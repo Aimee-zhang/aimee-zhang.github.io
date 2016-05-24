@@ -53,7 +53,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -64,9 +64,98 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-浅谈HTML结构二" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Javascript-01" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/05/23/浅谈HTML结构二/" class="article-date">
+    <a href="/2016/05/24/Javascript-01/" class="article-date">
+  <time datetime="2016-05-24T10:04:37.000Z" itemprop="datePublished">2016-05-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="title-javascript-01-基础知识"><a href="#title-javascript-01-基础知识" class="headerlink" title="title:javascript-01 基础知识"></a>title:javascript-01 基础知识</h2><h2 id="javascript-简介"><a href="#javascript-简介" class="headerlink" title="javascript 简介"></a>javascript 简介</h2><p>JavaScript 是世界上最流行的编程语言,可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。JavaScript 是脚本语言,是一种轻量级的编程语言。可以简单的将我们以前学过的HTML元素比作演员，而脚本语言就是剧本，你就是导演！</p>
+<h4 id="javascript的引入方式"><a href="#javascript的引入方式" class="headerlink" title="javascript的引入方式"></a>javascript的引入方式</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>JS引入方式<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	//外部引入 </span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"first.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span> </span><br><span class="line">	</span><br><span class="line">	//内部引入 </span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span><br><span class="line">		alert('内部引入方式');</span><br><span class="line">	</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>PS：其实引入方式同CSS的引入方式，优缺点亦一样哦。</p>
+<h4 id="引入javascript时有哪些注意点？"><a href="#引入javascript时有哪些注意点？" class="headerlink" title="引入javascript时有哪些注意点？"></a>引入javascript时有哪些注意点？</h4><p>##js引入放到头部或底部的区别</p>
+<p>###头部引入<br>代码执行时下面标签内容没加载完的时候如果需要获取元素是会出错的，所有需要加上<em>window.onload</em>等页面所有内容加载完载获取就可以了。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span><br><span class="line">		window.onload = function () &#123;</span><br><span class="line">			// 等页面加载完在执行</span><br><span class="line">		&#125;</span><br><span class="line">	</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>###底部引入<br>代码是重上往下执行的，执行到底部的是后，body里面的所有内容都加载完了，所有在底部用JS获取元素也没有问题了。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span><br><span class="line">	alert("底部")</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="javascript的注释方法："><a href="#javascript的注释方法：" class="headerlink" title="javascript的注释方法："></a>javascript的注释方法：</h3><p>//注释一行，不可以换行</p>
+<p>/<em>     </em>/ 多行注释</p>
+<h3 id="三种弹出对话框"><a href="#三种弹出对话框" class="headerlink" title="三种弹出对话框"></a>三种弹出对话框</h3><h4 id="alert语句"><a href="#alert语句" class="headerlink" title="alert语句"></a>alert语句</h4><p>（这是一个alert语句,用来在浏览器中弹出一个提示框的。这种只是弹出一个对话框，没有其他的返回值哦。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">	alter(<span class="string">'欢迎学习javascript'</span>)</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="confirm语句"><a href="#confirm语句" class="headerlink" title="confirm语句"></a>confirm语句</h4><p>这是一个confirm语句,用来在浏览器中弹出一个确认框的。这种会有两个选择项：取消、确定，并由返回值哦。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">	<span class="keyword">var</span> a = confirm(<span class="string">'此软件下载将会扣费1元，是否继续下载？'</span>);</span><br><span class="line">	 alert(a);</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="prompt语句"><a href="#prompt语句" class="headerlink" title="prompt语句"></a>prompt语句</h4><p>这是一个prompt语句,用来在浏览器中弹出一个输入框的。可以输入信息，并返回输入信息</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">	<span class="keyword">var</span> a = prompt(<span class="string">'请输入姓名：'</span>);</span><br><span class="line">	alert(a);</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="javascript-变量"><a href="#javascript-变量" class="headerlink" title="javascript 变量"></a>javascript 变量</h3><h4 id="什么是变量呢？"><a href="#什么是变量呢？" class="headerlink" title="什么是变量呢？"></a>什么是变量呢？</h4><p>所谓变量，就是其值是可以改变的，变量可以看做是存储数据的容器。比如一个瓶子，它既可以装入酱油、醋；也可以装入茅台和二锅头……</p>
+<h3 id="如何定义变量"><a href="#如何定义变量" class="headerlink" title="如何定义变量"></a>如何定义变量</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="comment">//以上代码定义了一个变量 a ,变量里保存的值是数值1</span></span><br></pre></td></tr></table></figure>
+<p>几种常用的数据类型：（前三种常用😄）</p>
+<p>number 值是数值；</p>
+<p>string   值是字符值；</p>
+<p>boolean值为布尔值（true，false）;</p>
+<p>undefined 值未定义；</p>
+<p>null 值为空；</p>
+<h3 id="变量的命名规范"><a href="#变量的命名规范" class="headerlink" title="变量的命名规范"></a>变量的命名规范</h3><p>变量命名规范：</p>
+<p>1.区分大小写，Name和name是两个不同的标识符。</p>
+<p>2.不能数字开头，必须以字母、下划线或者美元符号开始，不能使用特殊符号。</p>
+<p>3.命名不能是系统的关键字</p>
+<p>4.中间不能有空格</p>
+<p>有些保留字也不可以用来命名：如name</p>
+<p><strong><em>关键字可用于表示控制语句的开始或结束，或者用于执行特定操作等。<br>按照规则，关键字也是语言保留的，不能用作标识符</em></strong></p>
+<h2 id="js中的运算符"><a href="#js中的运算符" class="headerlink" title="js中的运算符"></a>js中的运算符</h2><p>算数运算符</p>
+<p>+加</p>
+<p>-减</p>
+<p>*乘</p>
+<p>/除</p>
+<p>% 求余(取模)</p>
+<h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h2><p>=赋值</p>
+<p>+= 加后赋值 </p>
+<p>-= 减后赋值 </p>
+<p>*= 乘后赋值 </p>
+<p>/= 除后赋值 </p>
+<p>%= 模后赋值</p>
+<h2 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h2><p>>大于</p>
+<p>&lt;小于</p>
+<p>&lt;= 小于等于</p>
+<p>>= 大于等于</p>
+<p>== 等于(如果左右两边类型不一致,则隐式转换为一致的类型后再比较)<br> === 等于(如果左右两边类型不一致,则返回false)</p>
+<p>!= 不等于(如果左右两边类型不一致,则隐式转换为一致的类型后再比较) </p>
+<p>!== 不等于(不转换类型,直接比较)</p>
+<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><p>&amp;&amp;与 </p>
+<p>||或 </p>
+<p>!非</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//只要其中一个为false就是false</span></span><br><span class="line"><span class="literal">true</span> &amp;&amp; <span class="literal">false</span> = <span class="literal">false</span></span><br><span class="line"><span class="literal">true</span> &amp;&amp; <span class="literal">true</span> = <span class="literal">true</span></span><br><span class="line"><span class="literal">false</span> &amp;&amp; <span class="literal">true</span> = <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//只要其中一个为true就是true</span></span><br><span class="line"><span class="literal">true</span> || <span class="literal">false</span> = <span class="literal">true</span></span><br><span class="line"><span class="literal">true</span> || <span class="literal">true</span> = <span class="literal">true</span></span><br><span class="line"><span class="literal">false</span> || <span class="literal">true</span> = <span class="literal">true</span></span><br><span class="line"><span class="literal">false</span> || <span class="literal">false</span> = <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//非true就是false 非flase就是true</span></span><br><span class="line">!<span class="literal">true</span> = <span class="literal">false</span></span><br><span class="line">!<span class="literal">false</span> = <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>#元素的获取</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 根据ID名获取div</span></span><br><span class="line"><span class="keyword">var</span> d1 = <span class="built_in">document</span>.getElementById(<span class="string">'d1'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 根据name属性获取p</span></span><br><span class="line"><span class="keyword">var</span> p = <span class="built_in">document</span>.getElementsByName(<span class="string">'pp'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 根据标类名获取a</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="built_in">document</span>.getElementsByClassName(<span class="string">'aa'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 根据标签名获取LI</span></span><br><span class="line"><span class="keyword">var</span> li = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="onclick事件的绑定"><a href="#onclick事件的绑定" class="headerlink" title="onclick事件的绑定"></a>onclick事件的绑定</h2><p>我们在浏览网页时,经常会通过点击鼠标来进行一些操作,比如点击登录按钮进行账 号的登录,点击注册按钮进入到一个账号注册页面,我们如何来实现一个点击时间 呢?这里我们就需要用到onclick事件绑定。<br>示例:点击红色div,弹出一个对话框</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 根据ID名获取DIV</span></span><br><span class="line"><span class="comment">// var div = document.getElementById('d1');</span></span><br><span class="line"><span class="comment">// 根据类名获取DIV</span></span><br><span class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.getElementsByClassName(<span class="string">'d1'</span>)[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span><br><span class="line">	onclick：给DIV加点击事件</span><br><span class="line">	function：函数,是一个方法</span><br><span class="line">*/</span> </span><br><span class="line">div.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">	alert(<span class="string">"我是DIV"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="onmouseover、onmouseout事件"><a href="#onmouseover、onmouseout事件" class="headerlink" title="onmouseover、onmouseout事件"></a>onmouseover、onmouseout事件</h2><p>鼠标基本事件除了onclick之外,还有:onmouseover、onmouseout事件。 </p>
+<p>onmouseover表示鼠标移入,在鼠标移入元素时会触发该方法; </p>
+<p>onmouseout表示鼠标移出,在鼠标移出元素时,会触发该方法。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//onmouseover/onmouseout是有bug的</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// IE8后改为用onmouseenter/onmouseleave</span></span><br><span class="line"><span class="comment">// onmouseenter:当鼠标移到DIV里面的时候触发的事件</span></span><br><span class="line">div.onmouseenter = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;		</span><br><span class="line">	div.style.backgroundColor = <span class="string">"blue"</span>;</span><br><span class="line">	alert(<span class="string">"进来"</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// onmouseleave:当鼠标移出div的时候触发的事件</span></span><br><span class="line">div.onmouseleave = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;		</span><br><span class="line">	div.style.backgroundColor = <span class="string">"red"</span>;</span><br><span class="line">	alert(<span class="string">"出去"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/24/Javascript-01/" data-id="ciolcnn8x0000vlpit8xcakm8" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-HTML-basic2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/23/HTML-basic2/" class="article-date">
   <time datetime="2016-05-23T09:15:55.000Z" itemprop="datePublished">2016-05-23</time>
 </a>
     
@@ -76,9 +165,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="HTML5学习-浅谈html结构二"><a href="#HTML5学习-浅谈html结构二" class="headerlink" title="   HTML5学习-浅谈html结构二"></a>   HTML5学习-浅谈html结构二</h2><p>#第二节<br>接着上一节内容继续，let’s go~<br>块元素：独占一行，其他的要换行显示，可以设置宽高，块元素可以嵌套块和行元素。<br>这里给出一些常用的块元素和行元素</p>
-<p>###常用块元素有：块元素：div  p  form(向服务器传输数据)  h1-h6  table hr  ul  ol  dl ……</p>
-<p> form 定义表单：</p>
+        <h2 id="title：-HTML5学习-浅谈html结构二"><a href="#title：-HTML5学习-浅谈html结构二" class="headerlink" title="  title： HTML5学习-浅谈html结构二"></a>  title： HTML5学习-浅谈html结构二</h2><h2 id="第二节"><a href="#第二节" class="headerlink" title="第二节"></a>第二节</h2><p>接着上一节内容继续，let’s go~<br>块元素：独占一行，其他的要换行显示，可以设置宽高，块元素可以嵌套块和行元素。<br>这里给出一些常用的块元素和行元素</p>
+<h4 id="常用块元素有：块元素：div-p-form-向服务器传输数据-h1-h6-table-hr-ul-ol-dl-……"><a href="#常用块元素有：块元素：div-p-form-向服务器传输数据-h1-h6-table-hr-ul-ol-dl-……" class="headerlink" title="常用块元素有：块元素：div  p  form(向服务器传输数据)  h1-h6  table hr  ul  ol  dl ……"></a>常用块元素有：块元素：div  p  form(向服务器传输数据)  h1-h6  table hr  ul  ol  dl ……</h4><p> form 定义表单：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span> =<span class="string">“post”</span> <span class="attr">action</span>=<span class="string">“url”</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>其中method属性：get不安全有缓存，但速度快     post 加密  速度慢，安全性高</p>
 <p>table 表格：<br>tr表示行    th表示表头单元格  td单元格<br>caption：表示表格的大标题，可以出现在table之间的任意位置    <caption>XXX</caption><br>cellpadding:内边距     cellspacing:外边距      colspan:跨列合并    rowspan:跨行合并</p>
@@ -88,8 +176,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">                     <span class="tag">&lt;<span class="name">li</span>&gt;</span>a<span class="tag">&lt;/<span class="name">li</span>&gt;</span>                             *a</span><br><span class="line">                     <span class="tag">&lt;<span class="name">li</span>&gt;</span>b<span class="tag">&lt;/<span class="name">li</span>&gt;</span> ——————》输出结果：            *b</span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>dl:定义列表   平时用的较少，对一个词的解释</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">dt</span>&gt;</span>我是DT<span class="tag">&lt;/<span class="name">dt</span>&gt;</span>            输出结果：我是DT   </span><br><span class="line">											   我是DD</span><br><span class="line">		<span class="tag">&lt;<span class="name">dd</span>&gt;</span>我是DD<span class="tag">&lt;/<span class="name">dd</span>&gt;</span>        </span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>###行元素：在行内显示，由内容撑开宽高，不可以设置宽高（img  input除外）常用的行元素：span  a  img  var  strong  em  select  input  textarea label ……</p>
-<p>a:定义超链接，用于页面之间的链接</p>
+<h3 id="行元素：在行内显示，由内容撑开宽高，不可以设置宽高（img-input除外）常用的行元素：span-a-img-var-strong-em-select-input-textarea-label-……"><a href="#行元素：在行内显示，由内容撑开宽高，不可以设置宽高（img-input除外）常用的行元素：span-a-img-var-strong-em-select-input-textarea-label-……" class="headerlink" title="行元素：在行内显示，由内容撑开宽高，不可以设置宽高（img  input除外）常用的行元素：span  a  img  var  strong  em  select  input  textarea label ……"></a>行元素：在行内显示，由内容撑开宽高，不可以设置宽高（img  input除外）常用的行元素：span  a  img  var  strong  em  select  input  textarea label ……</h3><p>a:定义超链接，用于页面之间的链接</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">‘http://www.baidu.com</span>'&gt;</span>百度<span class="tag">&lt;/<span class="name">a</span>&gt;</span>     ---这里是一个a链接</span><br></pre></td></tr></table></figure>
 <p>或：增加target属性<br><!-- target 的属性中：_blank:表示新建一个页面打开；_self:表示是同一个界面打开，不会重新加载界面 --></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.baidu.com"</span> <span class="attr">target</span>=<span class="string">"_self"</span>&gt;</span>百度一下<span class="tag">&lt;/<span class="name">a</span>&gt;</span>  ——》 不会新建窗口</span><br><span class="line">   <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://baidu.com"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>百度<span class="tag">&lt;/<span class="name">a</span>&gt;</span>       ——》新建窗口打开百度</span><br></pre></td></tr></table></figure>
@@ -97,8 +184,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">“#d1”</span>&gt;</span>跳转<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"d1"</span>&gt;</span>这是div<span class="tag">&lt;/<span class="name">div</span>&gt;</span>     ---鼠标点击“跳转”将会跳到“这是div”处</span><br></pre></td></tr></table></figure>
 <p>A的知识延伸（以后也会学习到，经常使用，所以在这里提一下咯😄：</p>
 <p>A标签 (简单记忆：LOVE and HATE 爱的水深火热)</p>
-<p>###A的四个伪类：</p>
-<ul>
+<h3 id="A的四个伪类："><a href="#A的四个伪类：" class="headerlink" title="A的四个伪类："></a>A的四个伪类：</h3><ul>
 <li>[1] link 有链接属性时 <ul>
 <li>[2] visited： 链接地址已被访问过</li>
 <li>[3]  hover：鼠标停留时</li>
@@ -106,14 +192,13 @@
 </ul>
 </li>
 </ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/*link-在a标签属性href里面有地址内容的时候执行的样式*/</span><br><span class="line">    a:link&#123;</span><br><span class="line">        color: blue;            ---字体显示蓝色</span><br><span class="line">    &#125;</span><br><span class="line">    /*visited-a标签的地址被访问过后*/</span><br><span class="line">    /*a:visited&#123;</span><br><span class="line">        color: red;            ---字体显示红色</span><br><span class="line">    &#125;*/</span><br><span class="line">    /*hover-当鼠标移动内容上回触发的样式*/</span><br><span class="line">    /*a:hover&#123;</span><br><span class="line">        color: yellow;         ---字体显示黄色</span><br><span class="line">    &#125;*/</span><br><span class="line">    /*active当鼠标按住的时候*/</span><br><span class="line">    /*a:active&#123;</span><br><span class="line">        color: green;         ---字体显示绿色</span><br><span class="line">    &#125;*/</span><br></pre></td></tr></table></figure>
-<p>###img元素<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"img/a.gif"</span> <span class="attr">alt</span>=<span class="string">"我是百度图片"</span> <span class="attr">title</span>=<span class="string">"我是title"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">/*link-在a标签属性href里面有地址内容的时候执行的样式*/</span><br><span class="line">    a:link&#123;</span><br><span class="line">        color: blue;            ---字体显示蓝色</span><br><span class="line">    &#125;</span><br><span class="line">    /*visited-a标签的地址被访问过后*/</span><br><span class="line">    a:visited&#123;</span><br><span class="line">        color: red;            ---字体显示红色</span><br><span class="line">    &#125;</span><br><span class="line">    /*hover-当鼠标移动内容上回触发的样式*/</span><br><span class="line">    a:hover&#123;</span><br><span class="line">        color: yellow;         ---字体显示黄色</span><br><span class="line">    &#125;</span><br><span class="line">    /*active当鼠标按住的时候*/</span><br><span class="line">    a:active&#123;</span><br><span class="line">        color: green;         ---字体显示绿色</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="img元素"><a href="#img元素" class="headerlink" title="img元素"></a>img元素</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"img/a.gif"</span> <span class="attr">alt</span>=<span class="string">"我是百度图片"</span> <span class="attr">title</span>=<span class="string">"我是title"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>src:书写图片路径     alt:当图片加字不出来时显示的提示文字    title：当鼠标放上时提示的文字信息</p>
-<p>###内联元素：</p>
-<p>var：定义变量文本  显示斜体   表示强调作业</p>
+<h3 id="内联元素："><a href="#内联元素：" class="headerlink" title="内联元素："></a>内联元素：</h3><p>var：定义变量文本  显示斜体   表示强调作业</p>
 <p>em:强调文本 表示强调</p>
 <p>strong 显示粗体   表示强调</p>
-<p>###select定义选择列表<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/example/html/form_action.asp"</span> <span class="attr">method</span>=<span class="string">"get"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">“phone</span>"&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">“iPhone4”</span>&gt;</span>苹果4<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">“iPhone4s”</span>&gt;</span>苹果4s<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">“iPhone5”</span>&gt;</span>苹果5<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">“iPhone5s”</span>&gt;</span>苹果5s<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">input</span> <span class="attr">text</span>=<span class="string">“submit”</span> <span class="attr">value</span>=<span class="string">“提交”</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="select定义选择列表"><a href="#select定义选择列表" class="headerlink" title="select定义选择列表"></a>select定义选择列表</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/example/html/form_action.asp"</span> <span class="attr">method</span>=<span class="string">"get"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">“phone</span>"&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">“iPhone4”</span>&gt;</span>苹果4<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">“iPhone4s”</span>&gt;</span>苹果4s<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">“iPhone5”</span>&gt;</span>苹果5<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">“iPhone5s”</span>&gt;</span>苹果5s<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">	 <span class="tag">&lt;<span class="name">input</span> <span class="attr">text</span>=<span class="string">“submit”</span> <span class="attr">value</span>=<span class="string">“提交”</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>运行结果：<br><img src="/Users/lan/Desktop/hexo/source/_posts/img/result.png" alt="General preferences pane">后台显示value的值：phone = iPhone4</p>
 <p>注意：value的值是要填写的，不然后台获取的数据为空！</p>
 <p>延伸：CSS3中datalist也可以达到这种效果：</p>
@@ -127,7 +212,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/23/浅谈HTML结构二/" data-id="ciojtupb90001k2pi4hlf10eb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/23/HTML-basic2/" data-id="ciojx5xn6000123pig086gn2a" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -137,9 +222,9 @@
 
 
   
-    <article id="post-浅谈HTML结构一" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-HTML-basic" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/05/23/浅谈HTML结构一/" class="article-date">
+    <a href="/2016/05/23/HTML-basic/" class="article-date">
   <time datetime="2016-05-23T08:31:40.000Z" itemprop="datePublished">2016-05-23</time>
 </a>
     
@@ -150,7 +235,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="HTML5学习-浅谈html结构"><a href="#HTML5学习-浅谈html结构" class="headerlink" title="HTML5学习-浅谈html结构"></a>HTML5学习-浅谈html结构</h2><p>##第一节<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span>  —声明为H5</span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en”&gt;    ---一般标签都是成对出现，但也由单个标签，如input，br等</span><br><span class="line">&lt;head&gt;                           ---开始标签</span><br><span class="line">    &lt;meta charset="</span><span class="attr">UTF-8</span>"&gt;</span>       ---声明字符类型</span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>我的第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span>  ——表示网页显示的名称</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>                          ---结束标签</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">          书写内容</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="title：HTML5学习-浅谈html结构"><a href="#title：HTML5学习-浅谈html结构" class="headerlink" title="title：HTML5学习-浅谈html结构"></a>title：HTML5学习-浅谈html结构</h2><h2 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span>  —声明为H5</span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en”&gt;    ---一般标签都是成对出现，但也由单个标签，如input，br等</span><br><span class="line">&lt;head&gt;                           ---开始标签</span><br><span class="line">    &lt;meta charset="</span><span class="attr">UTF-8</span>"&gt;</span>       ---声明字符类型</span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>我的第一个网页<span class="tag">&lt;/<span class="name">title</span>&gt;</span>  ——表示网页显示的名称</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>                          ---结束标签</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">          书写内容</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>注意：meta 在head里面使用，meta元素可提供有关页面的元信息；<br>meta常用属性：charset，content，name，（name和content必须配合使用，<br>语法：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span> =<span class="string">“参数”</span> <span class="attr">content</span> =<span class="string">“name属性值”</span>&gt;</span>） </span><br><span class="line"> 例如：<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>= <span class="string">“Keywords”</span> <span class="attr">content</span> = <span class="string">“</span> 关键字”&gt;</span>  </span><br><span class="line">   <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>= <span class="string">“Description”</span> <span class="attr">content</span> = <span class="string">“</span> 描述”&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>常用标签的介绍：<br>HTML 元素指的是从开始标签到结束标签的所有代码。</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">开始标签       元素内容              结束标签</span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>      h标签用来表示标题          <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>       p标签表示一个段落          <span class="tag">&lt;/<span class="name">p</span>&gt;</span>(段落结束自动空一行)</span><br></pre></td></tr></table></figure>
@@ -159,7 +244,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/23/浅谈HTML结构一/" data-id="ciojtupb50000k2piyu9279hv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/23/HTML-basic/" data-id="ciojx5xn1000023pi1ym9hfhb" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -204,7 +289,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/23/hello-world/" data-id="ciojohi5s00009jpiz0b1o751" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/23/hello-world/" data-id="ciojohi5s00009jpiz0b1o751" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -229,7 +314,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
     </div>
@@ -239,16 +324,20 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2016/05/23/浅谈HTML结构二/">(no title)</a>
+            <a href="/2016/05/24/Javascript-01/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2016/05/23/浅谈HTML结构一/">(no title)</a>
+            <a href="/2016/05/23/HTML-basic2/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/23/HTML-basic/">(no title)</a>
           </li>
         
           <li>
