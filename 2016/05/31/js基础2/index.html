@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#for循环
+###什么时候我们会用到循环?
+如果来计算1+2+3的和,应该怎么用程序表示?
+var sum = 1 + 2 + 3
+那如果从1一直加到100呢?这种情况下,在去写一个加法表达式就很浪费了,我们 观察:这个任务是在重复的执行加法运算,唯一变化的是加数,所以当程序需重复执 行一项任务时,我们就可以使用循环来替我们完成任务了。
+12345678910111213/* 		1+2+3+4">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/05/31/js基础2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#for循环
+###什么时候我们会用到循环?
+如果来计算1+2+3的和,应该怎么用程序表示?
+var sum = 1 + 2 + 3
+那如果从1一直加到100呢?这种情况下,在去写一个加法表达式就很浪费了,我们 观察:这个任务是在重复的执行加法运算,唯一变化的是加数,所以当程序需重复执 行一项任务时,我们就可以使用循环来替我们完成任务了。
+12345678910111213/* 		1+2+3+4">
+<meta property="og:updated_time" content="2016-05-31T13:37:40.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#for循环
+###什么时候我们会用到循环?
+如果来计算1+2+3的和,应该怎么用程序表示?
+var sum = 1 + 2 + 3
+那如果从1一直加到100呢?这种情况下,在去写一个加法表达式就很浪费了,我们 观察:这个任务是在重复的执行加法运算,唯一变化的是加数,所以当程序需重复执 行一项任务时,我们就可以使用循环来替我们完成任务了。
+12345678910111213/* 		1+2+3+4">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-js基础2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/31/js基础2/" class="article-date">
+  <time datetime="2016-05-31T13:37:40.000Z" itemprop="datePublished">2016-05-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#for循环</p>
+<p>###什么时候我们会用到循环?</p>
+<p>如果来计算1+2+3的和,应该怎么用程序表示?</p>
+<p><code>var sum = 1 + 2 + 3</code></p>
+<p>那如果从1一直加到100呢?这种情况下,在去写一个加法表达式就很浪费了,我们 观察:这个任务是在重复的执行加法运算,唯一变化的是加数,所以当程序需重复执 行一项任务时,我们就可以使用循环来替我们完成任务了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 	</span><br><span class="line">	1+2+3+4+5+6+7+8+9+10+11+12+13+++100=?</span><br><span class="line">	var sum = 0;</span><br><span class="line">	sum = sum+1;</span><br><span class="line">	sum = sum+2;</span><br><span class="line">	...</span><br><span class="line">	sum = sum+100;</span><br><span class="line"> 	alert(sum)</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">	sum += i;</span><br><span class="line">&#125;</span><br><span class="line">alert(<span class="string">"sum:"</span>+sum);</span><br></pre></td></tr></table></figure>
+<p>###循环跳出语句</p>
+<p><strong>break:跳出循环,继续向后执行</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;<span class="number">10</span>; i++)&#123;    alert(i);    <span class="keyword">if</span> (i&gt;<span class="number">5</span>)&#123;    	<span class="keyword">break</span>;	 &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上程序,当输出到6时就停止输出了,因为6&gt;5,满足if条件,所以就跳出循环,继续 向后执行</p>
+<p><strong>continue:结束本次循环,开启下次循环</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;<span class="number">10</span>; i++)&#123;   alert(i);   <span class="keyword">if</span> (i&gt;<span class="number">5</span>)&#123;		<span class="comment">// break;</span>		<span class="keyword">continue</span>; </span><br><span class="line">	&#125;	alert(<span class="string">"我在continue之后执行"</span>);&#125;</span><br></pre></td></tr></table></figure>
+<p>以上代码从输出6开始,就不再输出“我在continue之后执行”这句话了,但是数字还在继 续输出</p>
+<p>#input的checked属性</p>
+<p>在学习HTML是我们都知道:把input标签的type设置为checkbox后,就是一个复选框 了,如果checked属性是true,那么选框被选中;如果checked属性设置为false,则选框 是取消选中状态。下边,我们使用js来设置选框的状态.</p>
+<p>示例代码:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang="en"&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset="UTF-8"&gt;</span><br><span class="line">	&lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;input type="checkbox"&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script type="text/javascript"&gt;</span><br><span class="line">	var input = document.getElementsByTagName('input')[0];</span><br><span class="line">	// [input]</span><br><span class="line">	document.onclick = function () &#123;</span><br><span class="line">		//如果是选择就取消否则选中</span><br><span class="line">		if (input.checked==true) &#123;</span><br><span class="line">			input.checked = false;</span><br><span class="line">		&#125;else&#123;</span><br><span class="line">			input.checked = true;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>#this对象</p>
+<p>this：函数里面的以个对象</p>
+<p>默认调用函数的是window</p>
+<p>谁调用函数，函数里面的this就是谁</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">show()</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">show</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">   <span class="comment">//这里这个show是直接调用的属于window</span></span><br><span class="line">	alert(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"> div.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;    <span class="keyword">if</span> (<span class="keyword">this</span>.className == <span class="string">""</span>)&#123;</span><br><span class="line">    	  <span class="comment">//点击DIV执行的函数所有这里这个this是div</span>         <span class="keyword">this</span>.className = <span class="string">"active"</span>;     &#125;<span class="keyword">else</span>&#123;         <span class="keyword">this</span>.className = <span class="string">""</span>;	 &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/31/js基础2/" data-id="ciovhrug60000vcpik4ejsmo4" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/31/js基础知识点/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/31/js基础3/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/31/js基础知识点/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础2/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础3/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础4/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础6/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

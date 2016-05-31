@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#字符串常用方法
+indexOf()从前往后查找字符串位置,大小写敏感,从0开始计数。
+1234var str=&quot;Hello World!&quot; 	document.write(str.indexOf(&quot;Hello&quot;))//输出0	document.write(str.indexOf(&quot;World&quot;))//输出6	document.write(str.indexOf(&quot;world&quot;))//输出-1，因">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/05/31/js基础4/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#字符串常用方法
+indexOf()从前往后查找字符串位置,大小写敏感,从0开始计数。
+1234var str=&quot;Hello World!&quot; 	document.write(str.indexOf(&quot;Hello&quot;))//输出0	document.write(str.indexOf(&quot;World&quot;))//输出6	document.write(str.indexOf(&quot;world&quot;))//输出-1，因">
+<meta property="og:updated_time" content="2016-05-31T13:37:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#字符串常用方法
+indexOf()从前往后查找字符串位置,大小写敏感,从0开始计数。
+1234var str=&quot;Hello World!&quot; 	document.write(str.indexOf(&quot;Hello&quot;))//输出0	document.write(str.indexOf(&quot;World&quot;))//输出6	document.write(str.indexOf(&quot;world&quot;))//输出-1，因">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-js基础4" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/31/js基础4/" class="article-date">
+  <time datetime="2016-05-31T13:37:30.000Z" itemprop="datePublished">2016-05-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#字符串常用方法</p>
+<p>indexOf()<br>从前往后查找字符串位置,大小写敏感,从0开始计数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str=<span class="string">"Hello World!"</span> </span><br><span class="line">	<span class="built_in">document</span>.write(str.indexOf(<span class="string">"Hello"</span>))<span class="comment">//输出0</span></span><br><span class="line">	<span class="built_in">document</span>.write(str.indexOf(<span class="string">"World"</span>))<span class="comment">//输出6</span></span><br><span class="line">	<span class="built_in">document</span>.write(str.indexOf(<span class="string">"world"</span>))<span class="comment">//输出-1，因为没找到</span></span><br></pre></td></tr></table></figure>
+<p>substring()用于字符串截取,一个必选参数,一个可选参数,从0开始计数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span><br><span class="line">		字符串截取方法substring</span><br><span class="line">		substring里面最小参数为0</span><br><span class="line">		里面的参数是重最小截取到最大的位置</span><br><span class="line">	*/</span></span><br><span class="line">ar str = str.substring(<span class="number">100</span>,<span class="number">0</span>);</span><br><span class="line">alert(str)</span><br></pre></td></tr></table></figure>
+<p>split()<br>用于把一个字符串分割成字符串数组。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">"abcdefg"</span>;</span><br><span class="line">	<span class="comment">/*</span><br><span class="line">		split:把字符串劈开变成数组</span><br><span class="line">		劈开是按照split里面的参数</span><br><span class="line">	*/</span> </span><br><span class="line">	<span class="keyword">var</span> arr = str.split(<span class="string">"d"</span>);</span><br><span class="line">	alert(arr[<span class="number">0</span>]);<span class="comment">//abc</span></span><br><span class="line">	alert(arr[<span class="number">1</span>]);<span class="comment">//efg</span></span><br></pre></td></tr></table></figure>
+<p>其他方法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">"ABCDefg"</span>;</span><br><span class="line">	<span class="comment">// str[2]</span></span><br><span class="line">	<span class="comment">// charAt:获取字符串里的第几个字符从0开始</span></span><br><span class="line">	<span class="comment">// alert(str.charAt(2));</span></span><br><span class="line">	<span class="comment">// charCodeAt:获取字符串里的第几个字符的字符Ascii码</span></span><br><span class="line">	<span class="comment">// alert(str.charCodeAt(2));</span></span><br><span class="line">	<span class="comment">// toLowerCase变成小写</span></span><br><span class="line">	alert(str.toLowerCase());</span><br><span class="line">	<span class="comment">// toUpperCase变成大写</span></span><br><span class="line">	alert(str.toUpperCase());</span><br></pre></td></tr></table></figure>
+<p>#数组常用方法</p>
+<ul>
+<li>push(元素):从尾部添加新元素 </li>
+<li>unshift(元素): 从头部添加新元素 </li>
+<li>pop(),从尾部弹出元素 </li>
+<li>shift(),从头部弹出元素</li>
+</ul>
+<p>#数组元素的添加插入删除<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="string">"a"</span>,<span class="string">'b'</span>,<span class="string">'c'</span>,<span class="string">'d'</span>];</span><br><span class="line">	<span class="comment">/*</span><br><span class="line">		splice(a,b,c);</span><br><span class="line">		a:从哪里开始</span><br><span class="line">		b:往后删除多少个</span><br><span class="line">		c:添加内容后面可以添加多个用逗号隔开</span><br><span class="line">	*/</span></span><br><span class="line">	<span class="comment">//删除</span></span><br><span class="line">	<span class="comment">// arr.splice(1,2);</span></span><br><span class="line">	<span class="comment">//替换</span></span><br><span class="line">	<span class="comment">// arr.splice(1,2,"新1","新2","新3");</span></span><br><span class="line">	<span class="comment">//添加</span></span><br><span class="line">	arr.splice(<span class="number">2</span>,<span class="number">0</span>,<span class="string">"新的"</span>);</span><br><span class="line"></span><br><span class="line">	<span class="built_in">document</span>.write(arr);</span><br></pre></td></tr></table></figure></p>
+<p>#数组的排序</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">2</span>,<span class="number">6</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">3</span>,<span class="number">9</span>];</span><br><span class="line"><span class="comment">// reverse倒序</span></span><br><span class="line"><span class="comment">// arr.reverse()//数组已改变为倒序</span></span><br><span class="line"><span class="comment">// document.write(arr);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// arr.sort()//默认很顺序排列</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// arr.sort(function (a,b) &#123;</span></span><br><span class="line"><span class="comment">// 	return b-a;//a-b顺序 b-a倒序</span></span><br><span class="line"><span class="comment">// &#125;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//随机</span></span><br><span class="line">arr.sort(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">Math</span>.random()<span class="number">-0.5</span>;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.write(arr);</span><br></pre></td></tr></table></figure>
+<p>#数组元素之间添加分隔符</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">"abcdcefc"</span>;<span class="comment">//pdef</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.write(str+<span class="string">"&lt;br&gt;"</span>)</span><br><span class="line"><span class="keyword">var</span> arr = str.split(<span class="string">"c"</span>);</span><br><span class="line"><span class="built_in">document</span>.write(arr+<span class="string">"&lt;br&gt;"</span>)</span><br><span class="line"><span class="comment">/*</span><br><span class="line">	join:把数组拼接为字符串</span><br><span class="line">	将数组里面的逗号替换为join里面参数然后拼接为字符串</span><br><span class="line">*/</span></span><br><span class="line">str = arr.join(<span class="string">"&lt;span&gt;p&lt;/span&gt;"</span>);</span><br><span class="line"><span class="built_in">document</span>.write(str+<span class="string">"&lt;br&gt;"</span>)</span><br></pre></td></tr></table></figure>
+<p>#数组的合并</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</span><br><span class="line"><span class="keyword">var</span> arr2 = [<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>];</span><br><span class="line"><span class="keyword">var</span> arr3 = [<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>];</span><br><span class="line"><span class="comment">/*</span><br><span class="line">	concat合并数组</span><br><span class="line">	在concat里面加上要合并的数组</span><br><span class="line">	可以添加多个用逗号分开</span><br><span class="line">	原来的数组不会有任何改变</span><br><span class="line">*/</span></span><br><span class="line"><span class="keyword">var</span> newArr = arr.concat(arr2,arr3);</span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">"newArr："</span>+newArr+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">"arr"</span>+arr+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">"arr2"</span>+arr2+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">"arr3"</span>+arr3+<span class="string">"&lt;br&gt;"</span>);</span><br></pre></td></tr></table></figure>
+<p>#Mathd对象</p>
+<p>#常用方法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>)</span><br><span class="line"><span class="keyword">var</span> num = <span class="number">5.4999900001</span>;</span><br><span class="line"><span class="comment">//向上取整</span></span><br><span class="line"><span class="comment">// alert(Math.ceil(num));</span></span><br><span class="line"><span class="comment">//向下取整</span></span><br><span class="line"><span class="comment">// alert(Math.floor(num));</span></span><br><span class="line"><span class="comment">//四舍五入</span></span><br><span class="line"><span class="comment">// alert(Math.round(num))</span></span><br><span class="line"><span class="comment">// alert(Math.max(5,8,1,13,9,6))//13</span></span><br><span class="line"><span class="comment">// alert(Math.min(5,8,1,13,9,6))//1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//2 的 3次方</span></span><br><span class="line"><span class="comment">// alert(Math.pow(2,3))</span></span><br></pre></td></tr></table></figure>
+<p>#随机方法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span><br><span class="line">		Math.random()</span><br><span class="line">		随机数 0-1之间 不包 0 和 1 </span><br><span class="line">		最小0.000000....1</span><br><span class="line">		最大0.999999999....9</span><br><span class="line">	*/</span></span><br><span class="line">	<span class="comment">/*</span><br><span class="line">		0-10的随机数</span><br><span class="line">		0.00001*10 = 0.000001</span><br><span class="line">		0.99999999*10 = 9.99999</span><br><span class="line">		四舍五入</span><br><span class="line">		0.000001 = 0</span><br><span class="line">		9.99999 = 10</span><br><span class="line">	*/</span></span><br><span class="line">	<span class="keyword">var</span> rnd = <span class="built_in">Math</span>.round(<span class="built_in">Math</span>.random()*<span class="number">10</span>);</span><br><span class="line">	alert(rnd)</span><br><span class="line">	<span class="comment">//1-10</span></span><br><span class="line">	<span class="keyword">var</span> rnd = <span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.random()*<span class="number">10</span>);</span><br><span class="line">	alert(rnd)</span><br><span class="line">	<span class="comment">//0-9</span></span><br><span class="line">	<span class="keyword">var</span> rnd = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random()*<span class="number">10</span>);</span><br><span class="line">	alert(rnd)</span><br></pre></td></tr></table></figure>
+<p>#switch语句</p>
+<p>前边我们在学分支结构是学到了if. . .else. . .这种结构,我们可以通过if语句的嵌套实现多<br>分支结构,今天,我们将要学习一种更简单的多分支语句:switch. . .case. . .</p>
+<p>例子：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">	<span class="keyword">var</span> a = <span class="string">"1"</span>;</span><br><span class="line">	<span class="keyword">var</span> b = <span class="string">"2"</span>;</span><br><span class="line">	<span class="keyword">var</span> str = <span class="string">""</span>;</span><br><span class="line">	<span class="comment">// if (str == "+") &#123;</span></span><br><span class="line">	<span class="comment">// 	var num = Number(a)+Number(b);		</span></span><br><span class="line">	<span class="comment">// &#125;else if(str == "-")&#123;</span></span><br><span class="line">	<span class="comment">// 	var num = Number(a)-Number(b);		</span></span><br><span class="line">	<span class="comment">// &#125;else if(str == "*")&#123;</span></span><br><span class="line">	<span class="comment">// 	var num = Number(a)*Number(b);</span></span><br><span class="line">	<span class="comment">// &#125;else if(str == "/")&#123;</span></span><br><span class="line">	<span class="comment">// 	var num = Number(a)/Number(b);</span></span><br><span class="line">	<span class="comment">// &#125;else&#123;&#125;</span></span><br><span class="line">	<span class="keyword">switch</span>(str)&#123;</span><br><span class="line">		<span class="keyword">case</span> <span class="string">"+"</span>:</span><br><span class="line">			num = <span class="built_in">Number</span>(a)+<span class="built_in">Number</span>(b);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">		<span class="keyword">case</span> <span class="string">"-"</span>:</span><br><span class="line">			num = <span class="built_in">Number</span>(a)-<span class="built_in">Number</span>(b);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">		<span class="keyword">case</span> <span class="string">"*"</span>:</span><br><span class="line">			num = <span class="built_in">Number</span>(a)*<span class="built_in">Number</span>(b);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">		<span class="keyword">case</span> <span class="string">"/"</span>:</span><br><span class="line">			num = <span class="built_in">Number</span>(a)/<span class="built_in">Number</span>(b);</span><br><span class="line">		<span class="keyword">break</span>;	</span><br><span class="line">		<span class="keyword">default</span> : alert(<span class="string">"这部是运算符"</span>);<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	alert(num)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>#default关键词</p>
+<p>也许你注意到了,在上边讲解语法结构是有一个 default ,关键字。这个关键字的主 要任务相当于if语句中的最后一个else分支,和前边的条件都不匹配时,执行default分 支。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/31/js基础4/" data-id="ciovhrugg0002vcpiv2rxkw27" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/31/js基础3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/31/js基础6/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/31/js基础知识点/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础2/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础3/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础4/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础6/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

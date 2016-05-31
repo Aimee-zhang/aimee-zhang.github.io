@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#闭包
+ JavaScript中所有的function都是一个闭包。不过一般来说，嵌套的function所产生的闭包更为强大，也是大部分时候我们所谓的“闭包”。
+123456789101112131415161718192021/*		什么闭包：function函数就是一个闭包，闭包里面的变量是封闭的，函数外面不可以获取。		主要功能：function里面再嵌套一个函数，把这个函数返回出去		赋给">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/05/31/js基础6/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#闭包
+ JavaScript中所有的function都是一个闭包。不过一般来说，嵌套的function所产生的闭包更为强大，也是大部分时候我们所谓的“闭包”。
+123456789101112131415161718192021/*		什么闭包：function函数就是一个闭包，闭包里面的变量是封闭的，函数外面不可以获取。		主要功能：function里面再嵌套一个函数，把这个函数返回出去		赋给">
+<meta property="og:updated_time" content="2016-05-31T13:37:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#闭包
+ JavaScript中所有的function都是一个闭包。不过一般来说，嵌套的function所产生的闭包更为强大，也是大部分时候我们所谓的“闭包”。
+123456789101112131415161718192021/*		什么闭包：function函数就是一个闭包，闭包里面的变量是封闭的，函数外面不可以获取。		主要功能：function里面再嵌套一个函数，把这个函数返回出去		赋给">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-js基础6" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/31/js基础6/" class="article-date">
+  <time datetime="2016-05-31T13:37:08.000Z" itemprop="datePublished">2016-05-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#闭包</p>
+<p> JavaScript中所有的function都是一个闭包。不过一般来说，嵌套的function所产生的闭包更为强大，也是大部分时候我们所谓的“闭包”。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span><br><span class="line">		什么闭包：function函数就是一个闭包，闭包里面的变量是封闭的，函数外面不可以获取。</span><br><span class="line">		主要功能：function里面再嵌套一个函数，把这个函数返回出去</span><br><span class="line">		赋给外面的变量，函数外面就可以获取到函数里面的内容</span><br><span class="line"></span><br><span class="line">		注意的问题：闭包要注意内存溢出的问题，不可以乱用，需要用得才用</span><br><span class="line">	*/</span></span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> i = <span class="number">5</span>; <span class="comment">// a_i;</span></span><br><span class="line">		<span class="function"><span class="keyword">function</span> <span class="title">b</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">			i += n;<span class="comment">//a_i</span></span><br><span class="line">			<span class="keyword">return</span> i;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> b;</span><br><span class="line">	&#125;	</span><br><span class="line">	<span class="keyword">var</span> c = a();</span><br><span class="line">	c(<span class="number">5</span>)</span><br><span class="line">	alert(c(<span class="number">5</span>))<span class="comment">//15</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// alert(c(1));//6</span></span><br><span class="line">	<span class="comment">// alert(c(5));//11</span></span><br></pre></td></tr></table></figure>
+<p>#闭包有什么作用？</p>
+<p>简而言之，闭包的作用就是在a执行完并返回后，闭包使得javascript的垃圾回收机制GC不会收回a所占用的资源，因为a的内部函数b的执行需要依赖a中的变量。这是对闭包作用的非常直白的描述，不专业也不严谨，但大概意思就是这样，理解闭包需要循序渐进的过程。</p>
+<p>#使用闭包的注意点 </p>
+<p>由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。</p>
+<p>#作用域练习</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">6</span>;</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(a);<span class="comment">//66</span></span><br><span class="line">    a = <span class="number">666</span>;</span><br><span class="line"> &#125;, <span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"> a = <span class="number">66</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">6</span>;        <span class="comment">//a=6</span></span><br><span class="line">	(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		    alert(a);</span><br><span class="line">		    a = <span class="number">666</span>;<span class="comment">//a = 666</span></span><br><span class="line">		&#125;)();</span><br><span class="line">	&#125;)();</span><br><span class="line">	a = <span class="number">66</span>; </span><br><span class="line">	alert(a)<span class="comment">//a =66</span></span><br></pre></td></tr></table></figure>
+<p>#去重复</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">5</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">6</span>,<span class="number">6</span>,<span class="number">6</span>,<span class="number">2</span>,<span class="number">8</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">9</span>,<span class="number">9</span>,<span class="number">9</span>,<span class="number">9</span>,<span class="number">9</span>,<span class="number">9</span>];</span><br><span class="line">	<span class="comment">// 0  arr[0]==arr[5] 如果是重复 删掉arr[5]</span></span><br><span class="line">	<span class="comment">//splice(5,1)</span></span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">noRepeat</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">var</span> j = i+<span class="number">1</span>; j &lt; arr.length; j++) &#123;</span><br><span class="line">				<span class="keyword">if</span> (arr[i]==arr[j]) &#123;</span><br><span class="line">					arr.splice(j,<span class="number">1</span>)</span><br><span class="line">					j--;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;					</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> arr;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">var</span> arr = noRepeat();</span><br><span class="line">	alert(arr);</span><br></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">5</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">6</span>,<span class="number">6</span>,<span class="number">6</span>,<span class="number">2</span>,<span class="number">8</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">9</span>,<span class="number">9</span>,<span class="number">9</span>,<span class="number">9</span>,<span class="number">9</span>,<span class="number">9</span>];</span><br><span class="line">	<span class="comment">// 0  arr[0]==arr[5] 如果是重复 删掉arr[5]</span></span><br><span class="line">	<span class="comment">//splice(5,1)	</span></span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">noRepeat</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> newArr = [];</span><br><span class="line">		newArr.push(arr[<span class="number">0</span>])</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; newArr.length; j++) &#123;</span><br><span class="line">				<span class="keyword">if</span> (newArr[j]==arr[i]) &#123;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;	</span><br><span class="line">			<span class="keyword">if</span> (j==newArr.length) &#123;</span><br><span class="line">				newArr.push(arr[i]);</span><br><span class="line">				<span class="comment">// newArr[newArr.length] = arr[i]</span></span><br><span class="line">			&#125;			</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> newArr;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">var</span> arr = noRepeat();</span><br><span class="line">	alert(arr);</span><br></pre></td></tr></table></figure>
+<p>#排序</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">5</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">6</span>];</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">px</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="built_in">document</span>.write(<span class="string">"i="</span>+<span class="number">0</span>+<span class="string">";j="</span>+<span class="number">0</span>+<span class="string">"-"</span>+arr+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">var</span> j = i+<span class="number">1</span>; j &lt; arr.length; j++) &#123;</span><br><span class="line">				<span class="keyword">if</span> (arr[i]&gt;arr[j]) &#123;</span><br><span class="line">					<span class="keyword">var</span> num = arr[i];</span><br><span class="line">					arr[i]=arr[j];</span><br><span class="line">					arr[j]=num;					</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="built_in">document</span>.write(<span class="string">"i="</span>+i+<span class="string">";j="</span>+j+<span class="string">"-"</span>+arr+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="built_in">document</span>.write(<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> arr;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">var</span> arr = px();</span><br><span class="line">	alert(arr);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/31/js基础6/" data-id="ciovhruhh0003vcpiwbg0s5q5" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/31/js基础4/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/24/Javascript-01/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/31/js基础知识点/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础2/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础3/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础4/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/js基础6/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
