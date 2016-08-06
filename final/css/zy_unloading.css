@@ -1,0 +1,160 @@
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.fl{float: left;}
+.fr{float: right;}
+html{font-size: 100px;}
+html,body{
+	width: 100%;
+}
+.wrap{
+	width: 100%;
+}
+.header{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0.05rem;
+}
+.top{width: 100%;}
+.top img{
+	width: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.person{
+	margin:0.175rem auto 0.05rem ;
+	margin-top: 0.4rem;
+}
+.person img{width: 0.94rem;}
+.title{
+	width: 0.69rem;
+	margin:0 auto 0.21rem;
+	border-radius: 0.1rem;
+	border: 1px solid #c3ad88; 
+	color:#c3ad88;
+	font-size: 0.16rem;
+	text-align: center;
+	line-height: 0.29rem;
+	cursor: pointer;
+}
+.attention{
+	width: 80%;
+	border-top: 1px solid #c5c4c4;
+	border-bottom: 1px solid #c5c4c4;
+	margin:0 auto 2px;
+}
+.atten_1, .atten_2{
+	width: 49%;
+	text-align: center;
+	line-height: 0.4rem;
+	font-size: 0.11rem;
+}
+.atten_1{border-right: 1px solid #c5c4c4;}
+.atten_1 span{
+	margin-left: 0.15rem;
+	font-size: 0.11rem;
+	color: #7adf3c;
+	line-height: 0.4rem;
+}
+.atten_2 span{
+	margin-left:0.15rem;
+	font-size: 0.11rem;
+	color: #ff4e00;
+	line-height: 0.4rem;
+}
+.info{
+	width: 80%;
+	margin:2px auto 0;
+}
+.info_1,.info_2,.info_3{
+	width: 33%;
+	height: 100%;
+	font-size: 0.11rem;
+	text-align: center;
+	line-height:0.4rem;
+}
+.info_2 {
+	border-left: 1px solid #c5c4c4;
+	border-right: 1px solid #c5c4c4;
+}
+.info_1 span{color:#21d5f2;}
+.info_2 span{color:#bf21f2;}
+.info_3 span{color:#e23b47;}
+.info span{
+	margin-left: 0.15rem;
+}
+.content{
+	width: 90%;
+	height: 100%;
+	margin:auto;
+}
+.middle{
+	width: 100%;
+	height: 0.07rem;
+	background-color: #f4f3f0;
+}
+.order{width: 100%;}
+.order_1{
+	width: 50%;
+	font-size: 0.12rem;
+	line-height:0.32rem;
+}
+.order_2 img{
+	width: 0.06rem;
+	margin:0.1rem 0 0.1rem 0.1rem;
+}
+.shopstyle{
+	width: 100%;
+	margin:0.1rem 0px 0.05rem;
+	border-bottom:1px solid #ccc; 
+}
+.shopstyle li{
+	width: 13%;
+	margin:0px 0.2rem 0.1rem;
+	text-align: center;
+}
+.shopstyle span{font-size: 0.1rem;}
+.shopstyle img{margin-bottom: 0.05rem;}
+.ord_log img {height: 0.22rem;}
+
+.car{
+	width: 100%;
+	height:2rem;
+	margin-bottom:0.425rem;
+}
+.car table{width: 100%;}
+.car tr{
+	width: 100%;
+	border-bottom:1px solid #ccc; 
+}
+.car td{
+	font-size: 0.12rem;
+	line-height: 0.4rem;
+}
+.car img{vertical-align: middle;}
+.car .first{width: 6%;}
+.car .first img{width: 0.15rem;}
+.car .second {
+	margin-left: 0.2rem;
+	width: 0%;
+}
+.car .three{
+	text-align: right;
+	width: 22%;
+}
+.car .three img{
+	width: 0.06rem;
+}
+
+
+
+
+
+
+
+
+
+

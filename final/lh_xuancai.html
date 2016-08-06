@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/lh_xuancai.css">
+	<link rel="stylesheet" href="css/lh_footer.css">	
+</head>
+<body>
+	<div class="header">
+		<div class="searchbox">
+			<img src="img/fangda.png" alt="">
+			<input type="text" placeholder="输入菜品名称">
+		</div>
+		<img src="img/gengduo.png" alt="" class="more">
+	</div>
+	<div class="content">
+		<ul class="yixuan">
+			<li>
+				<p>金针菇</p>
+				<img src="img/jinzhengu.png" alt="">
+				<img src="img/quxiao.png" alt="" class="quxiao">
+			</li>
+			<li>
+				<p>金针菇</p>
+				<img src="img/jinzhengu.png" alt="">
+				<img src="img/quxiao.png" alt="" class="quxiao">
+			</li>
+		</ul>
+		<ul class="weixuan">
+			<li>
+				<p>樱桃番茄</p>
+				<img src="img/yingtaofanqie.png" alt="">
+			</li>
+			<li>
+				<p>樱桃番茄</p>
+				<img src="img/yingtaofanqie.png" alt="">
+			</li>
+			<li>
+				<p>樱桃番茄</p>
+				<img src="img/yingtaofanqie.png" alt="">
+			</li>
+			<li>
+				<p>樱桃番茄</p>
+				<img src="img/yingtaofanqie.png" alt="">
+			</li>
+		</ul>
+		<div class="hide"></div>
+	</div>
+	<div class="footer">
+		<a href="lh_zhuye.html"><img src="img/lh_zhuye.png" alt="" class="a1"></a>
+		<a href="lh_shangcheng-danpin.html"><img src="img/shangcheng.png" alt="" class="a2"></a>
+		<a href="lh_xuancai.html"><img src="img/xuancai-dianji.png" alt="" class="a3"></a>
+		<a href="dl_discover.html"><img src="img/faxian.png" alt="" class="a4"></a>
+		<a href="zy_loading.html"><img src="img/wode.png" alt="" class="a5"></a>
+	</div>
+</body>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script>
+	var yixuan=$(".yixuan");
+	var weixuan=$(".weixuan");
+	var weixuanLi=$(".weixuan").find("li");
+	var quxiao=yixuan.find("li").find(".quxiao");
+	weixuanLi.click(function () {
+		$(this).remove();
+		var li=$('<li>'+$(this).html()+'<img src="img/quxiao.png" alt="" class="quxiao"></li>');
+		yixuan.append(li);
+	})
+	quxiao.click(function () {
+		$(this).parent().remove();
+		var li=$('<li>'+$(this).parent().html()+'</li>');
+		weixuan.append(li);
+	})
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+.footer{
+	width: 100%;
+	height: 47px;
+	position: fixed;
+	bottom: 0;
+	background: #48382b;
+	text-align: center;
+}
+.footer a img{
+	margin: 7px 6%;
+}
+.footer .a1{
+	width: 20px;
+}
+.footer .a2{
+	width: 21px;
+}
+.footer .a3{
+	width: 25px;
+}
+.footer .a4{
+	width: 26px;
+}
+.footer .a5{
+	width: 19px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/lh_caipinxiangqing.css">
+</head>
+<body>
+	<div class="header">
+		<img src="img/zuojiantou.png" alt="">
+		菜品详情
+	</div>
+	<div class="main">
+		<img src="img/caipinxiangqing_main.png" alt="" class="main_pic">
+		<div class="inf">
+			<span class="nam">香煎杏鲍菇</span>
+			<span class="pingjia"><img src="img/love.png" alt=""><img src="img/love.png" alt=""><img src="img/love.png" alt=""><img src="img/love.png" alt=""><img src="img/love_empty.png" alt=""></span><br>
+			<span class="kouwei">酱香口味　５分钟</span>
+			<span class="liulan">305人浏览</span>
+			<div>菜单</div>
+		</div>
+	</div>
+	<div class="caidan">
+		<ul>
+			<li>
+				<p>杏鲍菇</p>
+				<img src="img/xingbaogu.png" alt="">
+			</li>
+			<li>
+				<p>鲜葱</p>
+				<img src="img/xiancong.png" alt="">
+			</li>
+			<li>
+				<p>玉米油</p>
+				<img src="img/yumiyou.png" alt="">
+			</li>
+			<li>
+				<p>山椒酱</p>
+				<img src="img/xingbaogu.png" alt="">
+			</li>
+		</ul>
+	</div>
+	<div class="gonglue">
+		<div class="tittle">攻略</div>
+		<img src="img/yongliaobiaoge.png" alt="" class="table">
+		<ul>
+			<li>
+				<img src="img/buzhou1.png" alt="">
+				<div>
+					<p class="p1">步骤一</p>
+					<p class="p2">杏鲍菇洗净，拭干水分，切片；尽量厚薄均匀；再切点葱花；</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/buzhou2.png" alt="">
+				<div>
+					<p class="p1">步骤二</p>
+					<p class="p2">电饼铛上下两个煎盘都刷上一层玉米油；</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/buzhou3.png" alt="">
+				<div>
+					<p class="p1">步骤三</p>
+					<p class="p2">通电，打开上下两个开关，预热；</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/buzhou4.png" alt="">
+				<div>
+					<p class="p1">步骤四</p>
+					<p class="p2">预热完成后，将杏鲍菇片铺在电饼铛里；启动“大饼/馅饼”功能；</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/buzhou5.png" alt="">
+				<div>
+					<p class="p1">步骤五</p>
+					<p class="p2">一个程序完成后，将杏鲍菇翻面；启动“煎蛋/薄饼”功能；</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/buzhou6.png" alt="">
+				<div>
+					<p class="p1">步骤六</p>
+					<p class="p2">程序完成后，关掉上开关；倒入适量山椒酱；将酱料同杏鲍菇炒均匀；</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/buzhou7.png" alt="">
+				<div>
+					<p class="p1">步骤七</p>
+					<p class="p2">食材都煎熟之后，撒入葱花；</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/buzhou8.png" alt="">
+				<div>
+					<p class="p1">步骤八</p>
+					<p class="p2">装盘，上桌。</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="footer">
+		<a href="###" class="join">加入购物车</a>
+		<a href="###" class="buy">立即购买</a>
+	</div>
+</body>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script>
+	var caidan=$(".caidan")
+	var ul=caidan.find("ul");
+	if (caidan.width()>ul.width()) {
+		ul.css({
+			left:(caidan.width()-ul.width())/2
+		})
+	}
+	else {
+		ul.on("touchstart",function (e) {
+			var dx=e.touches[0].clientX-ul.offset().left;
+			ul.on("touchmove",function (e) {
+				var x=e.touches[0].clientX-dx;
+				if (x>0) {x=0}
+				if (x<caidan.width()-ul.width()-10) {
+					x=caidan.width()-ul.width()-10
+				}
+				ul.css({
+					left:x
+				})
+				e.preventDefault();
+			})
+		})
+	}
+	
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关注人列表</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<style type="text/css">
+	html{
+		font-size: 100px;
+	}
+		html,body{
+			width: 100%;
+			height: 100%;
+
+			
+		}
+		.clear:after{
+			content: '';
+			clear:both;
+			display: block;
+		}
+		.wrap{
+			width: 100%;
+			height: 100%;
+		}
+		.nav{
+			width: 100%;
+			height: 0.65rem;
+			background-color: #48382b;
+			position: relative;
+		}
+		.nav p{
+			padding-top: 0.23rem;
+			width: 0.72rem;
+			font-size: 0.18rem;
+			color: white;
+			margin: 0 auto;
+		}
+		.nav img{
+
+			position: absolute;
+			height: 0.2rem;
+			left: 0.3rem;
+			top: 0.22rem;
+		}
+		.content{
+			width: 100%;
+			
+		}
+		.content .tu{
+			width: 100%;
+			height: 1.1rem;
+			border: 1px solid #bfbfbf;
+			position: relative;
+		}
+		.content img{
+			height: 0.8rem;
+		}
+		.content .tu div{
+			float: left;
+		}
+		.content .tu img {
+			margin-top: 0.15rem;
+			margin-left: 0.1rem;
+		}
+		.content .tu div:nth-child(2){
+			margin-left: 0.2rem;
+			margin-top: 0.2rem;
+		}
+		.content .tu .namer {
+			font-size: 0.16rem;
+			color: #292929;
+			margin-right: 1rem;
+		}
+		.content .tu .km{
+			color: #999999;
+			margin-right: 0.1rem;
+			font-size: 0.12rem;
+		}
+		.content .tu .p2{
+			color:#666666;
+			font-size: 0.12rem;
+		}
+		.content .tu .p3{
+			color:#666666;
+			font-size: 0.13rem;
+		}
+		.content .tu p{
+			margin-bottom: 0.11rem;
+		}
+		.content .tu .cern{
+			position: absolute;
+			right: 0.15rem;
+			bottom: 0.15rem;
+			height: 0.15rem;
+			width: 0.5rem;
+			border-radius: 3px;
+			border:1px solid #6ab439;
+			color: #6ab439;
+			text-align: center;
+
+		}
+		.content .tu .cerns{
+			position: absolute;
+			right: 0.3rem;
+			bottom: 0.15rem;
+			height: 0.15rem;
+			width: 0.25rem;
+			border-radius: 3px;
+			border:1px solid #6ab439;
+			color: #6ab439;
+			display: none;
+			text-align: center;
+
+		}
+		
+		@media only screen and (device-width: 320px) {
+			
+			html{
+				font-size: 81px;
+			}
+			.content .tu .cern{
+				font-size: 12px;
+				width: 50px;
+				right: 10px;
+			}
+			.content .tu .cerns{
+				font-size: 12px;
+				width: 30px;
+				right: 13px;
+
+			}
+			.content .tu div:nth-child(2){
+				margin-left: 10px;
+			}
+			
+		}
+		@media only screen and (device-width: 414px){
+			html{
+				font-size: 110px;
+			}
+		}
+		@media only screen and (device-width: 768px){
+			html{
+				font-size: 145px;
+			}
+			.content .tu .namer {
+			
+			margin-right: 2.5rem;
+		}
+		
+		.content .tu .cern{
+				font-size: 16px;
+				text-align: center;
+				line-height: 23px;
+				
+			}
+			.content .tu .cerns{
+				font-size: 16px;
+				text-align: center;
+				line-height: 23px;
+
+			}
+
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+<div>
+	<div class="nav">
+		<p>关注的人</p>
+		<img src="img/hlz_arrow.png" alt="">
+	</div>
+	<div class="content">
+		<div  class="tu clear" >
+			<div><img src="img/hlz_t1.png" alt=""></div>
+			<div>
+				<p><span class="namer">只若初见</span><span class="km">0.01km</span><span class="km">1分钟</span></p>
+				<p class="p2"><span style="margin-right:15px;">女</span><span style="margin-right:18px;">23岁</span><span style="margin-right:5px;">北京</span><span>大兴区</span>	</p>
+				<p class="p3">蛋炒饭饭炒蛋，两个鸡蛋一碗饭</p>
+			</div>
+			<div class="cern">取消关注</div>
+			<div class="cerns">关注</div>
+		</div>
+		<div class="tu clear">
+			<div><img src="img/hlz_t2.png" alt=""></div>
+			<div>
+				<p><span class="namer">唯见初心</span><span class="km">0.05km</span><span class="km">2分钟</span></p>
+				<p class="p2"><span style="margin-right:15px;">女</span><span style="margin-right:18px;">22岁</span><span style="margin-right:5px;">北京</span><span>丰台区</span>	</p>
+				<p class="p3">土豆爱上回锅肉</p>
+			</div>
+			<div class="cern">取消关注</div>
+			<div class="cerns">关注</div>
+		</div>
+		<div class="tu clear" >
+			<div><img src="img/hlz_t3.png" alt=""></div>
+			<div>
+				<p><span class="namer">宁静致远</span><span class="km">1.02km</span><span class="km">3分钟</span></p>
+				<p class="p2"><span style="margin-right:15px;">女</span><span style="margin-right:18px;">24岁</span><span style="margin-right:5px;">北京</span><span>石景山区</span>	</p>
+				<p class="p3">柠檬与黄鳝的碰撞，你敢想像</p>
+			</div>
+			<div class="cern">取消关注</div>
+			<div class="cerns">关注</div>
+		</div>
+		<div class="tu clear" >
+			<div><img src="img/hlz_t4.png" alt=""></div>
+			<div>
+				<p><span class="namer">上善若水</span><span class="km">1.03km</span><span class="km">3分钟</span></p>
+				<p class="p2"><span style="margin-right:15px;">女</span><span style="margin-right:18px;">22岁</span><span style="margin-right:5px;">北京</span><span>门头沟区</span>	</p>
+				<p class="p3">不会做饭的医生不是好设计师</p>
+			</div>
+			<div class="cern">取消关注</div>
+			<div class="cerns">关注</div>
+		</div>
+		<div class="tu clear" >
+			<div><img src="img/hlz_t5.png" alt=""></div>
+			<div>
+				<p><span class="namer">影随风</span><span class="km">0.01km</span><span class="km">5分钟</span></p>
+				<p class="p2"><span style="margin-right:15px;">男</span><span style="margin-right:18px;">25岁</span><span style="margin-right:5px;">北京</span><span>大兴区</span>	</p>
+				<p class="p3">谁动了我得窝头</p>
+			</div>
+			<div class="cern">取消关注</div>
+			<div class="cerns">关注</div>
+
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src = "js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript">
+		var cern = $('.content .tu .cern');
+		var cerns = $('.content .tu .cerns');
+		cern.on('click',function () {
+			$(this).hide();
+			$(this).next().show();
+		});
+		cerns.on('click',function () {
+			$(this).hide();
+			$(this).prev().show();
+		})
+
+	</script>
+
+
+</html>

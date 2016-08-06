@@ -1,0 +1,222 @@
+body{
+	background: #f4f3f0;
+}
+.header{
+	width: 100%;
+	height: 250px;
+	background-image: url(../img/wode-bg.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.header .cover{
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.4;
+	float: left;
+}
+.header .touxiang{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background: #c3ad88;
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+	margin-top: 35px;
+}
+.header .touxiang .zhong{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #95805b;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+}
+.header .touxiang .zhong .nei{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: #e4e2e2;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	background-image: url(../img/lh_touxiang.png);
+	background-size: 100% 100%;
+}
+.header .name{
+	font-size: 16px;
+	color: white;
+	position: absolute;
+	left: 50%;
+	margin-left: -32px;
+	margin-top: 140px;
+}
+.header .item{
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	top: 180px;
+	text-align: center;
+}
+.header .item a{
+	float: left;
+	line-height: 30px;
+}
+.header .item .a1,.header .item .a2{
+	width: 50%;
+}
+
+.header .item .a3,.header .item .a5{
+	width: 33%;
+}
+.header .item .a4{
+	width: 34%;
+}
+.header .item .title{
+	color: white;
+	margin-right: 15px;
+}
+.header .item .a1 .num{
+	color: #71f704;
+}
+.header .item .a2 .num{
+	color: #ff4e00;
+}
+.header .item .a3 .num{
+	color: #00deff;
+}
+.header .item .a4 .num{
+	color: #c600ff;
+}
+.header .item .a5 .num{
+	color: #ec0a22;
+}
+.header .item .d1{
+	width: 100%;
+	height: 1px;
+	background: #c5c4c4;
+	position: absolute;
+	top: 0;
+}
+.header .item .d2{
+	width: 100%;
+	height: 1px;
+	background: #c5c4c4;
+	position: absolute;
+	top: 30px;
+}
+
+.header .item .d3{
+	width: 1px;
+	height: 20px;
+	background: #c5c4c4;
+	position: absolute;
+	left: 50%;
+	top: 5px;
+}
+
+.header .item .d4{
+	width: 1px;
+	height: 20px;
+	background: #c5c4c4;
+	position: absolute;
+	left: 33%;
+	top: 35px;
+}
+
+.header .item .d5{
+	width: 1px;
+	height: 20px;
+	background: #c5c4c4;
+	position: absolute;
+	left: 67%;
+	top: 35px;
+}
+.content{
+	width: 100%;
+	background: white;
+	margin-top: 5px;
+}
+.content .all{
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #ebeae4;
+	line-height: 30px;
+}
+.content .all span{
+	margin-left: 15px;
+	color: #292929;
+}
+.content .all img{
+	width: 6px;
+	float: right;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+.content .fenlei{
+	width: 100%;
+	height: 55px;
+	border-bottom: 1px solid #ebeae4;
+	text-align: center;
+}
+.content .fenlei img{
+	width: 30px;
+	margin: 10px 7%;
+}
+.content ul li{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #ebeae4;
+	line-height: 40px;
+}
+.content ul li .logo{
+	width: 15px;
+	margin: 10px 15px;
+}
+.content ul li span{
+	color: #252029;
+}
+.content ul li .more{
+	width: 6px;
+	float: right;
+	margin-right: 15px;
+	margin-top: 15px;
+}
+.content .dingwei{
+	width: 100%;
+	height: 100px;
+	background: white;
+	text-align: center;
+}
+.content .dingwei img{
+	width: 40px;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

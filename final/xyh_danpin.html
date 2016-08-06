@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/xyh_head.css">
+	<link rel="stylesheet" href="css/xyh_danpin.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<div class="head_con">
+				<img  class="return" src="img/xyh_return.png" alt="">
+				湾仔小精排
+				<p class="dan">
+					<em></em><em></em><em></em>
+				</p>
+			</div>
+		</div>
+		<div class="danpin">
+			<img class="show" src="img/xyh_dan.png" alt="">
+			<ul class="dan_nav">
+				<li>帮助<div></div></li>
+				<li>首页<div></div></li>
+				<li>客服消息<div></div></li>
+			</ul>
+			<div class="dir">
+				<div class="dir_tit">湾仔码头精选1000g超级小精排</div>
+				<li>米其林三星专供</li>
+				<p>￥120</p>
+				<div class="dir_tu">
+					<div class="fl dir_tu_l">收藏</div>
+					<div class="fr dir_tu_r">分享</div>
+					<span>周销120份</span>
+				</div>
+			</div>
+			<dl class="state">
+				<dt>规格：1000g</dt>
+				<dd>因该产品加工时鲜肉经分割后抽真空包装再进行急速冷冻的，所以包装内会出现少量的血冰，为正常现象，不会影响商品的品质及口感。</dd>
+			</dl>
+			<div class="danpin_time">16:00前付款，预计3月23日送达</div>
+			<div class="pay clear">
+				<span class="fl">信用卡支付</span><span class="fl pay_cen">微信支付</span><span class="fr">当天无理由</span>
+			</div>
+			<div class="pull">
+				<p>拖动查看商品详情</p>
+				<img src="img/xyh_xia.png" alt="">
+			</div>
+			<div class="detail1 clear">
+				<span class="fl">商品详情</span><em id="evaluate" class="fr">宝贝评价</em>
+				<img class="fl" src="img/xyh_goods.png" alt="">
+				<div class="fl">加入购物车</div>
+				<p class="fr">直接购买</p>
+			</div>
+			<div class="detail2 clear">
+				<span id="details" class="fl">商品详情</span><em class="fr">宝贝评价</em>
+				<ul class="clear">
+					<li class="fl">口感不错(22)</li>
+					<li class="fl">物流超快(10)</li>
+					<li class="fl">包装很好(90)</li>
+					<li class="fl">价格实惠(8)</li>
+					<li class="fl">小贵(1)</li>
+				</ul>
+				<div class="comment">
+					<div class="comment_name">只若初见</div>
+					<div class="comment_con">这次买的没有上次送货快，希望改进。</div>
+					<div class="comment_date">2016-03-20</div>
+				</div>
+				<div class="all">查看全部评价</div>
+				<div class="fl sum clear"><div class="fl">收藏</div>合计：￥120</div>
+				<div class="fr car">加入购物车</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+var $dan = $('.dan');
+var $dan_nav = $('.dan_nav');
+var $pull = $('.pull');
+var $detail1 = $('.detail1');
+var $detail2 = $('.detail2');
+var $evaluate = $('#evaluate');
+var $details = $('#details');
+$dan.eq(0).on('click',function() {
+	$dan_nav.eq(0).css({display:'block'});
+})
+$dan_nav.eq(0).children().on('click',function() {
+	$dan_nav.eq(0).css({display:'none'});
+})
+var y = 0;
+$pull.on("touchstart",function(e) {
+	var ey = e.touches[0].clientY;
+	$(window).on('touchmove',function(e) {
+		y = e.touches[0].clientY - ey;
+		$pull.eq(0).css({top:y});
+	})
+	return false
+})
+$(window).on('touchend',function() {
+	if (y>10) {
+		$detail1.eq(0).css({display:'block'});
+		y = 10;
+	}
+	$pull.eq(0).css({top:0});
+	$(window).off('touchmove');
+})
+$evaluate.on('click',function() {
+	$detail1.eq(0).css({display:'none'});
+	$detail2.eq(0).css({display:'block'});
+})
+$details.on('click',function() {
+	$detail2.eq(0).css({display:'none'});
+	$detail1.eq(0).css({display:'block'});
+})
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

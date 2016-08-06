@@ -1,0 +1,58 @@
+.land{
+	width: 100%;
+	text-align: center;
+	padding-top: 39px;
+}
+.land .logo{
+	width: 23.5%;
+	margin-bottom: 30px;
+}
+.land input{
+	border: 0;
+	width: 92%;
+	margin: 0.11rem 4%;
+	font-size: 0.12rem;
+	margin-top: 0;
+	height: 0.30rem;
+	line-height: 0.30rem;
+	color: #d1d1d1;
+	border-bottom: 1px solid #a1a1a1; 
+}
+.land button{
+	width: 92%;
+	height: 0.31rem;
+	border: 0;
+	font-size: 0.12rem;
+	border-radius: 0.14rem;
+	color: #ffffff;
+	margin: 0.29rem 4%;
+	margin-bottom: 0;
+	background: #48382b;
+}
+.land .other{
+	width: 92%;
+	height: 0.12rem;
+	margin: 0.42rem 4% 0.12rem;
+	color: #3d3d3d;
+}
+.land img{
+	width: 5%;
+	margin: 0 0.13rem;
+}
+.land p{
+	width: 80%;
+	height: 0.12rem;
+	margin: 0.75rem auto 20px;
+	color: #3d3d3d;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,232 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+html,body{
+	width: 100%;
+	font-size: 100px;
+}
+.wrap{
+	width: 7.68rem;
+	position: absolute;
+}
+.header{
+	width: 92%;
+	height: 4.72rem;
+	padding: 0.2rem 4%;
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	font-size: 0.32rem;
+	color: #323232;
+	position: relative;
+}
+.header p{
+	width: 32.2%;
+	margin: 1.3rem auto 0;
+	/*font-size: 18px;*/
+}
+.header .img1{
+	width: 50%;
+}
+.header .i1{
+	position: absolute;
+	bottom: -1.34rem;
+	left: 2.41rem;
+	width: 35%;
+}
+
+/*==========content===========*/
+
+.content{
+	width: 100%;
+
+}
+.content .con1{
+	width: 90%;
+	padding: 0 5%;
+	display: -webkit-box;
+	font-size: 0.32rem;
+	margin: 1.41rem auto 0;
+	vertical-align: bottom;
+}
+.content .con1 .flect{
+	width: 10%;
+	height: 2px;
+	background: #c3ad88;
+	margin-top: 0.15rem;
+}
+.content .con1 .aa{
+	margin: 0 0.3rem;
+}
+
+.content .con2{
+	width: 85%;
+	margin: 25px auto;
+	display: -webkit-box;
+}
+.content .con2 a{
+	color: #6ab439;
+}
+
+.content .con2 div{
+	width: 30%;
+	height: 1.34rem;
+	line-height: 1.34rem;
+	border: 2px solid #6ab439;
+	border-radius: 10px;
+	text-align: center;
+	color: #6ab439;
+	font-size: 0.26rem;
+}
+.content .con2 div strong{
+	font-size: 0.4rem;
+}
+.content .con2 div var{
+	font-size: 0.26rem;
+	font-style: normal;
+}
+.content .con2 div:nth-child(2){
+	margin: 0 5%;
+}
+
+
+.content .con3{
+	width: 85%;
+	margin: 0.25rem auto 0;
+	display: -webkit-box;
+}
+.content .con3 div{
+	width: 30%;
+	height: 1.34rem;
+	line-height: 1.34rem;
+	border: 2px solid #6ab439;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 0.26rem;
+}
+.content .con3 a{
+	color: #6ab439;
+}
+.content .con3 div strong{
+	font-size: 0.4rem;
+}
+.content .con3 div var{
+	font-size: 0.26rem;
+	font-style: normal;
+}
+.content .con3 div:nth-child(2){
+	margin: 0 5%;
+}
+
+.content .clock{
+	width: 23%;
+	height: 0.5rem;
+	border-radius: 30px;
+	background: #c3ad88;
+	font-size: 0.3rem;
+	color:white;
+	text-align: center;
+	line-height: 0.5rem;
+	margin: 0.34rem auto;
+}
+
+
+
+/*=============footer=============*/
+.footer{
+	width: 28%;
+	height: 0.38rem;
+	line-height: 30px;
+	margin: 1.72rem auto 0.2rem;
+	font-size: 0.26rem;
+	vertical-align: middle;
+	text-align: center;
+}
+.footer strong{
+	margin: 0 10px;
+}
+
+/*==========================wrap2=====================*/
+
+
+.wrap2{
+	width: 100%;
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+	display: none;
+}
+.wrap2 .w1{
+	width: 5.9rem;
+	height: 3.17rem;
+	padding: 0.4rem 0.3rem;
+	position: absolute;
+	left: 0.51rem;
+	bottom: 5.94rem;
+	border-radius: 10px;
+	background: #ffffff;
+}
+.wrap2 .w1 span{
+	position: absolute;
+	left: 5%;
+	font-size: 0.34rem;
+	color: #86858e;
+}
+.wrap2 .w1 p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 0.34rem;
+	text-align: center;
+}
+.wrap2 .w1 .input1{
+	width: 80%;
+	height: 0.88rem;
+	border: 3px solid black;
+	
+	border-radius: 10px;
+	margin: 0.68rem 10% 0;
+	text-align: left;
+	font-size: 0.32rem;
+	color: #999999;
+}
+.wrap2 .w1 .input2{
+	width: 80%;
+	height: 0.88rem;
+	border-radius: 10px;
+	margin: 0.2rem 10%;
+	text-align: center;
+	font-size: 0.32rem;
+	color: white;
+	background: #6ab439;
+}
+
+.wrap2 .w2{
+	width: 100%;
+	height: 4.3rem;
+	position: absolute;
+	bottom: 0;
+}
+.wrap2 .w2 img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*============================*/
+@media screen and (max-width: 414px){
+	html,body{
+		font-size: 53.9px;
+	}
+}
+
+
+

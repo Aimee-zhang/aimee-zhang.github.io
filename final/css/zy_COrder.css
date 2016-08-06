@@ -1,0 +1,210 @@
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.fl{float: left;}
+.fr{float: right;}
+html,body{
+	width: 100%;
+}
+.header{
+	width: 100%;
+	height:0.525rem;
+	background-color:#48382b;
+	position: relative;
+}
+.top{
+	width: 100%;
+}
+.order_txt{
+	width: 100%;
+	font-size: 0.16rem;
+	line-height: 0.525rem;
+	color: white;
+	text-align: center;
+}
+.back{
+	width: 0.1rem;
+	position: absolute;
+	left:10%;
+	top:30%;
+}
+.content .con_1{
+	width: 100%;
+	height: 1.07rem;
+	background-color: #ebeae4;
+	background-image: url(../img/zy_colorbar.png);
+	background-position: 0rem 1.28rem;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	margin-bottom: 0.05rem;
+	padding-top: 0.1rem;
+}
+.con_1 .name_1{
+	width:2.75rem;
+	height:0.575rem;
+	margin:auto;
+	font-size:0.16rem;
+	padding-top:0.4rem;
+	padding-left: 0.7rem;
+}
+
+.con_1 .txt {
+	width: 1.5rem;
+	font-size: 0.11rem;
+	color:gray;
+}
+.con_2{
+	width: 100%;
+	height:1.30rem;
+	text-align: center;
+	border: 1px solid #ccc;
+	position: relative;
+}
+.con_2 li{
+	width: 20%;
+	height:1.3rem;
+}
+
+.con_2 .num{
+	width: 30%;
+	height: 1.05rem;
+	font-size: 0.125rem;
+	line-height: 1.05rem;
+	text-align: right;
+}
+#text{
+	font-size: 0.06rem;
+}
+ .con_2 #price{
+ 	font-size:0.075rem;
+	color: red;
+	text-align:left;
+}
+.con_3{
+	width: 100%;
+	height:1.27rem;
+	position: relative;
+}
+.con_3 .Pay_sent{
+	width: 40%;
+	height:0.855rem;
+	font-size: 0.11rem;
+	margin-top: 3%;
+	margin-left: 4%;
+}
+.delivery{
+	width: 50%;
+	height:0.855rem;
+}
+.deli_1,.deli_2{
+	width: 80%;
+	text-align: right;
+	font-size:0.11rem;
+}
+.deli_1{
+	margin-top: 3%;
+	margin-bottom:0.15rem;
+}
+.deli_2 img{
+	width: 0.135rem;
+	margin-right:0.01rem;
+}
+.vag img{
+	padding-top: 0.03rem;
+	width:0.645rem ;
+}
+.con_3 .more{
+	position: absolute;
+	right: 3%;
+	top:45%;
+}
+.check{
+	width: 100%;
+	height:0.39rem;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.ch_1{
+	font-size:0.15rem;
+	line-height:0.39rem;
+	text-align: center;
+	margin-left: 3%;
+}
+.ch_2{
+	text-align: right;
+	font-size:0.15rem;
+	color: gray;
+	line-height:0.39rem;
+	margin-right: 10%;
+}
+.middle{
+	width: 100%;
+	height:0.15rem;
+	background-color: #f3f4f6;
+}
+.con_4{
+	width: 100%;
+	height:1.60rem;
+
+}
+.con_row{
+	width: 100%;
+	height:0.4rem;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.con_41{
+	margin-left: 3%;
+	font-size:0.12rem;
+	line-height:0.4rem;
+}
+.con_42{
+	margin-right: 10%;
+	font-size:0.12rem;
+	color: gray;
+	line-height:0.4rem;
+}
+.con_money{
+	color: red;
+}
+#more{
+	width:0.085rem;
+	position: absolute;
+	top:38%;
+	right: 3%;
+}
+.footer{
+	width: 100%;
+	height:0.485rem;
+	background-color: #48382b;
+	font-size:0.15rem;
+	line-height:0.485rem;
+	color: white;
+	position: relative;
+	text-align: center;
+}
+.total{
+	margin-left: -1.30rem;
+}
+.OK{
+	width:1.42rem;
+	height:100%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #ff5e39;
+}
+
+/*横竖屏*/
+/*
+<link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">横屏
+<link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">竖屏
+加载不同的css文件
+*/
+/*	@media (orientation: portrait) { } //横屏
+    @media (orientation: landscape) { } //竖屏*/
+
+

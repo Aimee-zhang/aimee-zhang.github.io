@@ -1,0 +1,168 @@
+nav {
+	position: relative;
+	background-color: #48382b;
+	color: #fff;
+}
+nav a{
+	float: left;
+	margin-left: .37rem;
+	color: #fff;
+}
+nav p {
+	float: left;
+	margin-left: 3rem;
+	/*position: absolute;*/
+	/*top: 50%;*/
+	/*left: 50%;*/
+	/*margin-top: -.35rem;*/	
+	/*margin-left: -.35rem;*/	
+	font-size: .5rem;
+	line-height: 1.2rem;
+}
+header {
+	
+}
+header img {
+	width: 100%;
+}
+header .info {
+	padding: .3rem 0;
+}
+header .left{
+	float: left;
+}
+header .left p:nth-of-type(1){
+	font-size: .5rem;
+}
+header .left p:nth-of-type(2){
+	font-size: .4rem;
+	color: #9b9b9b;
+}
+header .left p {
+	margin-left: .3rem;
+}
+.lable {
+	margin-top: .5rem;
+	border-top-right-radius: .3rem;
+	border-bottom-right-radius: .3rem;
+	width: 2.13rem;
+	font-size: .4rem;
+	text-align: center;
+	color: #fff;
+	background-color: #65aa36;
+}
+header .right {
+	float: right;
+	padding-right: .3rem;
+	color: #9b9b9b;
+}
+header .right i{
+	cursor: pointer;
+	/*float: right;*/
+	/*font-size: .8rem;*/	
+}
+header .right p {
+	/*float: right;*/	
+	font-size: .3rem;
+	text-align: right;
+}
+.content section {
+	padding: .3rem 0;
+	background-color: #ebeae4;
+}
+.content section div{
+	position: relative;
+	margin-left: .25rem;
+	border-radius: .5rem;
+	box-shadow: 0 0 10px #818283;
+	background-color: #fff;
+	float: left;
+}
+.content section div p 	{
+	position: absolute;
+	top: .2rem;
+	left: 50%;
+	margin-left: -.3rem;
+	font-size: .33rem;
+	text-align: center;
+	color: #9b9b9b;
+}
+.content section div img {
+	border-radius: .5rem;
+	width: 3rem;
+}
+.tables {
+	margin-bottom: .7rem;
+	color: #9B9B9B;
+	text-align: center;
+}
+.step {
+	box-sizing: border-box;
+	/*padding: .76rem .4rem 0;*/
+}
+.step .table1 .lable{
+	margin:.3rem 0;
+}
+.step .table2 {
+	border-top: 1px solid #9B9B9B;
+	border-bottom: 1px solid #9B9B9B;
+	font-size: .33rem;
+	line-height: .72rem;
+}
+.step .table3 div{
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	font-size: .23rem;
+	line-height: 1rem;
+}
+.tablex {
+	border-top: 1px solid #9B9B9B;
+	border-bottom: 1px solid #9B9B9B;
+}
+.step .table3 div:nth-of-type(1){
+	border-right: 1px solid #9B9B9B;
+}
+.steps {
+	/*box-sizing: border-box;*/
+	margin: .2rem .4rem;
+	font-size: .23rem;
+	color: #9B9B9B;
+}
+.steps h5 {
+	font-size: .28rem;
+	color: #818283;
+}
+.steps img {
+	float: left;
+	width: 6.4rem;
+}
+.steps div {
+	float:left;
+	margin-left: .46rem;
+	width: 2.13rem;
+}
+footer {
+	height: 1.2rem;
+	font-size: .4rem;
+	line-height: 1.2rem;
+	text-align: center;
+	color: #fff;
+}
+.shoppingCar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.shoppingCar div {
+	float: left;
+	width: 50%;
+	cursor: pointer;
+}
+.shoppingCar div:nth-of-type(1){
+	background-color: #faa947;
+}
+.shoppingCar div:nth-of-type(2){
+	background-color: #f9603b;
+}

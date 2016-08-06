@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>快速帮助</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<style type="text/css">
+		html{
+			font-size: 100px;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			
+		}
+		.wrap{
+			width: 100%;
+			height: 100%;
+		}
+		.nav{
+			width: 100%;
+			height: 0.8rem;
+			background-color: #48382b;
+			position: relative;
+		}
+		.nav p{
+			width: 1.08rem;
+			padding-top: 0.3rem;
+			margin:0 auto;
+			font-size: 0.18rem;
+			color: white;
+		}
+		.nav img{
+
+			position: absolute;
+			height: 0.2rem;
+			left: 0.3rem;
+			top: 0.32rem;
+		}
+		.content{
+			margin-top: 0.25rem;
+			width: 100%;
+
+		}
+		.content div{
+			height: 0.56rem;
+			width: 100%;
+			border: 1px solid #c5c4c4;
+			font-size: 0.15rem;
+			line-height: 0.56rem;
+			position: relative;
+			/*padding-left: 30px;*/
+			/*padding-top: 20px;*/
+		}
+		.content div img{
+			margin-left: 0.3rem;
+			vertical-align: -5%;
+			height: 0.15rem;
+		}
+		.content div span{
+			margin-left: 0.18rem;
+		}
+		.content p{
+
+			height: 0.7rem;
+			width: 100%-0.4rem;
+			background-color: #eeeeee;
+			line-height: 0.21rem;
+			text-indent: 2em;
+			display: none;
+			padding-left: 0.2rem;
+			padding-right: 0.2rem;
+			padding-top: 0.07rem;
+			font-size: 0.13rem;
+
+
+		}
+		.content .arrow{
+			position: absolute;
+			top: 0.2rem;
+			right: 0.2rem;
+			height: 0.1rem;
+		}
+		@media only screen and (device-width: 320px) {
+			html{
+				font-size: 81px;
+			}
+		
+			.content p{
+				height: 70px;
+				font-size: 12px;
+			}
+			
+		}
+		@media only screen and (device-width:768px){
+			html{
+				font-size: 140px;
+			}
+
+		
+			.content p{
+				height: 85px;
+				font-size: 18px;
+				line-height: 32px;
+				padding-top: 18px;
+			}
+			
+		}
+		
+
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="nav">
+			<p>快速帮助中心</p>
+			<img src="../img/hlz_arrow.png" alt="">
+		</div>
+		<div class="content">
+			<div><img src="img/hlz_h1.png" alt=""><span>已审核订单能否取消</span><img class="arrow" src="img/hlz_down_arrow.png" alt=""></div>
+			<p>答：订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321</p>
+			<div><img src="img/hlz_h2.png" alt=""><span>如何修改订单</span><img class="arrow" src="img/hlz_down_arrow.png" alt=""></div>
+			<p>答：订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321</p>
+			<div><img src="img/hlz_h3.png" alt=""><span>怎样获得发票</span><img class="arrow" src="img/hlz_down_arrow.png" alt=""></div>
+			<p>答：订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321</p>
+			<div><img src="img/hlz_h4.png" alt=""><span>如何申请退货</span><img class="arrow" src="img/hlz_down_arrow.png" alt=""></div>
+			<p>答：订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321</p>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript" src = "js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript">
+
+		div = $('.content div');
+		div.on('click',function () {
+			div.find('.arrow').attr("src","img/hlz_down_arrow.png");
+			if ($(this).next().css('display')=='block') {
+				$(this).next().slideUp();
+				return;
+			}
+			$('.content p').slideUp();
+			$(this).next().slideDown();
+			$(this).find('.arrow').attr("src","img/hlz_up_arrow.png");
+		
+		})
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,100 @@
+html,body{
+	width: 100%;
+}
+html{font-size: 100px;}
+.wrap{
+	width: 100%;
+	height: 3.75rem;
+	background-image: url(../img/zy_video.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+.stop_play{
+	width: 0;
+	height: 0;
+	border: 0.3rem solid transparent;
+	border-color: transparent  transparent transparent white;
+	position: absolute;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	display: none;
+}
+.header,.footer{
+	width: 100%;
+	height: 0.44rem;
+	position: relative;
+}
+.header .txt{
+	text-align: center;
+	line-height: 0.44rem;
+	font-size: 0.12rem;
+	color:white;
+}
+.header img{
+	width: 0.12rem;
+	position: absolute;
+	left:5%;
+	top:35%;
+}
+.header .op{
+	width: 100%;
+	height:0.45rem;
+	background-color:rgba(0,0,0,0.5);
+	position: absolute;
+	top:0;
+}
+.content {
+	width: 100%;
+}
+.footer1{position: relative;}
+.footer1 .pro{
+	width: 100%;
+	position: fixed;
+	bottom: 2%;
+}
+.footer1 .op{
+	width: 100%;
+	height:0.45rem;
+	background-color:rgba(0,0,0,0.5);
+	position: fixed;
+	bottom:0;
+}
+.start_play{
+	position: fixed;
+	bottom: 2%;
+    width: 0.29rem;
+}
+.max_play{
+	position: fixed;
+    right: 0%;
+    bottom: 2%;
+    width: 0.21rem;
+}
+@media screen and (max-width: 768px) {
+	.header,.header .op,.footer1 .op{height: 0.65rem;}
+	.header .op .txt{
+		font-size: 0.20rem;
+		line-height: 0.65rem;
+	}
+	.start_play{width: 0.34rem;}
+	.max_play {width: 0.25rem;}
+}
+@media screen and (max-width: 414px) {
+	.start_play{width: 0.18rem;}
+	.max_play {width: 0.14rem;}
+
+}
+@media screen and (max-width: 375px) {
+	.wrap{height:1.875rem;}
+	.start_play{width: 0.16rem;}
+	.max_play {width: 0.12rem;}
+}
+
+@media screen and (max-width: 320px) {
+	.start_play{width: 0.13rem;}
+	.max_play {width: 0.10rem;}
+}

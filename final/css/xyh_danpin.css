@@ -1,0 +1,294 @@
+.danpin{
+	width: 100%;
+}
+.danpin .show{
+	width: 100%;
+	border-bottom: 1px solid #c2c2c2;
+}
+.dan_nav{
+	width: 22%;
+	position: absolute;
+	top: 0.5rem;
+	padding: 0.14rem 0 0.19rem;
+	right: 5%;
+	background: rgba(0,0,0,0.45);
+	text-align: center;
+	color: #edebeb;
+	display: none;
+}
+.dan_nav li{
+	height: 0.23rem;
+	line-height: 0.22rem;
+}
+.dan_nav li div{
+	height: 0.01rem;
+	background: linear-gradient(to left,rgba(0,0,0,0),rgba(255,255,255,1) 50%,rgba(0,0,0,0));
+}
+.danpin .dir{
+	padding: 0.1rem 4% 0.09rem;
+	width: 92%;
+	border-bottom: 1px solid #c2c2c2;
+	position: relative;
+}
+.danpin .dir .dir_tit{
+	color: #707070;
+	font-size: 0.14rem;
+}
+.danpin .dir li{
+	color: #b0afaf;
+	height: 0.34rem;
+	line-height: 0.34rem;
+}
+.danpin .dir p{
+	color: #ff5d5d;
+	padding-bottom: 0.06rem;
+}
+.danpin .dir .dir_tu{
+	text-align: right;
+	height: 0.66rem;
+	width: 0.77rem;
+	position: absolute;
+	right: 4%;
+	top: 0.1rem;
+}
+.danpin .dir .dir_tu div{
+	width: 0.38rem;
+	height: 0.15rem;
+	color: #c4c4c4;
+	line-height: 0.15rem;
+	padding-top: 0.25rem;
+	margin-bottom: 0.14rem;
+}
+.danpin .dir .dir_tu .dir_tu_l{
+	background: url(../img/xyh_collect.png) no-repeat 0.04rem 0.03rem;
+	background-size: 0.18rem auto;
+	border-right: 1px solid #c2c2c2;
+	text-align: left;
+}
+.danpin .dir .dir_tu .dir_tu_r{
+	background: url(../img/xyh_share.png) no-repeat 0.15rem 0.02rem;
+	background-size: 0.18rem auto;
+}
+.danpin .dir .dir_tu span{
+	color: #707070;
+}
+.danpin .state{
+	padding: 0.06rem 4% 0.14rem;
+	width: 92%;
+	line-height: 0.21rem;
+	border-bottom: 1px solid #c2c2c2;
+	color: #6a6a6a;
+}
+.danpin .state dd{
+	padding-left: 0.14rem;
+	text-indent: 2em;
+}
+.danpin .danpin_time{
+	padding: 0 4%;
+	width: 92%;
+	height: 0.28rem;
+	line-height: 0.28rem;
+	color: #6a6a6a;
+	background: #ebeae4;
+	border-bottom: 1px solid #c2c2c2;
+}
+.danpin .pay{
+	padding: 0 4%;
+	width: 92%;
+	height: 0.28rem;
+	color: #6a6a6a;
+	background: #ebeae4;
+	border-bottom: 1px solid #c2c2c2;
+	position: relative;
+}
+.danpin .pay span{
+	padding: 0 0 0.02rem 0.18rem;
+	margin: 0.08rem 0 0.06rem;
+	height: 0.12rem;
+	background: url(../img/xyh_clock.png) no-repeat;
+	background-size: 0.14rem auto;
+}
+.danpin .pay .pay_cen{
+	position: absolute;
+	width: 0.48rem;
+	left: 0;
+	right: 0;
+	top: 0.08rem;
+	margin: auto;
+}
+.danpin .pull{
+	padding: 0.20rem 4% 0;
+	width: 92%;
+	height: 0.39rem;
+	font-size: 0.14rem;
+	text-align: center;
+	color: #6a6a6a;
+	position: relative;
+}
+.danpin .pull img{
+	width: 0.17rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0.40rem;
+	margin: auto;
+}
+.danpin .detail1{
+	width: 100%;
+	border-top: 1px solid #c2c2c2;
+	display: none;
+}
+.danpin .detail1 span{
+	width: 50%;
+	height: 0.42rem;
+	box-sizing: border-box;
+	line-height: 0.41rem;
+	text-align: center;
+	background: #eecb91;
+	border: 1px solid #c2c2c2;
+	border-top: 0;
+}
+.danpin .detail1 em{
+	width: 50%;
+	height: 0.41rem;
+	line-height: 0.41rem;
+	text-align: center;
+	background: #ebeae4;
+	border-bottom: 1px solid #c2c2c2;
+}
+.danpin .detail1 img{
+	width: 92%;
+	padding: 0.04rem 4% 0;
+}
+.danpin .detail1 div{
+	width: 50%;
+	height: 0.45rem;
+	color: #fff;
+	border-top: 1px solid #c2c2c2; 
+	border-bottom: 1px solid #c2c2c2; 
+	background: #ffa842;
+	line-height: 0.45rem;
+	text-align: center;
+}
+.danpin .detail1 p{
+	width: 50%;
+	height: 0.45rem;
+	color: #fff;
+	border-top: 1px solid #c2c2c2; 
+	border-bottom: 1px solid #c2c2c2; 
+	background: #ff5e39;
+	line-height: 0.45rem;
+	text-align: center;
+}
+.danpin .detail2{
+	width: 100%;
+	border-top: 1px solid #c2c2c2;
+	display: none;
+}
+.danpin .detail2 span{
+	width: 50%;
+	height: 0.42rem;
+	box-sizing: border-box;
+	line-height: 0.41rem;
+	text-align: center;
+	background: #ebeae4;
+	border: 1px solid #c2c2c2;
+	border-top: 0;
+}
+.danpin .detail2 em{
+	box-sizing: border-box;
+	width: 50%;
+	height: 0.42rem;
+	line-height: 0.41rem;
+	text-align: center;
+	background: #dfceb1;
+	border-bottom: 1px solid #c2c2c2;
+}
+.danpin .detail2 ul{
+	width: 92%;
+	padding: 0.04rem 4% 0 ;
+	color: #6ab439;
+}
+.danpin .detail2 ul li{
+	list-style: none;
+	width: 21.5%;
+	height: 0.21rem;
+	line-height: 0.21rem;
+	text-align: center;
+	margin: 0.08rem 0.08rem 0 0;
+	border-radius: 0.03rem;
+
+	border: 1px solid #b0d796;
+	padding: 0.04rem 4% 0;
+}
+.danpin .detail2 .comment{
+	width: 92%;
+	padding: 0.09rem 4% 0;
+	color: #818181;
+}
+.danpin .detail2 .comment .comment_name{
+	height: 0.40rem;
+	padding-left: 0.45rem;
+	font-size: 0.14rem;
+	line-height: 0.40rem;
+	background: url(../img/danpin/image.png) no-repeat;
+	background-size: 0.39rem auto;
+}
+.danpin .detail2 .comment .comment_con{
+	height: 0.36rem;
+	font-size: 0.14rem;
+	line-height: 0.36rem;
+}
+.danpin .detail2 .all{
+	border: 1px solid #c2c2c2; 
+	border-radius: 0.03rem;
+	margin: auto;
+	color: #818181;
+	margin-top: 0.14rem;
+	line-height: 0.21rem;
+	text-align: center;
+	width: 1rem;
+	height: 0.21rem;
+}
+.danpin .detail2 .car{
+	width: 50%;
+	height: 0.45rem;
+	color: #fff;
+	border-top: 1px solid #c2c2c2; 
+	border-bottom: 1px solid #c2c2c2; 
+	background: #ffa842;
+	line-height: 0.45rem;
+	text-align: center;
+}
+.danpin .detail2 .sum{
+	width: 50%;
+	height: 0.45rem;
+	color: #fff;
+	border-top: 1px solid #c2c2c2; 
+	border-bottom: 1px solid #c2c2c2; 
+	background: #ff5e39;
+	line-height: 0.45rem;
+	text-align: center;
+}
+.danpin .detail2 .sum div{
+	width: 0.48rem;
+	height: 0.20rem;
+	padding-top: 0.25rem; 
+	line-height: 0.20rem;
+	border-right: 1px solid #c2c2c2; 
+	background: url(../img/danpin/collect1.png) no-repeat 0.14rem 0.05rem;
+	background-size: 0.18rem auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

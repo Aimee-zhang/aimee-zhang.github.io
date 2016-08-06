@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/xyh_head.css">
+	<link rel="stylesheet" href="css/xyh_search.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<div class="head_con">
+				<img  class="return" src="img/xyh_return.png" alt="">
+				<img class="fangda" src="img/xyh_fangda.png" alt="">
+				<input class="search_nav" type="text" placeholder="搜索食材、菜品">
+				<span id="cancel">取消</span>
+			</div>
+		</div>
+		<div class="search">
+			<ul class="history clear">
+				<p class="fl">搜索记录</p>
+				<span id="del" class="fr">清空记录</span>
+				<div class="history_b fl"></div>
+				<li class="fl">海带</li>
+				<li class="fl">菠菜</li>
+				<li class="fl">西蓝花</li>
+				<li class="fl">澳大利亚小肥牛</li>
+				<li class="fl">红烧排骨</li>
+			</ul>
+			<ul class="hots clear">
+				<p>热门搜索</p>
+				<li class="fl">湾仔红烧排骨</li>
+				<li class="fl">庄园养生小炒</li>
+				<li class="fl">生滚鱼片粥</li>
+				<li class="fl">鲜虾云吞面</li>
+				<li class="fl">浓情布朗尼懒人版</li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+var $search_nav = $('.search_nav');
+var $cancel = $('#cancel');
+var $del = $('#del');
+var $li = $('.history li');
+$cancel.on('click',function() {
+	$search_nav.eq(0).val('');
+})
+$del.on('click',function() {
+	$li.remove();
+})
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

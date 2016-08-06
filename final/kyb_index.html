@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>主页</title>
+	<!-- 文件加载 -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+<body>
+<!-- 主体 -->
+	<div class="wrap">
+	<!-- 头部 -->
+		<div class="header">
+			<a class="a1" href="###">北京▼</a><input type="textarea" value="搜索食材、菜品"><a class="a2" href="###"><img src="img/sou.png"></a><a class="a3" href="###"><img src="img/xiaoxi.png" alt=""></a>
+		</div>
+		<!-- 内容 -->
+		<div class="content">
+			<div class="tab swiper-container">
+				<div class="inner swiper-wrapper">
+					<div class="slide swiper-slide"><a href="#"><img src="img/tab.png" alt=""></a></div>
+					<div class="slide swiper-slide"><a href="#"><img src="img/2.jpg" alt=""></a></div>
+					<div class="slide swiper-slide"><a href="#"><img src="img/3.jpg" alt=""></a></div>
+
+				</div>
+				 <!-- 如果需要分页器 -->
+    			<div class="swiper-pagination"></div>
+			</div>
+			<div class="cont2 clear">
+				<div class="left fl">
+					<a href="">兔抢购</a>
+					<p>精选延庆生态胡萝卜600g</p>
+					<div class="clock clear">
+						<div class="h fl" >00</div><span class="fl">:</span>
+						<div class="m fl">00</div><span class="fl">:</span>
+						<div class="s  fl">00</div>
+						<strong class="fr"> ￥4.20</strong>
+					</div>
+					<div class="limg"><img src="img/left.png" alt=""></div>
+				</div>
+				<div class="right fr">
+					<p>精选延庆生态黄瓜 500g</p>
+					<div class="clock clear">
+						<div class="h2 fl" >00</div><span class="fl">:</span>
+						<div class="m2 fl">00</div><span class="fl">:</span>
+						<div class="s2  fl">00</div>
+						<strong class="fr"> ￥9.90</strong>
+					</div>
+					<div class="limg"><img src="img/right.png" alt=""></div>
+				</div>
+			</div>
+			<div class="cont3">
+				<div class="nav clear">
+					<a class="nava1 fl" href="">菜品精选</a>
+					<a class="nava2 fr" href="">查看更多</a>
+				</div>
+				<div class="nav2 clear">
+					<div class="bull fl"><img src="img/bull.png" alt=""></div>
+					<div class="apple fr"><img src="img/apple.png" alt=""></div>
+					<div class="middle fr"><img src="img/bullfood.png" alt=""></div>
+					<div class="bullfood fr"><img src="img/middle.png" alt=""></div>
+				</div>
+				
+			</div>
+		</div>
+		<!-- 底部 -->
+	<div class="footer">
+		<div class="div">
+			<div><img src="img/zhuye2.png" alt=""></div>
+			<a href="">主页</a>
+		</div>
+		<div class="div">
+			<div><img src="img/shangcheng2.png" alt=""></div>
+			<a href="">商店</a>
+		</div>
+		<div class="div">
+			<div><img src="img/xuancai2.png" alt=""></div>
+			<a href="">选菜</a>
+		</div>
+		<div class="div">
+			<div><img src="img/yanjing2.png" alt=""></div>
+			<a href="">发现</a>
+		</div>
+		<div class="div">
+			<div><img src="img/geren2.png" alt=""></div>
+			<a href="">我的</a>
+		</div>
+	</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+<script type="text/javascript">
+	
+  	var mySwiper = new Swiper ('.swiper-container', {
+	    
+	  pagination: '.swiper-pagination',
+	  loop:true,
+	  autoplay:2000,
+	  speed:1000,
+	  autoplayDisableOnInteraction : false,
+		effect : 'cube',
+
+    })  
+</script>
+</html>

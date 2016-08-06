@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/lh_zhuye.css">
+	<link rel="stylesheet" href="css/lh_footer.css">	
+</head>
+<body>
+	<div class="header">
+		<div class="city">北京</div>
+		<div class="searchbox">
+			<img src="img/fangda.png" alt="">
+			<input type="text" placeholder="搜索食材、菜品">
+		</div>
+		<img src="img/lh_xiaoxi.png" alt="" class="xiaoxi">
+	</div>
+	<div class="banner">
+		<img src="img/sanwenyu.png" alt="" class="hide">
+		<div class="inner">
+			<div class="item">
+				<img src="img/sanwenyu.png" alt="">
+				<div class="txt">
+					<p class="p1">吃三文鱼的正确姿势</p>
+					<p class="p2">早餐来点啥？？</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/sanwenyu.png" alt="">
+				<div class="txt">
+					<p class="p1">吃三文鱼的正确姿势</p>
+					<p class="p2">早餐来点啥？？</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/sanwenyu.png" alt="">
+				<div class="txt">
+					<p class="p1">吃三文鱼的正确姿势</p>
+					<p class="p2">早餐来点啥？？</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/sanwenyu.png" alt="">
+				<div class="txt">
+					<p class="p1">吃三文鱼的正确姿势</p>
+					<p class="p2">早餐来点啥？？</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/sanwenyu.png" alt="">
+				<div class="txt">
+					<p class="p1">吃三文鱼的正确姿势</p>
+					<p class="p2">早餐来点啥？？</p>
+				</div>
+			</div>
+		</div>
+		<div class="dian">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<div class="qianggou">
+		<p class="tittle">兔抢购</p>
+		<ul>
+			<li class="left">
+				<a href="###">
+					<p>精选延庆生态胡萝卜600g</p>
+					<div class="time">
+						<span class="t first">01</span>:<span class="t">36</span>:<span class="t">56</span>
+						<span class="jiage">￥4.20</span>
+					</div>
+					<img src="img/huluobo.png" alt="">
+				</a>
+			</li><li>
+				<a href="###">
+					<p>精选延庆生态胡萝卜600g</p>
+					<div class="time">
+						<span class="t first">01</span>:<span class="t">36</span>:<span class="t">56</span>
+						<span class="jiage">￥4.20</span>
+					</div>
+					<img src="img/huluobo.png" alt="">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="jingxuan">
+		<p class="title">
+			<span>菜品精选</span>
+			<a href="###">查看更多</a>
+		</p>
+		<ul>
+			<li class="li1">
+				<a href="###">
+					<img src="img/malaniupai.png" alt="" class="img1">
+					<div class="inf">
+						<p class="p1">麻辣牛排</p>
+						<p>￥35</p>
+					</div>
+				</a>
+			</li>
+			<li class="li2">
+				<a href="###">
+					<img src="img/yingtaopai.png" alt="" class="img2">
+					<div class="inf">
+						<p class="p1">麻辣牛排</p>
+						<p>￥35</p>
+					</div>
+				</a>
+			</li>
+			<li class="li3">
+				<a href="###">
+					<img src="img/niuroumian.png" alt="" class="img3">
+					<div class="inf">
+						<p class="p1">麻辣牛排</p>
+						<p>￥35</p>
+					</div>
+				</a>
+			</li>
+			<li class="li4">
+				<a href="###">
+					<img src="img/niurouwan.png" alt="" class="img4">
+					<div class="inf">
+						<p class="p1">麻辣牛排</p>
+						<p>￥35</p>
+					</div>
+				</a>
+			</li>
+			<div class="hide"></div>
+		</ul>
+	</div>
+	<div class="footer">
+		<a href="lh_zhuye.html"><img src="img/zhuye-dianji.png" alt="" class="a1"></a>
+		<a href="lh_shangcheng-danpin.html"><img src="img/shangcheng.png" alt="" class="a2"></a>
+		<a href="lh_xuancai.html"><img src="img/lh_xuancai.png" alt="" class="a3"></a>
+		<a href="dl_discover.html"><img src="img/faxian.png" alt="" class="a4"></a>
+		<a href="zy_loading.html"><img src="img/wode.png" alt="" class="a5"></a>
+	</div>
+</body>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script>
+	var inner=$(".inner");
+	var dian=$(".dian").find("div");
+	dian.eq(0).css({
+		background:"red"
+	})
+	var index=1;
+	inner.css({
+		left:-inner.width()/5
+	})
+	inner.on("touchstart",function (e) {
+		var dx=e.touches[0].clientX
+		var ax=inner.offset().left
+		inner.on("touchmove",function (e) {
+			x=e.touches[0].clientX-dx;
+			inner.css({
+				left:ax+x
+			})
+			e.preventDefault();
+		})
+	})
+	inner.on("touchend",function (e) {
+		if (x>inner.width()/10) {
+			index--;
+		}
+		if (x<-inner.width()/10) {
+			index++
+		}
+		if (index<1) {
+			index=3
+		}
+		if (index>3) {
+			index=1
+		}
+		change(index);
+	})
+	function change(index) {
+		inner.css({
+			left:-index*inner.width()/5
+		})
+		for (var i = 0; i < dian.length; i++) {
+			dian.eq(i).css({
+				background:""
+			})
+		}
+		dian.eq(index-1).css({
+			background:"red"
+		})
+	}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

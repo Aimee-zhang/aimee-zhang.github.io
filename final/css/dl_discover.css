@@ -1,0 +1,103 @@
+header {
+	margin-bottom: .15rem;
+	/*box-sizing: border-box;*/
+	background-color: #48382B;
+	font-size: .33rem;
+	line-height: .8rem;
+	text-align: center;
+	overflow: hidden;
+}
+header div {
+	/*box-sizing: border-box;*/
+	margin: .2rem 0 .2rem 3.4rem;
+	width: 3.2rem;
+}
+header div section {
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+}
+.active {
+	/*border-top-left-radius: .13rem;*/
+	/*border-bottom-left-radius: .13rem;*/
+	box-shadow: 5px 10px 10px #302920 inset;
+	/*box-shadow: 2px 2px 5px #5e4b3b;*/
+	border-bottom:1px solid #5e4b3b;
+	/*border-bottom:1px solid #5e4b3b;*/
+}
+header div section:nth-of-type(1){
+	border-top-left-radius: .13rem;
+	border-bottom-left-radius: .13rem;
+	/*box-shadow: 5px 10px 10px #302920 inset;*/
+	/*border-bottom:1px solid #5e4b3b;*/
+}
+header div section:nth-of-type(2){
+	border-top-right-radius: .13rem;
+	border-bottom-right-radius: .13rem;
+}
+header div section{
+	/*border-top-right-radius: .13rem;*/
+	/*border-bottom-right-radius: .13rem;*/
+	border-bottom:1px solid #3a2f25;
+	border-right:2px solid #3a2f25;
+	box-shadow: 5px 5px 10px #564638 inset;
+}
+header div section a {
+	color: #877b61;
+}
+.contain {
+	position: relative;
+}
+.contain>img {
+	width: 100%;
+}
+.contain .userName {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .3rem .4rem;
+	width: 100%;
+	color: #fff;
+	font-size: .3rem;
+}
+.userName .photo {
+	float: left;
+	overflow: hidden;
+	border-radius: 50%;
+	width: .8rem;
+	height: .8rem;
+}
+.photo>img {	
+	float: left;
+	height: 100%;
+}
+.userName .introduction {
+	float: left;
+}
+.userName .save {
+	float: right;
+	padding: .1rem;
+	border-radius: .13rem;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+.contain .description {
+	padding: .2rem .4rem;
+	border-bottom: 1px solid #9B9B9B;
+	font-size: .3rem;
+	color: #818283;
+}
+.contain .function {
+	padding: .2rem .4rem;
+}
+.function i:nth-of-type(1){
+	float: left;
+}
+.function i:nth-of-type(2){
+	float: left;
+	margin-left: .6rem;
+}
+.function i:nth-of-type(3){
+	float: right;
+}

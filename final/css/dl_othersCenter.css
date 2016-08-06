@@ -1,0 +1,119 @@
+header {
+	background-image: url(../img/0-4.png);
+	background-size: cover;
+}
+nav {
+	box-sizing: border-box;
+	overflow: hidden;
+	background-color:rgba(0,0,0,.4) ;
+	color: #fff;
+	/*line-height: 1.2rem;*/
+}
+nav a{
+	float: left;
+	margin-left: .37rem;
+	color: #fff;
+	font-size: .6rem !important;
+	line-height: 1.2rem;
+}
+
+nav #attention {
+	float: right;
+	margin-right: .37rem;
+	margin-top: .25rem;
+	padding: 0 .25rem;
+	font-size: .38rem;
+	color: #65AA36;
+	border: 5px solid #65AA36;
+	border-radius: .4rem;
+}
+nav .photo {
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: .08rem;
+	margin: .9rem 3.7rem .5rem 0;
+	margin-left: 3.7rem;
+	margin-top: .9rem;
+	border: 10px solid #C3AD88;
+	border-radius: 50%;
+	width: 2.4rem;
+	height: 2.4rem;
+}
+nav .photo img {
+	border-radius: 50%;
+}
+nav>p {
+	text-align: center;
+	font-size: .4rem;
+}
+nav .contain {
+	padding-top: .4rem;
+	margin: .5rem .6rem;
+	border-top: 1px solid #fff;
+	font-size: .3rem;
+	text-align: center;
+}
+nav .contain div {
+	float: left;
+	width: 49.9%;
+}
+nav .contain div:nth-of-type(1){
+	border-right: 1px solid #fff;
+}
+#content>p  {
+	box-sizing: border-box;
+	font-size: .3rem;
+	line-height: .9rem;
+	padding-left: .3rem;
+}
+#content .img {
+	float: left;
+	border: 1px solid #818283;
+}
+#content ul li {
+	padding: .26rem;
+	border-top: 1px solid #818283;
+	border-bottom: 1px solid #818283;
+}
+#content ul li img {
+	
+	width: 1.86rem;
+}
+#content .box {
+	float: right;
+	width: 7.12rem;
+	color: #818283;
+}
+#content .box>i {
+	display:block;
+	font-size: .33rem;
+	text-align: right;
+} 
+#content .box .tittle {
+	font-size: .26rem;
+	
+}
+.box .tittle p:nth-of-type(1){
+	float: left;
+}
+.box .tittle p:nth-of-type(2){
+	float: right;
+	/*font-size: .2rem;*/
+}
+#content .description {
+	font-size: .23rem;
+	color: #9B9B9B;
+}
+#content .function {
+	font-size: .26rem;
+	/*line-height: .9rem;*/
+}
+#content .function .award,.comment {
+	float: left;
+}
+#content .function .award {
+	margin-right: .5rem;
+}
+#content .function .share {
+	float: right;
+}

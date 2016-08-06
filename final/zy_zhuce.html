@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>注册</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/xyh_head.css">
+	<link rel="stylesheet" href="css/zy_zhuce.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<div class="head_con">
+			</div>
+		</div>
+		<div class="land">
+			<img class="logo" src="img/xyh_logo.png" alt="">
+			<form class="clear">
+				用户名：<input name="name" type="text" value=""><span class="fr"></span><br>
+				密&nbsp;&nbsp;&nbsp;码：<input name="pwd" type="password" value=""><span class="fr"></span><br>
+				确认密码：<input class="pwd" type="password"><span class="fr"></span><br>
+				<!-- <button>注册</button> -->
+				<input id="button" type="button" value="注册">
+			</form>
+			<div class="other">
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+
+
+
+	$('input').eq(0).on('blur',function () {
+		if ($('input').eq(0).val()=="") {
+			alert('用户名不能为空');
+			return;
+		}
+		// 设置本地cookie的值
+		setCookie("aimee",$('input').eq(0).val());
+		// alert(getCookie().aimee)//这里弹出来的就是setCookie里面的valu值即：0805
+		function setCookie(name,value) {
+			document.cookie =value;	
+		}
+		$.ajax({
+			type:'post',
+			url:'php/zy_zhuce.php',
+			data:{act:"check",name:$(this).val()},
+			dataType:'json',
+			success:function (data) {
+				// var arr = JSON.parse(data);
+				if (data.error==0) {
+					$('span').eq(0).html("用户名可用");
+					$('span').eq(0).css('color','green');
+				}else {
+					$('span').eq(0).html("用户名不可用");
+					$('span').eq(0).css('color','red');
+				}
+			}
+		})
+	})
+	$('input').eq(2).on('blur',function () {
+		if ($('input').eq(1).val()!=$('input').eq(2).val()) {
+			$('span').eq(2).html( "密码不一致！");
+			$('span').eq(2).css('color',"red");
+			return;
+		}
+	
+		$('#button').on('click',function () {
+			if ($('input').eq(0).val()==''||$('input').eq(1).val()==''||$('input').eq(2).val()=='') {
+				alert('请输入完整信息！')
+				return;
+			}
+			$.ajax({
+				type:'post',
+				url:'php/zy_zhuce.php',
+				data:{act:"add",name:$('input').eq(0).val(),pwd:$('input').eq(1).val()},
+				dataType:'json',
+				success:function (data) {
+					if (data.error==0) {
+						alert('注册成功');
+						setTimeout(function () {
+							location.href = "zy_loading.html";
+						},1000)
+					}else{
+						alert('注册失败')
+					}
+				}
+			})
+		})
+	})
+
+	// 设置cookie函数
+	function getCookie() {
+		var cookie = document.cookie;
+		var json={}
+		var arr = cookie.split("; ");
+		for (var i = 0; i < arr.length; i++) {
+			var arr2 = arr[i].split("=");
+			json[arr2[0]] = arr2[1];
+		}
+		return json;
+	}
+</script>
+</html>
+
+
+
+
+

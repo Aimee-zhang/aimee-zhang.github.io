@@ -1,0 +1,339 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+html,body{
+	font-size: 100px;
+}
+.wrap{
+	width: 7.68rem;
+	position: relative;
+}
+
+
+
+/*++++++++++header+++++++++++*/
+.header{
+	width: 6.9rem;  /*690px*/
+	height: 0.83rem;
+	line-height: 0.83rem;
+	background: #48382b;
+	padding: 0.2rem 0.39rem 0;     /*30px*/
+	font-size: 0.22rem;
+	position: relative;
+	box-shadow: 0 5px 10px;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+.header .a1{
+	color: white;
+}
+.header input{
+	width: 4.4rem;	 /*440px*/
+	height: 0.55rem;
+	margin-left:0.5rem; 
+	border-radius: 13px;
+	background: #403229;
+	border: none;
+	font-size: 0.2rem;
+	color: #715e4d;
+	padding-left: 0.6rem;
+}
+.header .a2 img{
+	position: absolute;
+	left: 1.57rem;
+	top:0.43rem;
+	width: 5%;
+}
+.header .a3 img{
+	position: absolute;
+	right: 0.4rem;
+	top: 0.34rem;
+	width: 7%;
+}
+
+
+/*++++++++++content+++++++++++*/
+
+.content{
+	width: 7.68rem;
+	background: #ebeae4;
+	padding-top: 1.05rem;
+}
+/*++++++++++content  tab切换+++++++++++*/
+
+.swiper-container{
+	width: 100%;
+	height: 3.49rem;
+	position: relative;
+	/*overflow: hidden;*/
+
+}
+.swiper-wrapper{
+	width: 100%;
+	height: 100%;
+
+}
+.swiper-slide{
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	background: linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+	bottom: 0px;
+}
+.swiper-pagination span{
+	width: 15px;
+	height: 15px;
+	background: gray;
+}
+
+
+/*++++++++++content  cont2+++++++++++*/
+
+.content .cont2{
+	width: 100%;
+	height: 3.88rem;
+	padding: 0.2rem 0;
+	background: #ebeae4;
+}
+
+
+/*============.content .cont2 .left==========*/
+.content .cont2 .left, .right{
+	background: #ffffff;
+	width: 47%;
+	padding-left: 2%;
+	font-size: 0.22rem;
+}
+.content .cont2 .left{
+	height: 3.60rem;
+	overflow: hidden;
+	padding-top: 0.28rem;
+}
+.content .cont2 .left a{
+	color: #6ab439;
+	font-size: 0.22rem;
+	
+}
+.content .cont2 .left p{
+	margin: 0.2rem 0;
+	font-size: 0.22rem;
+	color: #b0b0b0;
+}
+.content .cont2 .left .clock{
+	width: 100%;
+	height: 0.48rem;
+	line-height: 0.5rem;
+}
+.content .cont2 .left .clock div{
+	width: 0.5rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	text-align: center;
+	border-radius: 10px;
+	color: white;
+	background: black;
+	font-size: 0.22rem;
+}
+.content .cont2 .left .clock span{
+	color: black;
+	font-size: 0.22rem;
+	height: 0.33rem;
+	line-height: 0.5rem;
+	margin: 0 0.04rem;
+}
+.content .cont2 .left .clock strong{
+	font-size: 0.22rem;
+	color: red;
+}
+.content .cont2 .left .limg{
+	width: 100%;
+	height: 2rem;
+	overflow: hidden;
+	margin-top: 0.1rem;
+}
+.content .cont2 .left img{
+	width: 100%;
+	height: 100%;
+}
+/*============.content .cont2 .right==========*/
+
+.content .cont2 .right{
+	height: 3.15rem;
+	padding-top: 0.73rem;
+}
+.content .cont2 .right p{
+	font-size: 0.22rem;
+	color: #b0b0b0;
+	margin-bottom: 0.2rem;
+}
+.content .cont2 .right .clock{
+	width: 100%;
+	height: 0.48rem;
+	line-height: 0.5rem;
+}
+.content .cont2 .right .clock div{
+	width: 0.5rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	text-align: center;
+	border-radius: 10px;
+	color: white;
+	background: black;
+	font-size: 0.22rem;
+
+}
+.content .cont2 .right .clock span{
+	color: black;
+	font-size: 0.22rem;
+	height: 0.33rem;
+	line-height: 0.5rem;
+	margin: 0 0.04rem;
+}
+.content .cont2 .right .clock strong{
+	font-size: 0.22rem;
+	color: red;
+}
+.content .cont2 .right .limg{
+	width: 100%;
+	height: 2rem;
+	overflow: hidden;
+	margin-top: 0.1rem;
+}
+.content .cont2 .right img{
+	width: 100%;
+	height: 100%;
+}
+/*============.content .cont3==========*/
+.content .cont3{
+	width: 100%;
+	background: #ffffff;
+	margin-bottom: 1.18rem;   
+}
+.content .cont3 .nav{
+	width: 92%;
+	height: 0.74rem;
+	line-height: 0.74rem;
+	padding: 0 4%;
+}
+
+
+.content .cont3 .nav .nava1{
+	font-size: 0.24rem;
+	color: green;
+}
+.content .cont3 .nav .nava2{
+	font-size: 0.24rem;
+	color: #b0b0b0;
+}
+
+
+
+
+.content .cont3 .nav2{
+	width: 100%;
+	height: 2.6rem;
+}
+.content .cont3 .nav2 .bull{
+	width: 38.9%;
+	height: 100%;
+}
+.content .cont3 .nav2 .bull img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.content .cont3 .nav2 .apple{
+	width: 61%;
+	height: 55%;
+}
+.content .cont3 .nav2 .apple img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.content .cont3 .nav2 .middle{
+	width: 30.5%;
+	height: 45%;
+}
+.content .cont3 .nav2 .middle img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.content .cont3 .nav2 .bullfood{
+	width: 30.5%;
+	height: 45%;
+}
+.content .cont3 .nav2 .bullfood img{
+	width: 100%;
+	height: 100%;
+}
+
+/*===================footer=================*/
+
+
+.footer{
+	width: 100%;
+	height: 0.98rem;
+	/*line-height: 0.1rem;*/
+	background: #48382b;
+	position: fixed;
+	bottom: 0;
+	box-shadow: 5px 0  10px;
+	display: -webkit-box;
+	padding-top: 0.2rem;
+}
+.footer .div{
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	font-size: 0.18rem;
+}
+.footer .div a{
+	font-size: 0.18rem;
+	color: #c3ad88;
+}
+.footer .div div{
+	width: 0.45rem;
+	height: 0.45rem;
+	margin: 0 auto 0.2rem;
+}
+.footer .div div img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/*==========================================*/
+@media screen and (max-width:414px){
+	html,body{
+		font-size: 53.9px;
+	}
+}
+
+
+
+

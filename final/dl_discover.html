@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/dl_reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/dl_discover.css"/>
+		<link rel="stylesheet" type="text/css" href="css/dl_public.css"/>
+		<title>发现圈子</title>
+	</head>
+	<style type="text/css">
+	  /*矢量图标样式*/
+		@font-face {font-family: "iconfont";
+		  src: url('iconfont.eot?t=1468828242'); /* IE9*/
+		  src: url('iconfont.eot?t=1468828242#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		  url('iconfont.woff?t=1468828242') format('woff'), /* chrome, firefox */
+		  url('iconfont.ttf?t=1468828242') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+		  url('iconfont.svg?t=1468828242#iconfont') format('svg'); /* iOS 4.1- */
+		}
+		
+		.iconfont {
+		  font-family:"iconfont" !important;
+		  font-size:.6rem;
+		  font-style:normal;
+		  color: #818283;
+		  -webkit-font-smoothing: antialiased;
+		  -webkit-text-stroke-width: 0.2px;
+		  -moz-osx-font-smoothing: grayscale;
+		}
+	</style>
+	<body>
+		<header>
+			<div id="circle" class="clearfix">
+				<section  class="active"><a href="###">圈子</a></section>
+				<section ><a href="###">视频</a></section>
+			</div>
+		</header>
+		<div class="content">
+			<div class="contain">
+				<img src="img/d-2.png"/>
+				<section class="userName">
+					<div class="photo">
+						<img src="img/d-1.png"/>	
+					</div>
+					<div class="introduction">
+						<p>咋滴啦</p>
+						<p><span>2016.07.19 19:25</span> 发布</p>
+					</div>
+					<div class="save">
+						收藏
+					</div>
+				</section>
+				<section class="description">
+					<p>番茄意面</p>
+					<p>一直做给自己吃,今天分享出来,不太明白的私信我</p>
+				</section>
+				<section class="function clearfix">
+					<i class="iconfont">&#xe67f;</i>
+					<i class="iconfont">&#xe637;</i>
+					<i class="iconfont">&#xf007a;</i>
+				</section>
+			</div>
+			<div class="contain">
+				<img src="img/d-2.png"/>
+				<section class="userName">
+					<div class="photo">
+						<img src="img/d-1.png"/>						
+					</div>
+					<div class="introduction">
+						<p>咋滴啦</p>
+						<p><span>2016.07.19 19:25</span> 发布</p>
+					</div>
+					<div class="save">
+						收藏
+					</div>
+				</section>
+				<section class="description">
+					<p>番茄意面</p>
+					<p>一直做给自己吃,今天分享出来,不太明白的私信我</p>
+				</section>
+				<section class="function clearfix">
+					<i class="iconfont">&#xe67f;</i>
+					<i class="iconfont">&#xe637;</i>
+					<i class="iconfont">&#xf007a;</i>
+				</section>
+			</div>
+		</div>
+		<footer>
+			
+		
+		<div class="footer">
+			<ul class="clearfix">
+				
+			
+			<li class="fl">
+				<a href="lh_zhuye.html">
+					<img src="img/home.png" alt=""><p>主页</p>
+					
+				</a>
+			</li>
+			<li class="fl">
+				<a href="lh_shangchang-caipin.html">
+					<img src="img/shopping.png" alt=""><p>商城</p>
+					
+				</a>
+			</li>
+			<li class="fl">
+				<a href="lh_xuancai.html">
+					<img src="img/chose.png" alt=""><p>选菜</p>
+					
+				</a>
+			</li>
+			<li class="fl">
+				<a href="dl_discover.html">
+					
+						<img src="img/find.png" alt="">
+						<p>发现</p>
+					
+					
+				</a>
+			</li>
+			<li class="fl">
+				<a href="zy_loading.html">
+					<img src="img/my.png" alt=""><p>我的</p>
+					
+				</a>
+			</li>
+			</ul>
+		</div>
+		</footer>
+		<script src="js/dl_bottom_nav_public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('#circle section').click(function(){
+				var index=$(this).index();
+				$(this).addClass('active').siblings().removeClass('active');
+			})
+		</script>
+	</body>
+</html>

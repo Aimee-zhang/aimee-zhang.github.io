@@ -1,0 +1,82 @@
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.fl{float: left;}
+.fr{float: right;}
+/*底部布局样式*/
+.footer{
+	width: 100%;
+	background-color: #48382b;
+	position: fixed;
+	bottom: 0;
+
+}
+.footer li{
+	width: 20%;
+	line-height: 0.25rem;
+	text-align: center;
+}
+.footer li img{
+	width: 0.22rem;
+	height: 0.16rem;
+	vertical-align: bottom;
+}
+.footer span{
+	font-size: 0.1rem;
+	color:#c3ad88;
+}
+.footer a{
+	color: #c3ad88;
+}
+
+@media screen and (min-width: 320px) {
+	html{font-size: 85px;}
+}
+/*横屏*/
+/*@media screen and (orientation:landscape){
+	html{font-size: 128px;}
+}*/
+
+
+@media screen and (min-width: 375px) {
+	html{font-size: 100px;}
+}
+/*横屏*/
+/*@media screen and (orientation:landscape){
+	html{font-size: 177.8px;}
+}*/
+
+@media screen and (min-width: 414px) {
+	html{font-size: 110.3px;}
+}
+/*@media screen and (orientation:landscape){
+	html{font-size: 196px;}
+}*/
+
+
+@media screen and (min-width: 768px) {
+	html{font-size: 205px;}
+	.shopstyle li{width: 13%;}
+}
+@media screen and (orientation:landscape){
+	html{font-size: 273px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
