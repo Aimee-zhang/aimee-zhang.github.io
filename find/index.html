@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>找徐峥</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/xuzheng.css">
+</head>
+<body>
+	<div class="wrap">
+	<!-- 开始加载 -->
+		<div class="loading">
+			<img class="load" src="img/load.png" alt="">
+			<img class="load_txt" src="img/loadingtxt.png" alt="">
+		</div>
+		<!-- 游戏背景文字 -->
+		<div class="animate_txt">
+			<div></div>
+		</div>
+		<!-- 超人出现 -->
+		<div class="animate_dong">
+			<img class="fly" src="img/animate/fly1.png" alt="">
+			<!-- vivo手机出现 -->
+			<img class="phone" src="img/animate/phone.png" alt="">
+		</div>
+		<!-- 列为8块碎片 -->
+		<div class="star">
+			<img class="venus" src="img/star/piece1.png" alt="">
+			<img class="jupiter" src="img/star/piece2.png" alt="">
+			<img class="earth" src="img/star/piece3.png" alt="">
+			<img class="saturn" src="img/star/piece4.png" alt="">
+			<img class="mercury" src="img/star/piece5.png" alt="">
+			<img class="neptune" src="img/star/piece6.png" alt="">
+			<img class="uranus" src="img/star/piece7.png" alt="">
+			<img class="mars" src="img/star/piece8.png" alt="">
+		</div>
+		<!-- 开始游戏 -->
+		<div class="star2">
+			<p>找齐徐峥　启动能量<br><br>
+				<img src="img/star/pull.png" alt="">
+			</p>
+		</div>
+		<div class="start">
+		<!-- 游戏wrap -->
+			<div class="kuang">
+			<!-- 第几关 -->
+				<img class="txt" src="img/start/txt1.png" alt="">
+				<div class="time"></div>
+				<!-- 游戏内容 -->
+				<div class="content">
+					<div class="kong"></div>
+				</div>
+			</div> 
+			<!-- 转动的小星球 -->
+			<img class="first1 tu1" src="img/start/first1.png" alt="">
+			<img class="first2 tu1" src="img/start/first2.png" alt="">
+			<img class="first3 tu1" src="img/start/first3.png" alt="">
+			<!-- 失败 -->
+			<div class="fail">
+				<img src="img/end/fail.png" alt="">
+				<img class="again" src="img/end/again.png" alt="">
+				<img class="shuoming" src="img/end/explain.png" alt="">
+			</div>
+			<!-- 过关等级 -->
+			<div class="state">
+				<img src="img/start/state1.png" alt="">
+			</div>
+		</div>
+		<div class="end">
+			<div class="he">
+				<div class="text">旺德福<br>你已集齐徐铮分身<br>vivo X5pro碎片开始合体<br>合体中<br>...<br></div>
+				<img class="p1" src="img/end/piece1.png" alt="">
+				<img class="p2" src="img/end/piece2.png" alt="">
+				<img class="p3" src="img/end/piece3.png" alt="">
+				<img class="p4" src="img/end/piece4.png" alt="">
+				<img class="p5" src="img/end/piece5.png" alt="">
+				<img class="p6" src="img/end/piece6.png" alt="">
+				<img class="p7" src="img/end/piece7.png" alt="">
+				<img class="p8" src="img/end/piece8.png" alt="">
+			</div>
+			<div class="success">
+				<img class="heti" src="img/end/heti.png" alt="">
+				<img class="choujiang" src="img/end/choujiang.png" alt="">
+				<img class="shuoming" src="img/end/explain.png" alt="">
+			</div>
+
+		</div>
+		<div class="explain">
+			<div class="con">
+				<div class="txt1">
+					游戏规则：<br>
+					1.玩家要在规定时间内，依次从2*2至7*7的方格中找徐铮。点对徐铮，即可过关。<br>
+					2.每找到一个徐铮，得到一个vivo手机“碎片”。集齐8块“碎片”，即获得一次抽奖机会。<br>
+					3.中奖玩家请正确填写信息。信息填写错误或未填写的玩家将被取消中奖资格。<br>
+					4.每个ID只有一次中奖机会。<br>
+					5.恶意刷奖的玩家一经发现将取消抽奖资格。<br><br>
+					活动时间：<br>
+					2015年9月28至10月2日<br><br>
+					游戏奖励：<br>
+					一等奖：vivo X5Pro智能手机 2台<br>
+					二等奖：vivo充电宝 10个<br>
+					三等奖：vivo耳机 20个<br>
+					四等奖：《港囧》电影票20套（每套2张）<br>
+					五等奖：《港囧》主创签名剧照 50张<br><br>
+					注：电影票为格瓦拉兑换券，中奖玩家请自行兑换<br>
+				</div>
+				<img class="scroll" src="img/end/scroll.png" alt="">
+			</div>
+			<img class="shuo" src="img/end/shuotan.png" alt="">
+			<img class="guan" src="img/end/retu.png" alt="">
+		</div>
+	</div>
+	<audio src="sound/bg.mp3" autoplay loop></audio>
+	<audio src="sound/daojishi.mp3"></audio>
+	<audio src="sound/false_prize.mp3"></audio>
+	<audio src="sound/false.mp3"></audio>
+	<audio src="sound/succ_prize.mp3"></audio>
+	<audio src="sound/type.mp3"></audio>
+</body>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/xuzheng.js"></script>
+<script type="text/javascript" src="js/start.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
