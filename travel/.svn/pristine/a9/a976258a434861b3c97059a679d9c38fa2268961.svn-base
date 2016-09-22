@@ -1,0 +1,37 @@
+.about_us{padding:19px;border:1px solid #e3e3e3;position:relative;z-index:10;top:-45px;background:#fff;}
+.about_us_bt{border-bottom:1px dashed #e3e3e3;text-align:center;}
+.about_us_bt a{padding:20px 35px;color:#666;font-size:18px;display:inline-block;}
+.about_us_bt a.border_bottom{border-bottom:2px solid #ff6600;margin-top:-1px;}
+.about_us_li{padding-top:45px;}
+.about_us_li_nr_p p{padding-bottom:30px;line-height:25px;font-size:14px;color:#999;text-indent:30px;}
+.yjfk-left{width:446px;height:446px;padding-left:80px;}
+.yjfk-left img{width:446px;height:446px;}
+.yjfk-right{width:610px;}
+.yjfk{padding-bottom:300px;}
+.yjfk-right-check{padding-bottom:25px;position:relative;}
+.yjfk-right-check span{display:block;width:50px;height:40px;line-height:40px;color:#666;padding-right:13px;text-align:right;}
+.yjfk-right-check input{width:378px;height:38px;padding:0 10px;border:1px solid #e3e3e3;outline:none;}
+.yjfk-right-check textarea{width:378px;padding:10px;height:140px;outline:none;resize:none;border:1px solid #e3e3e3;}
+.yjfk-right-check div.cb{position:absolute;left:85px;bottom:0;height:25px;line-height:25px;color:#999;font-size:14px;}
+.yjfk-tj{padding-top:55px;width:120px;height:40px;padding-left:80px;}
+.yjfk-tj button{width:120px;height:40px;border:none;outline:none;background:#ff6600;color:#fff;border-radius:6px;cursor:pointer;}
+.yj-bg{position:fixed;background:url(../images/yjfk/zhou.png);top:0;left:0;width:100%;height:100%;z-index:11;opacity:0.5;display:none;}
+.yj-bg-li{position:fixed;width:530px;height:290px;background:#fff;z-index:12;top:50%;left:50%;margin-top:-145px;margin-left:-265px;display:none;}
+.yj-bg-nr{background:#ff6600;padding:0 20px;height:50px;}
+.yj-bg-nr span{display:block;width:auto;height:50px;line-height:50px;color:#fff;font-size:16px;}
+.yj-bg-nr a{display:block;width:auto;height:50px;line-height:50px;font-size:20px;color:#fff;}
+.yj-bg-main{padding:0 20px;height:160px;width:490px;}
+.yj-bg-main-right{display:table-cell;vertical-align:middle;text-align:center;}
+.yj-bg-main-ver{width:100%;height:100%;display:table;}
+.yj-bg-main-left{background:url(../images/yjfk/yj-bg-image.png) no-repeat;width:60px;height:55px;position:absolute;left:0;top:0;}
+.yj-bg-middle{display:inline-block;padding-left:80px;position:relative;}
+.yj-bg-middle .font_big{font-size:18px;}
+.yj-bg-middle .font_small{font-size:14px;}
+.yj-bg-middle p{color:#666;text-align:left;}
+.yj-bg-foot{width:120px;height:40px;}
+.yj-bg-foot button{width:100%;height:100%;outline:none;border-radius:6px;background:#ff6600;color:#fff;border:none;outline:none;cursor:pointer;}
+
+
+
+
+

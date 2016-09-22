@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="browsermode" content="application">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>平安-全球签证-送签-填写订单</title>
+    <meta name="keywords" content="平安-全球签证-送签-填写订单" />
+    <meta name="description" content="平安-全球签证-送签-填写订单" />
+    <link rel="stylesheet" type="text/css" href="./js/lib/artDialog/skins/green.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/visa-send.css">
+    <script type="text/javascript" src="./js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/lib/artDialog/jquery.artDialog.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/order.js"></script>
+    <script type="text/javascript" src="./js/add.js"></script>
+</head>
+
+<body class="model-body">
+    <div class="model-pad">
+        <div class="model-content">
+            乌克兰驻华大使馆消息：乌克兰内阁于2016年06月08日通过第356号法令，宣布从2016年06月20日至2016年09月3日在基辅鲍里斯波尔国际机场对中国公民实施落地签证制度。办理停留时间不超过15天的一次入境签证。落地签只适用于以旅游或商务为目的的人员，办理费用为2550乌克兰币。<br><br>
+            以下为办理签证时需要提供的相关证明材料：<br>
+            1. 乌克兰移民局签发的统一格式的商务邀请函；<br>
+            2. 乌克兰国家单位，政府机构，国营企业签发的邀请函；<br>
+            3. 往乌克兰投资不少于5万美元的国家投资登记证明文件；<br>
+            4. 外国政府机构或国际组织签发的邀请函；<br>
+            5. 往返机票（或其他能够证明在签证有效期结束之前离开乌克兰的文件）加上以下材料之一：酒店订单或旅游订单(VOUCHER)或旅游服务合同。<br><br>
+            与此同时，办理落地签证的中国公民办理边防入境手续时必须提供在乌克兰停留期间有效的医疗保险和在乌克兰停留期间足够用的资金证明。另外，乌克兰驻外使领馆给中国公民办理签证的制度没有变化。<br><br>
+            乌克兰驻华大使馆消息：乌克兰内阁于2016年06月08日通过第356号法令，宣布从2016年06月20日至2016年09月3日在基辅鲍里斯波尔国际机场对中国公民实施落地签证制度。办理停留时间不超过15天的一次入境签证。落地签只适用于以旅游或商务为目的的人员，办理费用为2550乌克兰币。
+        </div>
+        <div class="button-group">
+            <input type="submit" class="btn btn-gray" value="取消" onclick="$.dialog.close()">
+            <a href="visa-pay.html" target="_blank" class="btn btn-yellow">同意协议</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="browsermode" content="application">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>平安-首页</title>
+    <meta name="keywords" content="平安-首页" />
+    <meta name="description" content="平安-首页" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script type="text/javascript" src="./js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/lib/jquery-superSlide/jquery.SuperSlide.2.1.2.js"></script>
+    <script type="text/javascript" src="./js/lib/jquery-lazyload/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- 页面头部开始 -->
+    <div id="header">
+        <div class="header wrapper m">
+            <div class="header-logo">
+                <a href="/" title="吾界" class="spliceico ico-logo"></a>
+            </div> 
+            <ul>
+
+            </ul> 
+        </div>
+    </div>
+    <!-- 页面头部结束 -->
+    <!-- 导航开始 -->
+    <div id="nav">
+        <div class="menu-box">
+            <div class="menu-title current">
+                <a href="javascript:;" title="所有分类" id="nav-menu-title-all">所有分类<i class="nav-icon nav-icon-up"></i></a>
+                <div class="menu-list-detail-box current">
+                    <ul>
+                        <li class="first">
+                            <a href="javascript:;" title="海外投资">
+                                <i class="nav-icon nav-icon-01"></i>海外投资
+                            </a>
+                            <div class="menu-list-second">
+                                <ul>
+                                    <li>
+                                        <a href="/" title="海外移民">
+                                            海外移民
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="海外置业">
+                                            海外置业
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="财税规划">
+                                            财税规划
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="法律协助">
+                                            法律协助
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="海外家族管理">
+                                            海外家族管理
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="海外商业考察">
+                                            海外商业考察
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="健康人生">
+                                <i class="nav-icon nav-icon-02"></i>健康人生
+                            </a>
+                            <div class="menu-list-second">
+                                <ul>
+                                    <li>
+                                        <a href="/" title="体检">
+                                            体检
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="整形/美容">
+                                            整形/美容
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="海外月子中心">
+                                            海外月子中心
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="私人医生">
+                                            私人医生
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="海外医疗全球通">
+                                            海外医疗全球通
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="精英子女">
+                                <i class="nav-icon nav-icon-03"></i>精英子女
+                            </a>
+                            <div class="menu-list-second">
+                                <ul>
+                                    <li>
+                                        <a href="/" title="海外留学">
+                                            海外留学
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="海外夏令营">
+                                            海外夏令营
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="海外体验">
+                                            海外体验
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="海外亲子游">
+                                            海外亲子游
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="悦动人生">
+                                <i class="nav-icon nav-icon-04"></i>悦动人生
+                            </a>
+                            <div class="menu-list-second">
+                                <ul>
+                                    <li>
+                                        <a href="/" title="俱乐部">
+                                            俱乐部
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="精彩赛事">
+                                            精彩赛事
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="旅行家">
+                                <i class="nav-icon nav-icon-05"></i>旅行家
+                            </a>
+                            <div class="menu-list-second">
+                                <ul>
+                                    <li>
+                                        <a href="/" title="美食旅游">
+                                            美食旅游
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="探险旅游">
+                                            探险旅游
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="极地旅游">
+                                            极地旅游
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="北欧旅游">
+                                            北欧旅游
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" title="定制游">
+                                            定制游
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航结束 -->
+    <!-- banner和导航列表开始 -->
+    <div id="banner">
+        <div class="banner-box">
+            <div class="banner-image">
+                <ul>
+                    <li>
+                        <a href="" title="" style="background-image:url(http://192.168.1.115:8080/ImageServer/sites/projectRecommendPositionItem/img/20160412/4889690facd945ed889e19d1634e61a9.jpg)"></a>
+                    </li>
+                    <li>
+                        <a href="" title="" style="background-image:url(./images/lxj-jd-bg-02.jpg)"></a>
+                    </li>
+                    <li>
+                        <a href="" title="" style="background-image:url(./images/lxj-jd-bg-02.jpg)"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner-ctrl">
+                <a href="javascript:;" title="上一页" class="banner-btn banner-prev"></a>
+                <a href="javascript:;" title="下一页" class="banner-btn banner-next"></a>
+                <div class="menu_thumb">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner和导航列表结束 -->
+    <!-- main开始 -->
+
+    <!-- main结束 -->
+    <!-- 页面底部开始 -->
+    <div id="footer">
+        <div class="footer-box">
+            <div class="footer-left">
+                <div class="footer-menu clearfix">
+                    <ul>
+                        <li class="first">
+                            <a href="/" title="关于吾界">
+                                关于吾界
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" title="联系我们">
+                                联系我们
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" title="加入我们">
+                                加入我们
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" title="商务合作">
+                                商务合作
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>版权所有 ©吾界跨境增值服务平台 未经许可不得复制、转载或摘编，违者必究!</p>
+                    <p>Copyright © WUJIE (CHINA), All Rights Reserved</p>
+                    <p>ICP许可证号 京ICP备16006580号</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li>
+                        <a href="javascript:;" title="微信公众帐号">
+                            <div class="ecode">
+                                <div class="ecode-image">
+                                    <img src="./images/ecode-weachat.png" />
+                                </div>
+                                <div class="ecode-title">
+                                    微信公众帐号
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="手机版">
+                            <div class="ecode">
+                                <div class="ecode-image">
+                                    <img src="./images/ecode-phone.png" />
+                                </div>
+                                <div class="ecode-title">
+                                    手机版
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

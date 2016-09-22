@@ -1,0 +1,10 @@
+.cjwt{padding:0 20px 20px 20px;border:1px solid #e3e3e3;}
+.cjwt li{list-style:none;border-bottom:1px dashed #e3e3e3;height:50px;overflow:hidden;line-height:50px;font-size:14px;}
+.cjwt li a{color:#8a8a8a;text-decoration:none;}
+.cjwt li:last-child{border-bottom:none;}
+/**常见问题详情**/
+.cjwt-xq{padding:0 20px 100px 20px;border:1px solid #e3e3e3;}
+.cjwt-xq h1{line-height:65px;font-size:20px;color:#666;border-bottom:1px dashed #e3e3e3;}
+.cjwt-xq-nr-list{padding-top:15px;}
+.cjwt-xq-nr-list h4{font-size:16px;color:#666;}
+.cjwt-xq-wz{color:#8a8a8a;font-size:14px;padding-top:3px;} 

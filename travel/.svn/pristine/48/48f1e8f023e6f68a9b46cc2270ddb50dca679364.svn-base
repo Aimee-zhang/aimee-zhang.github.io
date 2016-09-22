@@ -1,0 +1,66 @@
+$(function(){
+	var $bannerBox = $('#banner .banner-box'),
+        $bannerUl = $("#banner .banner-image ul"),
+		$bannerList = $("#banner .banner-image li"),
+		bannerDot = '<ul>';
+	$bannerList.each(function(){
+		bannerDot += '<li></li>'; 
+	});
+	bannerDot += '</ul>';
+	$bannerBox.find(".menu_thumb").html(bannerDot += '</ul>');
+    $bannerBox.slide({
+		titCell:".menu_thumb ul li", 
+        mainCell:".banner-image ul",
+        effect:"fold", 
+        pnLoop : true,
+        prevCell:".banner-prev",
+        nextCell:".banner-next",
+        vis:"auto",
+        scroll:1,
+        autoPlay:true,
+        interTime : 4000,
+        delayTime:1500, 
+        triggerTime:50,
+        endFun:function(i){
+        	var $t = $bannerList.eq(i);
+            if ( $t.data("bgcolor") ){
+                $t.css("background-color",$t.data("bgcolor"));
+            }
+        }
+    });
+    var $window = $(window),
+        before = 0;
+    $window.on("resize",function(){
+        var now = + new Date;
+        if ( now - before < 100 ){
+            return false;
+        }
+        before = now;
+        var w = $window.width();
+        $bannerUl.width(w);
+        $bannerList.width(w);
+    });
+    $(".plate-list .plate-title ul li").not(".noSwitch").on("click",function(){
+    	var $t = $(this);
+    	var index = $t.index();
+    	$t.addClass("current").siblings().removeClass("current");
+    	var $list = $t.parents(".plate-title").siblings(".plate-detail").find(".plate-right .plate-detail-list");
+    	$list.removeClass("current");
+    	$list.eq(index).addClass("current");
+    });
+    $(".plate-detail-list-style6 li").hover(function(){
+    	var $t = $(this);
+    	$t.addClass("current").find(".plate-summary").stop(false,true).animate({
+    		top : 0
+    	},300);
+    },function(){
+    	var $t = $(this);
+    	$t.removeClass("current").find(".plate-summary").stop(false,true).animate({
+    		top : 174
+    	},300);
+    });
+    $("img.lazyload").lazyload({
+    	effect : "fadeIn",
+    	skip_invisible : false
+    });
+})

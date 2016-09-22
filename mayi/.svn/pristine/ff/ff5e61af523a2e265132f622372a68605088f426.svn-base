@@ -1,0 +1,159 @@
+/***
+ * 全局样式
+ **/
+p,body,span,a,i,em,ul,li,h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-style:normal;font-family:"微软雅黑";}
+body{background: #f4f4f4;}
+.fl{float:left;}
+.fr{float:right;}
+ul,li{ list-style: none;  padding:0; margin:0; }
+a{ color: #333;}
+body{background:#2a3243;}
+.hide{display:none;}
+.clearfix{clear:both;}
+
+/**page1**/
+.p1_1{width:100%;height:100%;background:#2a3243;}
+.p1_2{width:260px;height:137px;background:url(../images/p1_2.png) no-repeat;position:absolute;top:110px;left:230px;z-index:4;}
+.p1_3{width:565px;height:281px;background:url(../images/p1_3.png) no-repeat;position:absolute;bottom:0;left:77px;}
+.p1_4{width:720px;height:480px;background:url(../images/p1_4.jpg) no-repeat;position:absolute;bottom:281px;border-top:2px solid #fff;border-bottom:2px solid #fff;}
+.p1_5{width:32px;height:21px;background:url(../images/p1_5.gif) no-repeat;position:absolute;bottom:763px;right:100px;animation:my_p1_5 40s linear infinite;animation-delay:2s;-webkit-animation:my_p1_5 40s linear infinite;-webkit-animation-delay:2s;}
+@keyframes my_p1_5{
+	0%{right:100px;}
+	100%{right:720px;}
+}
+@-webkit-keyframes my_p1_5{
+	0%{right:100px;}
+	100%{right:720px;}
+}
+.p1_6{width:32px;height:21px;background:url(../images/p1_5.gif) no-repeat;position:absolute;bottom:763px;right:0;animation:my_p1_6 30s linear infinite;-webkit-animation:my_p1_6 30s linear infinite;}
+@keyframes my_p1_6{
+	0%{right:300px;}
+	100%{right:720px;}
+}
+@-webkit-keyframes my_p1_6{
+	0%{right:300px;}
+	100%{right:720px;}
+}
+.p1_7{width:32px;height:21px;background:url(../images/p1_5.gif) no-repeat;position:absolute;bottom:763px;right:0;animation:my_p1_7 20s linear infinite;animation-delay:2s;-webkit-animation-delay:2s;-webkit-animation:my_p1_7 20s linear infinite;}
+@keyframes my_p1_7{
+	0%{right:0;}
+	100%{right:720px;}
+}
+@-webkit-keyframes my_p1_7{
+	0%{right:0;}
+	100%{right:720px;}
+}
+.p1_8{width:130px;height:150px;background:url(../images/p1_6.png)   no-repeat;position:absolute;top:0;right:0;z-index:4;animation:bounceOut 2s;-webkit-animation:bounceOut 2s;}
+.p1_9{width:400px;height:270px;background:url(../images/p1_7.png)  no-repeat;position:absolute;top:0;right:0;/*animation:bounceIn 1.5s linear;-webkit-animation:bounceIn 1.5s linear;*/}
+.p1_10{width:400px;height:270px;background:#2a3243;position:absolute;top:0;right:0;z-index:2;animation:my_p10 6s infinite;-webkit-animation:my_p10 6s infinite;animation-delay:2.3s;-webkit-animation-delay:2.3s;}
+@keyframes my_p10{
+	0%{right:0;}
+	100%{right:400px;}
+}
+@-webkit-keyframes my_p10{
+	0%{right:0;}
+	100%{right:400px;}
+}
+
+
+/** 精品课程 **/
+.page-course-top{position:absolute;top: 0;left:0;right:0;overflow: hidden;}
+.page-course-top img{width:100%;height: 100%;}
+
+
+.page-activity .page-course-top{height:60%;}
+.page-course .page-course-top{height:75%;}
+.page-about .page-course-top{height:75%;}
+
+.page-course-yuan{opacity:0.8;width:200px;height:200px;border-radius:50%;background:#2a3243;position:absolute;top:30px;left:30px;text-align: center;line-height:60px;animation:bounceIn 1.5s linear;-webkit-animation:bounceIn 1.5s linear;}
+/*@keyframes c-bounceIn{
+	0{opacity:0;}
+	100%{opacity:0.8;}
+}
+@-webkit-keyframes c-bounceIn{
+	0%{opacity:0;}
+	100%{opacity:0.8;}
+}*/
+
+.page-course-yuan .page-course-yuan1{width:160px;margin:40px auto;line-height:60px;font-size:26px;height:120px;color:#fff;}
+.page-course-yuan .page-course-yuan1 h1{font-size:30px;font-weight: 100;border-bottom: 1px solid #fff;line-height:60px;}
+
+.page-course-bottom{position:absolute;bottom:0px;left:0;right:0;animation:bounceInUp 1.5s linear;-webkit-animation:bounceInUp 1.5s linear;}
+/*@keyframes c-bot{
+	0%{bottom:-300px;}
+	100%{bottom:0;}
+}
+@-webkit-keyframes c-bot{
+	0{bottom:-300px;}
+	100%{bottom:0;}
+}*/
+
+.page-course-bottom .page-course-bg{width: 100%;position: relative;background:#2a3243;}
+.page-course-bottom .page-course-bg:before{display: block;content:"";width:0;height:0;border-left:8px solid transparent;border-right:8px transparent solid;border-bottom:8px solid #2a3243;position: absolute;top:-7px;left:50%; transform:translateX(-50%);-webkit-transformX:translate(-50%); }
+.page-course-bottom .mune{clear: both;overflow: hidden;padding:10px 0;}
+.page-course-bottom .mune li{float:left; width:50%; padding-top:10px;text-align:center;}
+.page-course-bottom .mune li img{width:95px;height:98px;}
+.page-course-bottom .mune li a{font-size: 26px;}
+.page-course-bottom .mune li a span{ display:block; padding:6px 0;color:#f1be59;}
+
+.activity-con{color:#f1be59;padding:100px 15px;font-size:26px;}
+.activity-con p{font-size:26px;margin-top:15px;}
+.page-course-bottom .activity-mune{padding:20px 0 0;}
+.page-course-bottom .activity-mune li{float:left;  margin:0 5%; width:22%; padding-top:10px;text-align:center;}
+.page-course-bottom .activity-mune li img{width:97px;height:71px;}
+
+.page-about-con{color:#f1be59;padding:120px 30px;font-size:32px;}
+.page-about-con p{font-size:28px;margin-top:15px;line-height:44px;}
+
+/**page5**/
+.p5_1{width:100%;height:100%;background:url(../images/p5_1.jpg) no-repeat;position:absolute;}
+.p5_2{width:368px;height:40px;position:absolute;top:50px;right:20px;background:url(../images/p5_2.png)no-repeat;}
+.p5_3{width:90px;height:90px;top:25px;left:25px;background:url(../images/fh.png) no-repeat;position:absolute;z-index:2;}
+.p5_4{width:274px;height:88px;position:absolute;background:url(../images/p5_3.png) no-repeat;top:205px;left:-30px;z-index:2;}
+.p5_4 em{width:20px;height:20px;display:none;float:left;margin-top:34px;background:url(../images/jt.png) no-repeat;margin-right:30px;margin-left:190px;}
+.p5_4 span{display:block;width:auto;height:88px;line-height:88px;font-size:28px;color:#f1be59;text-align:center;}
+.p5_5{width:274px;height:88px;position:absolute;background:url(../images/p5_3.png) no-repeat;top:335px;left:0;z-index:2;}
+.p5_5 em{width:20px;height:20px;display:none;float:left;margin-top:34px;background:url(../images/jt.png) no-repeat;margin-right:30px;margin-left:190px;}
+.p5_5 span{display:block;width:auto;height:88px;line-height:88px;font-size:28px;color:#f1be59;text-align:center;}
+.p5_6{width:274px;height:88px;position:absolute;background:url(../images/p5_3.png) no-repeat;top:465px;left:0;z-index:2;}
+.p5_6 em{width:20px;height:20px;display:none;float:left;margin-top:34px;background:url(../images/jt.png) no-repeat;margin-left:190px;}
+.p5_6 span{display:block;width:auto;height:88px;line-height:88px;font-size:28px;color:#f1be59;text-align:center;}
+.js_kz_nr{width:580px;line-height:65px;font-size:28px;color:#fff;text-indent:35px;z-index:2;position:absolute;bottom:15px;left:20px;margin:0 50px;animation:bounceInUp 2s;-webkit-animation:bounceInUp 2s;}
+.p5_7{width:680px;height:1260px;background:url(../images/nr.png) no-repeat;position:absolute;top:10px;left:20px;z-index:1;}
+.p5_8{width:274px;height:88px;position:absolute;background:url(../images/p5_3.png) no-repeat;top:245px;left:-30px;z-index:2;}
+.p5_8 em{width:20px;height:20px;display:none;float:left;margin-top:34px;background:url(../images/jt.png) no-repeat;margin-left:190px;}
+.p5_8 span{display:block;width:auto;height:88px;line-height:88px;font-size:28px;color:#f1be59;text-align:center;}
+.js_kz{z-index:3;}
+/**page6**/
+.p6_1{width:100%;height:100%;background:url(../images/p60.jpg) no-repeat;position:absolute;}
+.js_kz_nr1{width:580px;line-height:65px;font-size:28px;color:#fff;text-indent:35px;z-index:2;position:absolute;bottom:15px;left:20px;margin:0 50px;animation:bounceInUp 2s;-webkit-animation:bounceInUp 2s;}
+.js_kz_nr1 span{padding-bottom:20px;display:block;}
+.js_kz1{z-index:3;}
+.page6 .p5_4{top:282px;}
+.page6 .p5_5{top:412px;}
+.page6 .p5_6{top:542px;}
+.page6 .p5_8{top:157px;}
+/**page2**/
+.page-course-banner{width:90px;height:779px;}
+.mb{margin-bottom:390px;animation:mb 0.5s linear;-webkit-animation:mb 0.5s linear;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;}
+.mt{margin-top:390px;animation:mt 0.5s linear;animation-fill-mode:forwards;-webkit-animation:mt 0.5s linear;-webkit-animation-fill-mode:forwards;}
+@keyframes mb{
+	0%{margin-top:-390px;}
+	100{margin-top:0;}
+}
+@keyframes mt{
+	0%{margin-top:390px;}
+	100%{margin-top:0;}
+}
+@-webkit-keyframes mb{
+	0%{margin-top:-390px;}
+	100{margin-top:0;}
+}
+@-webkit-keyframes mt{
+	0%{margin-top:390px;}
+	100%{margin-top:0;}
+}
+
+
+
+

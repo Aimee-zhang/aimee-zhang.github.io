@@ -1,0 +1,9 @@
+$(function() {
+    //添加申请人
+    var $addApply = $("#add-apply");
+
+    $addApply.on("click",function(){
+        $(".visa-add-box").append("<div class='apply-people clearfix'><div class='apply-people-num fl'>申请人1</div><div class='apply-people-info fl'><div>姓名：<span class='name'>张三</span></div>|<div>身份证号：<span class='idcard'>410000000000000000</span></div></div><div class='apply-people-operate fr'><a class='modify' href=''>修改</a>|<a class='delete' href=''>删除</a></div></div><div class='apply-box'><div class='apply-list-box'><div class='apply-title'>申请人1</div><form action='' class='apply-form'><div class='apply-list clearfix'><label>姓名</label><div class='apply-input'><input type='text' class='apply-name' placeholder='姓名' value='姓名'><div class='tip'></div></div></div><div class='apply-list clearfix'><label>身份证号</label><div class='apply-input'><input type='text' maxlength='18' class='apply-idcard' placeholder='身份证号' value='41052119920813111x'><div class='tip'></div></div></div><div class='apply-list clearfix'><label>手机号码</label><div class='apply-input'><input type='tel' maxlength='11' class='apply-tel' placeholder='手机号' value='13111111111'><div class='tip'></div></div></div><div class='apply-list clearfix'><label>邮箱</label><div class='apply-input'><input type='email' class='apply-email' placeholder='邮箱' value='baidu@baidu.com'><div class='tip'></div></div></div><div class='apply-list clearfix'><label>优惠券</label><div class='apply-input'><input type='text' class='apply-coupon' placeholder='优惠劵'><div class='tip'></div></div></div><div class='button-group'><input type='submit' class='btn btn-gray save' value='保存'><input type='button' class='btn btn-gray' value='取消'></div></form></div></div>")
+    })
+
+});

@@ -1,0 +1,276 @@
+<!DOCTYPE html >
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" name="viewport" id="viewport"/>
+    <title>蚂蚁金服</title>
+    <link rel="prefetch" href="../images/p0.jpg" />
+    <link rel="prefetch" href="../images/p1.jpg" />
+    <link rel="prefetch" href="../images/p2.jpg" />
+    <link rel="prefetch" href="../images/p60.jpg" />
+    <link rel="prefetch" href="../images/p61.jpg" />
+    <link rel="prefetch" href="../images/p62.jpg" />
+    <link rel="prefetch" href="../images/p63.jpg" />
+    <link rel="prefetch" href="../images/p5_3.png" />
+    <link href="../css/animate.min.css" rel="stylesheet"/>
+    <link href="../css/common.css" rel="stylesheet"/>
+    <script src="../js/jquery.mobile-1.3.2.min.js"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+   <!-- <script src="../js/js.js"></script>-->
+    <script src="../js/mui.min.js"></script>
+    <script>
+		var vScale = window.screen.width/720;
+		document.getElementById('viewport').setAttribute('content','target-densitydpi=device-dpi, width=720, user-scalable=no, minimum-scale='+vScale+', maximum-scale='+vScale+' initial-scale='+vScale);		
+	</script>
+</head>
+<body>
+	<div class="page1 page" id="page1">
+		<div class="p1_1"></div>
+		<div class="p1_2"></div>
+		<div class="p1_3"></div>
+		<div class="p1_4"></div>
+		<div class="p1_5"></div>
+		<div class="p1_6"></div>
+		<div class="p1_7"></div>
+		<div class="p1_8"></div>
+		<div class="p1_9"></div>
+		<div class="p1_10"></div>
+	</div>
+	<div class="page-activity page2 page hide" id="page2">
+		<div class="page-course-top clearfix">
+			<div class="page-course-banner fl mb">
+				<img src="../images/01.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/02.jpg"/>
+			</div>
+			<div class="page-course-banner fl mb">
+				<img src="../images/03.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/04.jpg"/>
+			</div>
+			<div class="page-course-banner fl mb">
+				<img src="../images/05.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/06.jpg"/>
+			</div>
+			<div class="page-course-banner fl mb">
+				<img src="../images/07.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/08.jpg"/>
+			</div>
+		</div>
+		<div class="page-course-yuan" style="display:none;">
+			<div class="page-course-yuan1">
+				<h1>精彩活动</h1>
+				<p> ACTIVITIES</p>
+			</div>
+		</div>
+		<div class="page-course-bottom">
+			<div class="page-course-bg">
+				<div class="activity-con">
+					我们身上承载了太多小微的梦想，我们喜欢与更多的小伙伴们同行.
+					<p>Bearing the dreams of small and micro businesses，sharing the future with more kindred spirits.</p>
+					<ul class="activity-mune mune">
+					<li id="ymdx">
+						<a href="javascript:void(0);">
+							<img src="../images/activity-h1.png">
+							<span>一马当先</span>
+						</a>
+					</li>
+					<li id="mydwj">
+						<a href="javascript:void(0);">
+							<img src="../images/activity-h2.png">
+							<span>蚂蚁大玩家</span>
+						</a>
+					</li>
+					<li id="hlw">
+						<a href="javascript:void(0);">
+							<img src="../images/activity-h3.png">
+							<span> 互联网＋高峰论坛</span>
+						</a>
+					</li>
+				</ul>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="page-course page3 page hide" id="page3">
+		<div class="page-course-top">
+			<div class="page-course-banner fl mb">
+				<img src="../images/401.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/402.jpg"/>
+			</div>
+			<div class="page-course-banner fl mb">
+				<img src="../images/403.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/404.jpg"/>
+			</div>
+			<div class="page-course-banner fl mb">
+				<img src="../images/405.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/406.jpg"/>
+			</div>
+			<div class="page-course-banner fl mb">
+				<img src="../images/407.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/408.jpg"/>
+			</div>
+		</div>
+		<div class="page-course-yuan" style="display:none;">
+			<div class="page-course-yuan1">
+				<h1>精品课程</h1>
+				<p>COURSE</p>
+			</div>
+		</div>
+		<div class="page-course-bottom">
+			<div class="page-course-bg">
+				<ul class="mune">
+					<li>
+						<a href="#">
+							<img src="../images/course-h1.png">
+							<span>O2O实战训练营</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../images/course-h2.png">
+							<span>创业者课程</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../images/course-h3.png">
+							<span>EMBA</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../images/course-h4.png">
+							<span>理财课堂</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="page-course page-about page4 page hide" id="page4">
+		<div class="page-course-top">
+			<div class="page-course-banner fl mb">
+				<img src="../images/501.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/502.jpg"/>
+			</div>
+			<div class="page-course-banner fl mb">
+				<img src="../images/503.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/504.jpg"/>
+			</div>
+			<div class="page-course-banner fl mb">
+				<img src="../images/505.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/506.jpg"/>
+			</div>
+			<div class="page-course-banner fl mb">
+				<img src="../images/507.jpg"/>
+			</div>
+			<div class="page-course-banner fl mt">
+				<img src="../images/508.jpg"/>
+			</div>
+		</div>
+		<div class="page-course-yuan" style="display:none;">
+			<div class="page-course-yuan1">
+				<h1>关于我们</h1>
+				<p>ABOUT US</p>
+			</div>
+		</div>
+		<div class="page-course-bottom">
+			<div class="page-course-bg">
+				<div class="page-about-con">
+					<div class="page-about-tit">蚂蚁金服商学院 </div>
+					<p>简称AFBS（ANT FINACIAL BUSINESS SCHOOL）
+&nbsp;&nbsp;&nbsp;&nbsp;AFBS是蚂蚁金服集团的生态组织，通过AFBS凝聚诸多
+的行业精英和伙伴，创造更多的合作机会，搭建一
+个全新的资源交流和学习分享型平台。其主要功能
+是蚂蚁金服的生态建设及生态培训。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page5 hide" id="page5">
+		<div class="p5_1"></div>
+		<div class="p5_7"></div>
+		<div class="p5_2"></div>
+		<div class="p5_3"></div>
+		<div class="p5_4 js_kz">
+			<span>一马当先</span>
+			<em></em>
+		</div>
+		<div class="p5_5 js_kz" style="left:-170px;">
+			<span style="display:none;">蚂蚁大玩家</span>
+			<em style="display:block;"></em>
+		</div>
+		<div class="p5_6 js_kz" style="left:-170px;">
+			<span style="display:none;">互联网＋高峰论坛</span>
+			<em style="display:block;"></em>
+		</div>
+		<div class="js_kz_nr">我们与7家媒体（第一财经、优酷、新浪科技、创业家、虎嗅、36氪、天下网商）联合共创的电视大赛创造了同类栏目收视记录，通过一马当先建立起来的创业生态圈，包括1000多家创业团队、100家通过大赛获得在知名投资机构面前现场路演项目的机会、30%的项目在参赛期间获得投资机构融资、50多家优质o2o服务通过大赛接入支付宝开放平台			
+		</div>
+		<div class="js_kz_nr" style="display:none;">蚂蚁金服商学院与新闻晨报、都市快报和新京报一起走进校园，关注生态圈中的未来新生力量，发起“蚂蚁大玩家AntPlayer”活动，把互联网金融和创新资讯用新方式玩起来。旨在培养当代大学生的创新精神，对梦想的坚持，加强社会责任感，与蚂蚁金服一起书写热血、正能量的青春。未来蚂蚁金服商学院对于青年群体的关注会升级成青年关注计划。			
+		</div>
+		<div class="js_kz_nr" style="display:none;">互联网与传统产业的深度融合带来了巨大的市场，为了帮助企业家们更好地站在“互联网+”的风口上，蚂蚁金服商学院联合生态合作伙伴举办互联网+峰会，与会嘉宾们分享和探讨如何更精准地定位“互联网+”的风口、如何更好地在“互联网+”的风口迎风起飞、如何在整个时代的兴奋和渴望之中实实在在地去拥抱和拥有新的红利。			
+		</div>
+	</div>
+	<div class="page6 hide" id="page6">
+		<div class="p6_1"></div>
+		<div class="p5_7"></div>
+		<div class="p5_2"></div>
+		<div class="p5_3"></div>
+		<div class="p5_8 js_kz1">
+			<span>O2O实战训练营</span>
+			<em></em>
+		</div>
+		<div class="p5_4 js_kz1" style="left:-170px;">
+			<span style="display:none;">创业者课程</span>
+			<em style="display:block;"></em>
+		</div>
+		<div class="p5_5 js_kz1" style="left:-170px;">
+			<span style="display:none;">EMBA</span>
+			<em style="display:block;"></em>
+		</div>
+		<div class="p5_6 js_kz1" style="left:-170px;">
+			<span style="display:none;">理财讲堂</span>
+			<em style="display:block;"></em>
+		</div>
+		<div class="js_kz_nr1">2014年期间，蚂蚁金服商学院团队打造的“O2O实战训练营”与14家媒体和机构达成合作共完成了45场培训，已经成为国内O2O领域的顶级培训品牌。蚂蚁理财公开课也已在杭州成功举办，吸引了各个年龄层次的消费者的参与。成立之日起，商学院还将走进企业，为优秀的合作伙伴包装案例，进行宣传，促进市场的积极发展。			
+		</div>
+		<div class="js_kz_nr1" style="display:none;">蚂蚁金服商学院与媒体合作的首个创业服务项目。分校的建立既能帮助创业者解决传播上的痛点,也能为创业者在融资上答疑解惑,为创业者提供实实在在的服务。目前已经合作的有华西分校，合作伙伴是华西都市报，华北分校，合作对象是36氪，华东分校，合作伙伴是创业邦，未来蚂蚁金服商学院的合作分校会继续扩大，旨在和合作伙伴一起为更多的创业者搭建更强大的生态平台。			
+		</div>
+		<div class="js_kz_nr1" style="display:none;">联合国内各大高等院校及合作机构，针对在互联网时代经济与管理、互联网金融、创新创业、商业模式及企业社会责任等领域合作，开拓针对互联网金融、移动互联网时代经济管理、创业领域的优秀人才的培养项目，为中国今后的金融生态、商业生态、创业生态源源不断输送中坚力量。			
+		</div>
+		<div class="js_kz_nr1" style="display:none;">蚂蚁金服商学院与华南地区媒体新快报合作，对于大妈用户的关注，以及蚂蚁金服品牌影响力的树立，活动吸引了近20支广场舞队伍约300人参加，大叔大妈们不仅会跳舞还会使用支付宝。<span></span>			
+		</div>
+	</div>
+
+	<script>
+		$('body').on('touchmove', function (event) {
+		    event.preventDefault();
+		});
+ /*var shutterH=new Hongru.shutter.init('shutterH',{
+			id:'shutter'
+		});	*/
+	</script>
+	<script src="../js/common.js"></script>
+</body>
+</html>

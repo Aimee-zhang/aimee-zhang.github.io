@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+body{
+  background: #eff0f1;
+}
+.weixin-pay{
+  width: 100%;
+  min-width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.weixin-pay-bg{
+  width: 100%;
+}
+.order-name{
+  width: 57%;
+  font-size: 22px;
+  color: #333;
+  position: absolute;
+  left: 5.8%;
+  top: 19.2%;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.order-name span{
+  font-size: 18px;
+  margin-left: 2.6%;
+}
+.order-money{
+  font-size: 30px;
+  color: #f60;
+  position: absolute;
+  right: 7.5%;
+  top: 16.3%;
+  line-height: 1;
+}
+.order-money-pay{
+  width: 22.9%;
+  text-align: center;
+  font-size: 30px;
+  color: #f60;
+  position: absolute;
+  left: 31.4%;
+  top: 40.6%;
+}
+.order-code{
+  width: 16.4%;
+  position: absolute;
+  left: 34.6%;
+  top: 48.9%;
+}
+.order-code img{
+  width: 100%;
+}

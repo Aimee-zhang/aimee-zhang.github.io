@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <meta name="browsermode" content="application">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <title>平安-首页</title>
+        <meta name="keywords" content="平安-首页" />
+        <meta name="description" content="平安-首页" />
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <link rel="stylesheet" type="text/css" href="./css/qgqz.css">
+        <script type="text/javascript" src="./js/lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/lib/jquery-superSlide/jquery.SuperSlide.2.1.2.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="header wrapper m clearfix">
+                <div class="header-logo fl">
+                    <a href="/" title="吾界" class="spliceico ico-logo"></a>
+                </div> 
+                <ul class="nav fl clearfix">
+                    <li><a class="active" href="index.html">首页</a></li>
+                    <li><a href="index.html">全球签证</a></li>
+                    <li><a href="index.html">服务中心</a></li>
+                    <li><a href="index.html">签证政策</a></li>
+                    <li><a href="index.html">常见问题</a></li>
+                    <li><a href="index.html">会员中心</a></li>
+                </ul> 
+                <div class="login fr">
+                    <a href="/" class="btn btn-green">登录</a>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <!-- 体检banner开始 -->
+            <div class="tj-banner"  id="Js_tj_banner">
+                <div class="banner_image">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="./images/qgqz/qgqz-banner.png"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="./images/qgqz/qgqz-banner.png"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="./images/qgqz/qgqz-banner.png"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="./images/qgqz/qgqz-banner.png"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mune_thumb">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 体检banner结束 -->
+            <!--几大洲-->
+            <div class="m wrapper pt20">
+                <div class="zhou_list">
+                    <div class="zhou_list_title">
+                        <img src="images/qgqz/yazhou.png">
+                    </div>
+                    <div class="zhou_main">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="zhou_list">
+                    <div class="zhou_list_title">
+                        <img src="images/qgqz/ouzhou.png">
+                    </div>
+                    <div class="zhou_main">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="zhou_list">
+                    <div class="zhou_list_title">
+                        <img src="images/qgqz/feizhou.png">
+                    </div>
+                    <div class="zhou_main">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="./images/qgqz/banner-x.png">
+                                    <div class="zhou_main_nr_dw">马尔代夫</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="zhou_list">
+                    <div class="zhou_list_title">
+                        <img src="images/qgqz/beimei.png">
+                    </div>
+                    <div class="zhou_main">
+                        <ul class="clearfix">
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="zhou_list">
+                    <div class="zhou_list_title">
+                        <img src="images/qgqz/dayangzhou.png">
+                    </div>
+                    <div class="zhou_main">
+                        <ul class="clearfix">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--几大洲end-->
+        </div>
+        <!-- 页面底部开始 -->
+        <div id="footer">
+            <div class="footer-box wrapper m clearfix">
+                <div class="footer-left fl">
+                    <p><a href="#">关于我们</a><a href="#">意见反馈</a><a href="#">法律声明</a></p>
+                    <p>版权所有 ©吾界(中国) 未经许可不得复制、转载或摘编，违者必究!  Copyright © WUJIE (CHINA), All Rights Reserved</p>
+                    <p>ICP许可证号 京ICP备16006580号</p>
+                </div>
+                <div class="footer-right fr">
+                    <i class="spliceico ico-tel"></i>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#Js_tj_banner').slide({
+                    titCell:".mune_thumb ul li", 
+                    mainCell:".banner_image ul",
+                    effect:"leftLoop", 
+                    vis:"auto",
+                    scroll:1,
+                    autoPlay:true,
+                    delayTime:300, 
+                    triggerTime:50 
+                });
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

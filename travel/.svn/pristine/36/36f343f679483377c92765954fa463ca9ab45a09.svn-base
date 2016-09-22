@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="browsermode" content="application">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>平安-全球签证-送签-填写订单</title>
+    <meta name="keywords" content="平安-全球签证-送签-填写订单" />
+    <meta name="description" content="平安-全球签证-送签-填写订单" />
+    <link rel="stylesheet" type="text/css" href="./js/lib/artDialog/skins/green.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/visa-send.css">
+    <script type="text/javascript" src="./js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/lib/artDialog/jquery.artDialog.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/order.js"></script>
+    <script type="text/javascript" src="./js/add.js"></script>
+</head>
+
+<body class="model-body">
+    <div class="model-pad">
+        <div class="model-content ac">
+            请您在新打开的支付页面进行支付，支付完成前请不要关闭该窗口。
+        </div>
+        <div class="button-group">
+            <a href="visa-pay.html" target="_blank" class="btn btn-gray">重新支付</a>
+            <a href="visa-pay-success.html" target="_blank" class="btn btn-yellow">已完成支付</a>
+        </div>
+    </div>
+</body>
+</html>

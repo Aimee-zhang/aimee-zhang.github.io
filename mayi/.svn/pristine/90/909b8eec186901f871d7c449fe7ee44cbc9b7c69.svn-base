@@ -1,0 +1,48 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" name="viewport" id="viewport"/>
+	    <title>蚂蚁金服</title>
+	    <link href="../css/animate.min.css" rel="stylesheet"/>
+	    <link href="../css/common.css" rel="stylesheet"/>
+	    <script src="../js/jquery-1.8.3.min.js"></script>
+	    <script src="../js/common.js"></script>
+	    <script>
+			var vScale = window.screen.width/720;
+			document.getElementById('viewport').setAttribute('content','target-densitydpi=device-dpi, width=720, user-scalable=no, minimum-scale='+vScale+', maximum-scale='+vScale+' initial-scale='+vScale);		
+		</script>
+	</head>
+	<body>
+		<div class="page6 page">
+			<div class="p6_1"></div>
+			<div class="p5_7"></div>
+			<div class="p5_2"></div>
+			<div class="p5_3"></div>
+			<div class="p5_8 js_kz1">
+				<span>O2O实战训练营</span>
+				<em></em>
+			</div>
+			<div class="p5_4 js_kz1" style="left:-170px;">
+				<span style="display:none;">创业者课程</span>
+				<em style="display:block;"></em>
+			</div>
+			<div class="p5_5 js_kz1" style="left:-170px;">
+				<span style="display:none;">EMBA</span>
+				<em style="display:block;"></em>
+			</div>
+			<div class="p5_6 js_kz1" style="left:-170px;">
+				<span style="display:none;">理财讲堂</span>
+				<em style="display:block;"></em>
+			</div>
+			<div class="js_kz_nr1">2014年期间，蚂蚁金服商学院团队打造的“O2O实战训练营”与14家媒体和机构达成合作共完成了45场培训，已经成为国内O2O领域的顶级培训品牌。蚂蚁理财公开课也已在杭州成功举办，吸引了各个年龄层次的消费者的参与。成立之日起，商学院还将走进企业，为优秀的合作伙伴包装案例，进行宣传，促进市场的积极发展。			
+			</div>
+			<div class="js_kz_nr1" style="display:none;">蚂蚁金服商学院与媒体合作的首个创业服务项目。分校的建立既能帮助创业者解决传播上的痛点,也能为创业者在融资上答疑解惑,为创业者提供实实在在的服务。目前已经合作的有华西分校，合作伙伴是华西都市报，华北分校，合作对象是36氪，华东分校，合作伙伴是创业邦，未来蚂蚁金服商学院的合作分校会继续扩大，旨在和合作伙伴一起为更多的创业者搭建更强大的生态平台。			
+			</div>
+			<div class="js_kz_nr1" style="display:none;">联合国内各大高等院校及合作机构，针对在互联网时代经济与管理、互联网金融、创新创业、商业模式及企业社会责任等领域合作，开拓针对互联网金融、移动互联网时代经济管理、创业领域的优秀人才的培养项目，为中国今后的金融生态、商业生态、创业生态源源不断输送中坚力量。			
+			</div>
+			<div class="js_kz_nr1" style="display:none;">蚂蚁金服商学院与华南地区媒体新快报合作，对于大妈用户的关注，以及蚂蚁金服品牌影响力的树立，活动吸引了近20支广场舞队伍约300人参加，大叔大妈们不仅会跳舞还会使用支付宝。			
+			</div>
+		</div>
+	</body>
+</html>

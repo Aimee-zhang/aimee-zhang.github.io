@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" name="viewport" id="viewport"/>
+	    <title>蚂蚁金服</title>
+	    <link href="../css/animate.min.css" rel="stylesheet"/>
+	    <link href="../css/common.css" rel="stylesheet"/>
+	    <script src="../js/jquery-1.8.3.min.js"></script>
+	    <script src="../js/common.js"></script>
+	    <script>
+			var vScale = window.screen.width/720;
+			document.getElementById('viewport').setAttribute('content','target-densitydpi=device-dpi, width=720, user-scalable=no, minimum-scale='+vScale+', maximum-scale='+vScale+' initial-scale='+vScale);		
+		</script>
+	</head>
+	<body>
+		<div class="page5 page">
+			<div class="p5_1"></div>
+			<div class="p5_7"></div>
+			<div class="p5_2"></div>
+			<div class="p5_3"></div>
+			<div class="p5_4 js_kz">
+				<span>一马当先</span>
+				<em></em>
+			</div>
+			<div class="p5_5 js_kz" style="left:-170px;">
+				<span style="display:none;">蚂蚁大玩家</span>
+				<em style="display:block;"></em>
+			</div>
+			<div class="p5_6 js_kz" style="left:-170px;">
+				<span style="display:none;">互联网＋高峰论坛</span>
+				<em style="display:block;"></em>
+			</div>
+			<div class="js_kz_nr">我们与7家媒体（第一财经、优酷、新浪科技、创业家、虎嗅、36氪、天下网商）联合共创的电视大赛创造了同类栏目收视记录，通过一马当先建立起来的创业生态圈，包括1000多家创业团队、100家通过大赛获得在知名投资机构面前现场路演项目的机会、30%的项目在参赛期间获得投资机构融资、50多家优质o2o服务通过大赛接入支付宝开放平台			
+			</div>
+			<div class="js_kz_nr" style="display:none;">蚂蚁金服商学院与新闻晨报、都市快报和新京报一起走进校园，关注生态圈中的未来新生力量，发起“蚂蚁大玩家AntPlayer”活动，把互联网金融和创新资讯用新方式玩起来。旨在培养当代大学生的创新精神，对梦想的坚持，加强社会责任感，与蚂蚁金服一起书写热血、正能量的青春。未来蚂蚁金服商学院对于青年群体的关注会升级成青年关注计划。			
+			</div>
+			<div class="js_kz_nr" style="display:none;">互联网与传统产业的深度融合带来了巨大的市场，为了帮助企业家们更好地站在“互联网+”的风口上，蚂蚁金服商学院联合生态合作伙伴举办互联网+峰会，与会嘉宾们分享和探讨如何更精准地定位“互联网+”的风口、如何更好地在“互联网+”的风口迎风起飞、如何在整个时代的兴奋和渴望之中实实在在地去拥抱和拥有新的红利。			
+			</div>
+		</div>
+	</body>
+</html>

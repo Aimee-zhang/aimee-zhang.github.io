@@ -1,0 +1,185 @@
+html,body{
+	min-height: 100%;
+}
+body{
+	background: url(../images/login-bg.png) #f7f0e6 no-repeat center center;
+}
+.body-login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.login-box {
+    width: 428px;
+    height: 468px;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #f5e8d6;
+    position: absolute;
+    top: 50%;
+    margin-top: -234px;
+    left: 50%;
+    margin-left: -214px;
+}
+.login-box .login-login{
+    width: 350px;
+    height: 400px;
+    margin: 14px auto;
+    background: url(../images/login-login.png) no-repeat;
+    padding: 20px 25px;
+}
+
+.login-box .logo {
+    width: 350px;
+    margin: 0 auto;
+    border-bottom: 2px solid #fcab64;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.login-box .logo img {
+    width: 258px;
+    height: 50px;
+}
+
+.login-box .login p.title {
+    font-size: 16px;
+    color: #7a89a4;
+    text-align: center;
+}
+.login-form{
+    padding-top: 25px;
+}
+.login-form .login-row {
+    width: 340px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+.login-form .login-btn-box{
+    margin: 35px auto 0;
+}
+.login-form .form-label{
+    position: relative;
+}
+p.form-error{
+	padding-left: 40px;
+	line-height: 30px;
+	position: absolute;
+	top: 40px;
+	right:0;
+	width:290px;
+	color:#fff;
+	font-size:12px;
+}
+input.form-error{
+    border-color: #fff!important;
+    outline: 0;
+}
+input.form-error:focus{
+    border-color: #fff!important;
+}
+.login-form .login-row .login-row-ico {
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    text-align: center;
+    position: absolute;
+    left:1px;
+    top:1px;
+}
+
+.login-form .login-row .login-row-ico i {
+    display: inline-block;
+    width: 20px;
+    height: 19px;
+    background: url(../images/login-icon-user.png) no-repeat 0 0;
+    margin: 10px 0;
+}
+
+.login-form .login-row .login-row-ico i.pwd-ico {
+    background: url(../images/login-icon-pwd.png) no-repeat 0 0;
+}
+
+.login-form .login-row .login-row-ico i.codes-ico {
+    background: url(../images/login-icon-codes.png) no-repeat 0 0;
+}
+
+.login-form .login-remeber{
+	background:none;
+	width: 340px;
+	margin:15px auto 0;
+    color: #fff;
+    font-size: 16px;
+}
+.login-form .login-remeber a{
+    color:#fff;
+}
+.login-form .login-remeber input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    border: none;
+    background: #fff;
+}
+
+input {
+    font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB';
+}
+
+.login-form .login-row .login-row-input input {
+    width: 276px;
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px 0 50px;
+    font-size: 16px;
+    color: #999;
+    border: #e1e1e1 1px solid;
+}
+.login-form .login-row .input-codes input{
+    width: 122px;
+}
+.login-form .login-row .login-row-refresh{
+    width: 140px;
+    height: 42px;
+    background: #fff;
+    position: relative;
+}
+.login-form .login-row .login-row-refresh .codes-img{
+    width: 113px;
+    height: 42px;
+    text-align: center;
+}
+.login-form .login-row .login-row-refresh .codes-img img{
+    max-width: 113px;
+    height: 42px;
+}
+.login-form .login-row .login-row-refresh a{
+    padding: 12.5px 5px;
+    width: 17px;
+    height: 17px;
+    background: url(../images/refresh.png) no-repeat center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.login-form .login-row .login-btn {
+    background: url(../images/login.png) no-repeat;
+    color: #fff;
+    width: 340px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 44px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.login-remeber input{
+	vertical-align: middle;
+}

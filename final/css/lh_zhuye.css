@@ -66,6 +66,7 @@ body{
 	height: 100%;
 	position: absolute;
 	top: 0;
+	overflow: hidden;
 }
 .banner .inner .item{
 	width: 20%;

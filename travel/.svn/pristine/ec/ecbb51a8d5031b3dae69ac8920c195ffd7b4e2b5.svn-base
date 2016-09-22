@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <meta name="browsermode" content="application">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <title>平安-常见问题详情</title>
+        <meta name="keywords" content="平安-常见问题详情" />
+        <meta name="description" content="平安-常见问题详情" />
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <link rel="stylesheet" type="text/css" href="./css/cjwt.css">
+        <script type="text/javascript" src="./js/lib/jquery/jquery.min.js"></script>
+    	<script type="text/javascript" src="./js/common.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="header wrapper m clearfix">
+                <div class="header-logo fl">
+                    <a href="/" title="平安" class="spliceico ico-logo"></a>
+                </div> 
+                <ul class="nav fl clearfix">
+                    <li><a class="active" href="index.html">首页</a></li>
+                    <li><a href="index.html">全球签证</a></li>
+                    <li><a href="index.html">服务中心</a></li>
+                    <li><a href="index.html">签证政策</a></li>
+                    <li><a href="index.html">常见问题</a></li>
+                    <li><a href="index.html">会员中心</a></li>
+                </ul> 
+                <div class="login fr">
+                    <a href="/" class="btn btn-green">登录</a>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="m wrapper">
+                <!--面包线导航-->
+                <div class="bread-line">
+                    <a href="javascript:void(0);">首页</a>>
+                    <a href="javascript:void(0);">常见问题</a>>
+                    <span>详情</span>
+                </div>
+                <!--面包线导航end-->
+                <div class="qgqz-list clearfix">
+                    <div class="qgqz-list-right fl">
+						<div class="cjwt-xq">
+                            <h1>销签/面试销签对于签证来说很重要吗？</h1> 
+                            <div class="cjwt-xq-nr">
+                                <div class="cjwt-xq-nr-list">
+                                    <h4>案例介绍</h4>
+                                    <div class="cjwt-xq-wz">客人王女士，申请欧洲某申根国个人旅游签证后出签，并顺利返回，该国领馆要求王女士回国后5个工作日内前往领馆面试销签。但王女士由于工作繁忙，没有对面试销签引起重视，导致第二年再次申请其他申根国家个人旅游签证时，被拒签了。</div>
+                                </div>
+                                <div class="cjwt-xq-nr-list">
+                                    <h4>案例分析</h4>
+                                    <div class="cjwt-xq-wz">关于销签/面试销签，领馆可能是随机抽取，但也有可能在给您签发签证时已经对您的情况有所担心，才要求您回国后进行销签/面试销签。因此，如您被要求销签/面试销签，务必在领馆指定工作日内，完成销签/面试销签，以证明您的确已按时回国。针对王女士的情况，我司也建议客人提供一份详细的英文情况说明写明当时未去参加面销的原因。</div>
+                                </div>
+                                <div class="cjwt-xq-nr-list">
+                                    <h4>签证结果</h4>
+                                    <div class="cjwt-xq-wz">王女士顺利签出了该申根国个人旅游签证。</div>
+                                </div>
+                                <div class="cjwt-xq-nr-list">
+                                    <h4>案例结果</h4>
+                                    <div class="cjwt-xq-wz">如不按照领馆要求面试、面销将被办理领馆记录并影响下次签证的办理，因此面试面销很重要。</div>
+                                </div>
+                            </div>                 
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <div class="qgqz-list-left mb20">
+                            <div class="qgqz-left-title">常见问题</div>
+                            <div class="qzzc-wt-list">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);">花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">花样漳州”端出“旅游套餐”，最新推出花样漳州”端出“旅游套餐”，最新推出</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+        <!-- 页面底部开始 -->
+        <div id="footer">
+            <div class="footer-box wrapper m clearfix">
+                <div class="footer-left fl">
+                    <p><a href="#">关于我们</a><a href="#">意见反馈</a><a href="#">法律声明</a></p>
+                    <p>版权所有 ©吾界(中国) 未经许可不得复制、转载或摘编，违者必究!  Copyright © WUJIE (CHINA), All Rights Reserved</p>
+                    <p>ICP许可证号 京ICP备16006580号</p>
+                </div>
+                <div class="footer-right fr">
+                    <i class="spliceico ico-tel"></i>
+                </div>
+            </div>
+        </div>
+        <div class="return-top" id="back-to-top">
+	        <i class="spliceico ico-returntop"></i>
+	    </div>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+$(function() {
+    var ns = {};
+    ns.check = {
+        empty: function(data, info) {
+            var regrex = /.+/;
+            if (regrex.test(data)) {
+                return false;
+            }
+            if (info !== undefined) {
+                ns.tip(info);
+            }
+            return true;
+        },
+        tel: function(data, info) {
+            var regrex = /^1[0-9]{10}$/
+            info = info || "请输入正确的手机号码！";
+            if (!regrex.test(data)) {
+                ns.tip(info);
+                return false;
+            }
+            return true;
+        },
+        name: function(data, info) {
+            var regrex = /^[\u4e00-\u9fa5a-zA-Z]+$/;
+            info = info || "请输入正确的姓名！";
+            if (!regrex.test(data)) {
+                ns.tip(info);
+                return false;
+            }
+            return true;
+        },
+        pwd: function(data1, data2, info) {
+            info = info || "请确认两次密码输入一致并不为空！";
+            if (!/.+/.test(data1) || data1 != data2) {
+                ns.tip(info);
+                return false;
+            }
+            return true;
+        },
+        num: function(data, info) {
+            if (/.+/.test(data) || isNaN(data)) {
+                if (info) {
+                    ns.tip(info);
+                }
+                return false;
+            }
+            return true;
+        },
+        int: function(data, info) {
+            var regrex = /^\d+$/;
+            if (!regrex.test(data)) {
+                if (info) {
+                    ns.tip(info);
+                }
+                return false;
+            }
+            return true;
+        },
+        len: function(data,length) {
+            if ( data.length != length ){
+                return false;
+            }
+            return true;
+        },
+        idcard : function ( data , info ){
+            var regrex = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+            info = info ? info : "请输入正确的身份证号！";
+            if (!regrex.test(data)){
+                ns.tip(info);
+            }
+            return regrex.test(data);
+        },
+        email : function ( data , info ){
+            var regrex = /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+            info = info ? info : "请输入正确的email地址！";
+            if (!regrex.test(data)){
+                ns.tip(info);
+            }
+            return regrex.test(data);
+        },
+        lenRange: function(data,minlength,maxlength){
+            var len = data.length;
+            if ( len < minlength ){
+                return false;
+            }
+            if ( maxlength !== undefined ){
+                if ( len > maxlength ){
+                    return false;
+                }
+            }
+            return true;
+        }
+    };
+ 
+    ns.tip = function(txt) {
+        
+    };
+
+  
+    window.ns = ns;
+    var $apply_form = $(".apply-form"),
+        $apply_name = $apply_form.find(".apply-name"),
+        $apply_idcard = $apply_form.find(".apply-idcard"),
+        $apply_tel = $apply_form.find(".apply-tel"),
+        $apply_email = $apply_form.find(".apply-email"),
+        $apply_coupon = $apply_form.find(".apply-coupon");
+
+    $apply_form.find("input").focus(function(){
+        $(this).siblings(".tip").html(" ");
+    })
+
+    $apply_form.submit(function(){
+        var name = $(this).find(".apply-name").val(),
+            idcard = $(this).find(".apply-idcard").val(),
+            tel = $(this).find(".apply-tel").val(),
+            email = $(this).find(".apply-email").val(),
+            coupon = $(this).find(".apply-coupon").val();
+        if (!ns.check.name(name)) {
+            $(this).find(".apply-name").siblings(".tip").html("请输入正确的姓名！");
+            return false;
+        }
+        if (!ns.check.idcard(idcard)) {
+            $(this).find(".apply-idcard").siblings(".tip").html("请输入正确的身份证号！");
+            return false;
+        }
+        if (!ns.check.tel(tel)) {
+            $(this).find(".apply-tel").siblings(".tip").html("请输入正确的手机号码！");
+            return false;
+        }
+        if (!ns.check.email(email)) {
+            $(this).find(".apply-email").siblings(".tip").html("请输入正确的email地址！");
+            return false;
+        }
+        if ( ns.check.empty(coupon) ){
+            //添加申请人
+            
+            return false;
+        }else{
+            //判断优惠码是否重复
+        }
+        //执行ajax检测优惠码是否有效。然后再执行添加申请人
+        return false;
+    });
+});

@@ -1,0 +1,33 @@
+(function(window, $) {
+    var ns = window.ns || {};
+    var $window = $(window);
+
+    ns.open = function(el,opts,width,height,confirm,cancel,okVal,cancelVal){
+        if ( typeof el === "object" ){
+            var $el = $(el),
+                href = $el.attr("href"),
+                title = $el.attr("title");
+        }else{
+            var href = el || opts.href,
+                title = opts || opts.title;
+        }
+        var data = {};
+        if ( typeof opts === "object" ){
+            data = opts;
+            data.title = data.title || title;
+        }else{
+            data = {
+                title : title,
+                width : width || 1000,
+                height : height || 600,
+                ok : confirm,
+                cancel : cancel,
+                okVal: okVal,
+                cancelVal: cancelVal
+            }
+        }
+        $.dialog.open(data.href || href,data);
+        return false;
+    }
+    window.NS = ns;
+})(window, jQuery)

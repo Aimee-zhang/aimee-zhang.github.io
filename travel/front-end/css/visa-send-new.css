@@ -1,0 +1,545 @@
+@charset "utf-8";
+
+.visa-info{
+  width: 1150px;
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  margin-bottom: 20px;
+}
+.visa-info .visa-info-top{
+  border-bottom: 1px dashed #e3e3e3;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.visa-info .visa-info-top .visa-img{
+  width: 197px;
+  height: 117px;
+  border: 1px solid #e3e3e3;
+  float: left;
+}
+.visa-info .visa-info-top .visa-img img{
+  width: 197px;
+  height: 117px;
+}
+.visa-info .visa-info-top .visa-content{
+  width: 720px;
+  float: left;
+  margin-left: 15px;
+}
+.visa-info .visa-info-top .visa-content h1{
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+  margin:5px 0 10px;
+}
+.visa-info .visa-info-top .visa-content > ul > li{
+  float: left;
+  width: 350px;
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+}
+.visa-info .visa-info-top .visa-price{
+  float: right;
+  width: 200px;
+  text-align: right;
+}
+.visa-info .visa-info-top .visa-price p{
+  font-size: 36px;
+  color: #f60;
+  margin: 10px 0 5px;
+}
+.visa-info .visa-info-top .visa-price .btn{
+  font-size: 16px;
+  line-height: 30px;
+}
+.visa-info .visa-info-bottom{
+  font-size: 14px;
+  line-height: 24px;
+  color: #999;
+}
+.visa-info .visa-info-bottom p span{
+  color: #666;
+}
+
+.visa-box{
+  border: 1px solid #e3e3e3;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.visa-box-title{
+  font-size: 18px;
+  height: 24px;
+  line-height: 24px;
+  color: #333;
+  border-left: 5px solid #f60;
+  padding-left: 15px;
+}
+
+.visa-pad{
+  margin-top: 20px;
+  padding:0 20px;
+}
+.inventory-tab > ul{
+  height: 42px;
+}
+.inventory-tab > ul > li{
+  width: 168px;
+  font-size: 14px;
+  float: left;
+  line-height: 42px;
+  text-align: center;
+  cursor: pointer;
+  color: #333;
+  background: #f5f5f5;
+  position: relative;
+}
+.tabico{
+  display: inline-block;
+  background: url(../images/tab-ico.png) no-repeat;
+  vertical-align: middle;
+  position: absolute;
+}
+.ico-right{
+  width: 15px;
+  height: 42px;
+  background-position: 0 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.ico-left{
+  width: 15px;
+  height: 42px;
+  top: 0;
+  left: -15px;
+  z-index: 5;
+}
+.ico-last-right{
+  width: 15px;
+  height: 42px;
+  background-position: 0 0;
+  top: 0;
+  right: -15px;
+}
+.inventory-tab > ul{
+  margin-bottom: 20px;
+}
+.inventory-tab > ul > li.active{
+  color: #fff;
+  background: #f60;
+  z-index: 10;
+}
+.inventory-tab > ul > li.active .ico-left{
+  background-position: -30px 0;
+}
+.inventory-tab > ul > li.active .ico-right{
+  background-position: -15px 0;
+}
+.inventory-tab > ul > li.active .ico-last-right{
+  background-position: -45px 0;
+}
+
+.inventory-con{
+  font-size: 14px;
+  color: #666;
+  display: none;
+}
+.inventory-con.on{
+  display: block;
+}
+.inventory-table{
+  border: 1px solid #e3e3e3;
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+  line-height: 28px;
+  text-align: center;
+}
+.inventory-table td{
+  padding: 8px 15px;
+  border-bottom: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+}
+.text-left{
+  text-align: left;
+}
+.text-left a{
+  color: #f60;
+  text-decoration: underline;
+  margin-left: 20px;
+}
+.tab-img{
+  max-width: 100%;
+}
+
+.declare-content{
+  font-size: 14px;
+  line-height: 24px;
+  color: #999;
+}
+
+
+/*全球签证-送签-填写订单*/
+.order-left{
+  width: 808px;
+}
+.apply-people{
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.apply-people ul{
+  margin-bottom: 20px;
+}
+.apply-people ul li{
+  margin-bottom: 15px;
+}
+.apply-people .apply-people-num{
+  font-size: 18px;
+  margin-right: 20px;
+}
+.apply-people .apply-people-info > div{
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  padding: 0 20px;
+}
+.apply-people .apply-people-operate a{
+  padding: 0 10px;
+  cursor: pointer;
+}
+.ico-modifies{
+  width: 16px;
+  height: 16px;
+  background-position: 0 -437px;
+  margin-right: 2px;
+}
+.ico-delete{
+  width: 16px;
+  height: 16px;
+  background-position: -16px -437px;
+  margin-right: 2px;
+}
+.apply-box{
+  border-bottom: 1px dashed #e3e3e3;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: none;
+}
+.apply-list-box{
+
+}
+.apply-list-box .apply-title{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.apply-form .apply-list{
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+.apply-form .apply-list label{
+  width: 190px;
+  text-align: right;
+  display: block;
+  float: left;
+  line-height: 36px;
+  margin-right: 15px;
+}
+.apply-form .apply-list .apply-input{
+  width: 380px;
+  float: left;
+}
+.apply-form .apply-list .apply-input input{
+  padding: 5px;
+  width: 370px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #e3e3e3;
+}
+.apply-form .apply-list .apply-input select{
+  width: 380px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #e3e3e3;
+}
+.button-group{
+  text-align: center;
+}
+.button-group .btn{
+  margin: 0 10px;
+}
+.apply-add .btn{
+  padding: 7px 25px;
+}
+
+.return-box{
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+}
+.return-box .back{
+  font-size: 18px;
+  color: #333;
+  position: absolute;
+  left: 15px;
+}
+.return-box .order-money{
+  font-size: 18px;
+}
+.return-box .order-money span{
+  font-size: 30px;
+  color: #f60;
+}
+.return-box a.btn{
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+
+.order-right{
+  width: 358px;
+}
+.visa-info-box{
+  font-size: 14px;
+}
+.visa-info-box > ul > li{
+  color: #666;
+  margin-bottom: 5px;
+}
+.visa-info-box > ul > li span{
+  color: #999;
+  float: left;
+}
+.visa-info-box > ul > li > div{
+  padding-left: 80px;
+}
+
+.billing-box > ul > li{
+  color: #f60;
+  font-size: 14px;
+  padding:0 5px 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #e3e3e3;
+  text-align: right;
+}
+.billing-box > ul > li span{
+  float: left;
+  color: #666;
+}
+
+.billing-box > ul > li.billing-price{
+  font-size: 16px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+/*表单验证*/
+.tip {
+    color: #f00;
+    font-size: 12px;
+    margin-top: 5px; 
+}
+
+/*弹窗*/
+.model-pad{
+  padding: 15px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999;
+}
+.model-pad .button-group{
+  margin-top: 30px;
+}
+.model-pad .button-group .btn{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/*全球签证-支付*/
+.visa-detail{
+  font-size: 14px;
+}
+.visa-detail .visa-box-title a{
+  font-size: 14px;
+  color: #999;
+  margin-left: 10px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.ico-modify{
+  width: 16px;
+  height: 16px;
+  background-position: 0 -420px;
+  margin-right: 2px;
+}
+.visa-detail-box{
+  border-bottom: 1px solid #e3e3e3;
+}
+.visa-detail-list{
+  border-bottom: 1px dashed #e3e3e3;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.visa-detail-list span {
+  color: #999;
+  float: left;
+  width: 80px;
+  text-align: right;
+}
+.visa-detail-list > ul{
+  color: #666;
+  float: left;
+  margin-left: 20px;
+  width: 1048px;
+}
+.visa-detail-list > ul.detail-people li.apply-li{
+  padding: 4px 15px;
+}
+.visa-detail-list > ul.detail-apply li.apply-li{
+  background: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.visa-detail-list > ul.detail-people li.apply-li > ul > li{
+  line-height: 16px;
+  text-align: center;
+  border-left: 1px solid #c1c1c1;
+  padding: 0;
+  float: left;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.visa-detail-list > ul.detail-people li.apply-li > ul > li.name{
+  width: 112px;
+  text-align: left;
+  border-left: none;
+}
+.visa-detail-list > ul.detail-people li.apply-li > ul > li.card{
+  width: 277px;
+}
+.visa-detail-list > ul.detail-people li.apply-li > ul > li.tel{
+  width: 211px;
+}
+.visa-detail-list > ul.detail-people li.apply-li > ul > li.email{
+  width: 262px;
+}
+.visa-detail-list > ul.detail-people li.apply-li > ul > li.coupon{
+  width: 152px;
+  text-align: right;
+}
+
+.visa-content-list{
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.visa-detail-price{
+  height: 30px;
+  padding: 0 20px;
+  margin-top: 20px;
+  float: right;
+  line-height: 30px;
+}
+
+.details-money{
+  font-size: 14px;
+  color: #999;
+  line-height: 36px;
+}
+.all-money{
+  font-size: 18px;
+  color: #666;
+  margin-left: 60px;
+}
+.all-money span{
+  color: #f60;
+}
+
+.visa-pay{
+  padding: 20px 0 10px;
+  border: 1px solid #e3e3e3;
+}
+.visa-pay .visa-box-title{
+  border-left: none;
+  float: left;
+  width: 100px;
+  line-height: 36px;
+}
+.visa-pay .pay-choose{
+  width: 1050px;
+  float: left;
+  margin-left: 20px;
+}
+.visa-pay .pay-choose label{
+  margin-right: 50px;
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+}
+.visa-pay .pay-choose label input{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.visa-pay .pay-choose label img{
+  width: 36px;
+  height: 36px;
+}
+
+.pay-btn{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.pay-success{
+  padding: 15px 30px;
+}
+.pay-success .pay-success-img {
+  width: 480px;
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+}
+.pay-success .pay-success-img img{
+  max-width: 480px;
+}
+.pay-success .pay-success-content{
+  font-size: 14px;
+  color: #666;
+  float: left;
+}
+.pay-success-content .title{
+  font-size: 18px;
+  background: url(../images/success.png) no-repeat left center;
+  padding-left: 30px;
+}
+.pay-success-content .title span{
+  color: #333;
+}
+.pay-success-content .success-detail{
+  padding-left: 30px;
+}
+.pay-success-content .success-detail > div{
+  padding-top: 15px;
+}
+.pay-success-content .success-detail  ul{
+  margin-top: 15px;
+}
+.pay-success-content .success-detail  ul li{
+  color: #333;
+  line-height: 26px;
+}
+.pay-success-content .success-detail  ul li span{
+  color: #f60;
+}
+.pay-success-content .success-login span{
+  margin-left: 15px;
+}

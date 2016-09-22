@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="browsermode" content="application">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>平安-全球签证-送签-填写订单</title>
+    <meta name="keywords" content="平安-全球签证-送签-填写订单" />
+    <meta name="description" content="平安-全球签证-送签-填写订单" />
+    <link rel="stylesheet" type="text/css" href="./js/lib/artDialog/skins/green.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/visa-send.css">
+    <script type="text/javascript" src="./js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/lib/artDialog/jquery.artDialog.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/model.js"></script>
+    <script type="text/javascript" src="./js/order.js"></script>
+    <script type="text/javascript" src="./js/add.js"></script>
+    <script type="text/javascript">
+        function model(el,width,height){
+            NS.open(el,{
+                width : width || 800,
+                height : height || 540
+            });
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 页面头部开始 -->
+    <div id="header">
+        <div class="header wrapper m clearfix">
+            <div class="header-logo fl">
+                <a href="/" title="吾界" class="spliceico ico-logo"></a>
+            </div> 
+            <ul class="nav fl clearfix">
+                <li><a href="index.html">首页</a></li>
+                <li><a class="active" href="visa-send.html">全球签证</a></li>
+                <li><a href="index.html">服务中心</a></li>
+                <li><a href="index.html">签证政策</a></li>
+                <li><a href="index.html">常见问题</a></li>
+                <li><a href="index.html">会员中心</a></li>
+            </ul> 
+            <div class="login fr">
+                <a href="/" class="btn btn-green">登录</a>
+            </div>
+        </div>
+    </div>
+    <!-- 页面头部结束 -->
+    <div class="wrapper m">
+        <div class="bread-line">
+            <a href="javascript:void(0);">首页</a> &gt;
+            <a href="javascript:void(0);">签证</a> &gt;
+            <a href="javascript:void(0);">日本</a> &gt;
+            <span>填写订单</span>
+        </div>
+    </div>
+    <!-- main开始 -->
+    <div class="order wrapper m clearfix">
+        <div class="order-left fl">
+            <div class="visa-box visa-write">
+                <div class="visa-box-title">
+                    申请人信息
+                </div>
+                <div class="visa-pad">
+                    <div class="visa-add-box">
+                        <div class="apply-box">
+                            <div class="apply-people clearfix">
+                                <div class="apply-people-num fl">
+                                    申请人1
+                                </div>
+                                <div class="apply-people-info fl">
+                                    <div>姓名：<span class="name">张三</span></div>|
+                                    <div>身份证号：<span class="idcard">410000000000000000</span></div>
+                                </div>
+                                <div class="apply-people-operate fr">
+                                    <a class="modify">修改</a> |
+                                    <a class="delete">删除</a>
+                                </div>
+                            </div>
+                            <div class="apply-list-box hide">
+                                <div class="apply-title">
+                                    申请人1
+                                </div>
+                                <form action="" class="apply-form">
+                                    <div class="apply-list clearfix">
+                                        <label>姓名</label>
+                                        <div class="apply-input">
+                                            <input type="text" class="apply-name" placeholder="姓名" value="姓名">
+                                            <div class="tip"></div>
+                                        </div>
+                                    </div>
+                                    <div class="apply-list clearfix">
+                                        <label>身份证号</label>
+                                        <div class="apply-input">
+                                            <input type="text" maxlength="18" class="apply-idcard" placeholder="身份证号" value="41052119920813111x"> 
+                                            <div class="tip"></div>
+                                        </div>
+                                    </div>
+                                    <div class="apply-list clearfix">
+                                        <label>手机号码</label>
+                                        <div class="apply-input">
+                                            <input type="tel" maxlength="11" class="apply-tel" placeholder="手机号" value="13111111111">
+                                            <div class="tip"></div>
+                                        </div>           
+                                    </div>
+                                    <div class="apply-list clearfix">
+                                        <label>邮箱</label>
+                                        <div class="apply-input">
+                                            <input type="email" class="apply-email" placeholder="邮箱" value="baidu@baidu.com">
+                                            <div class="tip"></div>
+                                        </div>
+                                    </div>
+                                    <div class="apply-list clearfix">
+                                        <label>优惠券</label>
+                                        <div class="apply-input">
+                                            <input type="text" class="apply-coupon" placeholder="优惠劵">
+                                            <div class="tip"></div>
+                                        </div>
+                                    </div>
+                                    <div class="button-group">
+                                        <input type="submit" class="btn btn-gray" value="保存">
+                                        <input type="button" class="btn btn-gray" value="取消">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apply-add">
+                        <a class="btn btn-gray" id="add-apply">添加申请人</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visa-box visa-write">
+                <div class="visa-box-title">
+                    联系人信息
+                </div>
+                <div class="contacts-box visa-pad">
+                    <form class="apply-form">
+                        <div class="apply-list clearfix">
+                            <label>姓名</label>
+                            <div class="apply-input">
+                                <input type="text" class="apply-name" placeholder="姓名" value="姓名">
+                                <div class="tip"></div>
+                            </div>
+                        </div>
+                        <div class="apply-list clearfix">
+                            <label>身份证号</label>
+                            <div class="apply-input">
+                                <input type="text" maxlength="18" class="apply-idcard" placeholder="身份证号" value="41052119920813111x"> 
+                                <div class="tip"></div>
+                            </div>
+                        </div>
+                        <div class="apply-list clearfix">
+                            <label>手机号码</label>
+                            <div class="apply-input">
+                                <input type="tel" maxlength="11" class="apply-tel" placeholder="手机号" value="13111111111">
+                                <div class="tip"></div>
+                            </div>           
+                        </div>
+                        <div class="apply-list clearfix">
+                            <label>邮箱</label>
+                            <div class="apply-input">
+                                <input type="email" class="apply-email" placeholder="邮箱" value="baidu@baidu.com">
+                                <div class="tip"></div>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <input type="submit" class="btn btn-gray" value="保存">
+                            <input type="button" class="btn btn-gray" value="取消">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="visa-box">
+                <div class="return-box clearfix">
+                    <a class="back" href="visa-send.html"><  返回上一步</a>
+                    <div class="order-money">
+                        订单金额   <span>￥30403040</span>
+                    </div>
+                    <a class="btn btn-gray" href="model.html" onclick="return model(this);">提交</a>
+                </div>
+            </div>
+        </div>
+        <div class="order-right fr">
+            <div class="visa-box">
+                <div class="visa-box-title">
+                    签证信息
+                </div>
+                <div class="visa-info-box visa-pad">
+                    <ul>
+                        <li class="clearfix">
+                            <span>项目名称：</span>
+                            <div class="information">澳大利亚对中国公民正式开放</div>
+                        </li>
+                        <li class="clearfix">
+                            <span>办理时长：</span>
+                            <div class="information">收齐资料7-30个工作日</div>
+                        </li>
+                        <li class="clearfix">
+                            <span>入境次数：</span>
+                            <div class="information">多次（以领馆签发为准）</div>
+                        </li>
+                        <li class="clearfix">
+                            <span>签证有效期：</span>
+                            <div class="information">一般1-10年一般1-10年（以领馆签发为准）</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="visa-box">
+                <div class="visa-box-title">
+                    结算信息
+                </div>
+                <div class="billing-box visa-pad">
+                    <ul>
+                        <li class="clearfix">
+                            <span>签证费用</span> 
+                            ￥ 2100
+                        </li>
+                        <li class="clearfix">
+                            <span>服务费用</span> 
+                            ￥ 2100
+                        </li>
+                        <li class="billing-price clearfix">
+                            <span>服务费用</span> 
+                            ￥ 2100
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main结束 -->
+    <!-- 页面底部开始 -->
+    <div id="footer">
+        <div class="footer-box wrapper m clearfix">
+            <div class="footer-left fl">
+                <p><a href="#">关于我们</a><a href="#">意见反馈</a><a href="#">法律声明</a></p>
+                <p>版权所有 ©吾界(中国) 未经许可不得复制、转载或摘编，违者必究!  Copyright © WUJIE (CHINA), All Rights Reserved</p>
+                <p>ICP许可证号 京ICP备16006580号</p>
+            </div>
+            <div class="footer-right fr">
+                <i class="spliceico ico-tel"></i>
+            </div>
+        </div>
+    </div>
+    <div class="return-top" id="back-to-top">
+        <i class="spliceico ico-returntop"></i>
+    </div>
+</body>
+</html>

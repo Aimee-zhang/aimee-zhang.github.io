@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="browsermode" content="application">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>平安-登录</title>
+    <meta name="keywords" content="平安-登录" />
+    <meta name="description" content="平安-登录" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <script type="text/javascript" src="./js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-validate/1.8.1/jquery.validate.min.js"></script>
+</head>
+
+<body>
+    <div class="login-wrap">
+        <div class="login-box">
+            <div class="login-login">
+                <div class="logo">
+                    <img src="images/login-top.png">
+                </div>
+                <form action="/" id="login-form" class="login-form">
+                    <div class="login-row">
+                        <div class="form-label">
+                            <div class="login-row-ico">
+                                <i></i>
+                            </div>
+                            <div class="login-row-input">
+                                <input type="text" name="username" placeholder="请输入用户名" id="user">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-row">
+                        <div class="form-label">
+                            <div class="login-row-ico">
+                                <i class="pwd-ico"></i>
+                            </div>
+                            <div class="login-row-input">
+                                <input type="password" name="password" placeholder="请输入密码" id="pwd">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-row clearfix">
+                        <div class="form-label fl">
+                            <div class="login-row-ico">
+                                <i class="codes-ico"></i>
+                            </div>
+                            <div class="login-row-input input-codes">
+                                <input type="text" name="codes" placeholder="请输入验证码" id="codes">
+                            </div>
+                        </div>
+                        <div class="login-row-refresh fr">
+                            <div class="codes-img">
+                                <img src="images/codes.png">
+                            </div>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="login-row login-btn-box">
+                        <input class="login-btn" type="submit" value="登 录">
+                    </div>
+                    <div class="login-remeber clearfix">
+                        <a class="automatic fr" href="...">
+                            忘记密码
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(function() {
+        $("#login-form").validate({
+            rules: {
+                username: "required",
+                password: "required",
+                codes: "required"
+            },
+            messages: {
+                username: "请输入用户名！",
+                password: "请输入密码！",
+                codes: "请输入验证码！"
+            },
+            errorClass: 'form-error',
+            errorElement: "p",
+            onfocusout: function(element) {
+                $(element).valid();
+            },
+            onkeyup: function(element) {
+                $(element).valid();
+            },
+            errorPlacement: function(error, el) {
+                el.parents(".login-row").append(error);
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

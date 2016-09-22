@@ -1,0 +1,81 @@
+@charset "utf-8";
+#banner {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+  z-index: 77;
+}
+#banner .banner-box {
+  height: 500px;
+  text-align: center;
+}
+#banner .banner-box .banner-ctrl {
+  position: absolute;
+  width: 760px;
+  left: 50%;
+  margin-left: -390px;
+  bottom: 10px;
+  height: 20px;
+  z-index: 77;
+  overflow: visible;
+}
+#banner .banner-box .banner-ctrl .banner-btn {
+  position: absolute;
+  background: no-repeat 0 0;
+  width: 40px;
+  height: 60px;
+  top: -270px;
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#banner .banner-box .banner-ctrl .banner-btn:hover {
+  opacity: 1;
+}
+#banner .banner-box .banner-ctrl .menu_thumb {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  margin-left: -380px;
+}
+#banner .banner-box .banner-ctrl .menu_thumb li {
+  width: 40px;
+  height: 4px;
+  background: #fff \9;
+  opacity: .5 \9;
+  filter: alpha(opacity=50);
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  *display: inline;
+  margin-right: 10px;
+  cursor: pointer;
+  *float: left;
+}
+#banner .banner-box .banner-ctrl .menu_thumb li.on {
+  background-image: url(../images/banner-current.png);
+}
+#banner .banner-box .banner-image {
+  min-width: 1200px;
+  height: 100%;
+}
+#banner .banner-box .banner-image ul {
+  min-width: 1200px;
+}
+#banner .banner-box .banner-image ul li {
+  min-width: 1200px;
+}
+#banner .banner-box .banner-image a {
+  background: no-repeat center top;
+  width: 100%;
+  height: 100%;
+  height: 500px;
+  min-width: 1200px;
+  display: block;
+}
